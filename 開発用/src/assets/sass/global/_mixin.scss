@@ -1,0 +1,20 @@
+@use "./variables" as global;
+
+//メディアクエリ
+@mixin mq($breakpoint: sp) {
+  @media #{map-get(global.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin rem($fontsize) {
+  font-size: $fontsize + px;
+  font-size: ($fontsize / 16) * 1rem;
+}
+
+@mixin font($size, $weight, $height, $spacing) {
+  font-size: calc($size / 16 * 1rem);
+  font-weight: $weight;
+  line-height: calc($height / $size);
+  letter-spacing: calc($spacing / $size * 1em);
+}
