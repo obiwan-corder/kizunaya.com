@@ -1,3 +1,7 @@
+body {
+	background-color: #000;
+}
+
 .c-search-btn {
 	background: linear-gradient(180deg, #007ADF 0%, rgba(2, 200, 160, 0.79) 139.64%, rgba(0, 236, 188, 0.48) 194.29%);
 	display: inline-block;
