@@ -1,4 +1,21 @@
-body {
-	background-color: #000;
+.c-search-btn {
+	background: linear-gradient(180deg, #007ADF 0%, rgba(2, 200, 160, 0.79) 139.64%, rgba(0, 236, 188, 0.48) 194.29%);
+	display: inline-block;
+	height: 280px;
+	position: fixed;
+	right: 0;
+	top: 430px;
+	width: 125px;
+}
+
+.c-search-btn__link {
+	color: #ffffff;
+	display: grid;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 24px;
+	height: 100%;
+	place-items: center;
+	width: 100%;
+	writing-mode: vertical-rl;
 }
 
