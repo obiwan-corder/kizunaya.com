@@ -3,9 +3,10 @@ $main-color:#64629D;
 $bg-color:#9F9EC1;
 $bg-sub-color:#2D2D32;
 $accent-color:#F9F9F9;
-$accent-color-action:;
 $link-color:#000000;
 $text-color:#EDECFC;
+$c-search-btn-color: linear-gradient(180deg, #007ADF 0%, rgba(2, 200, 160, 0.79) 139.64%, rgba(0, 236, 188, 0.48) 194.29%);
+$white-color: #ffffff;
 
 
 /////////フォント/////////
@@ -14,6 +15,7 @@ $en-font:'Lato', sans-serif;
 $label-font:'Hind', sans-serif;
 $fz-base: 16px;
 $fw-base: 400;
+$text-font: 'Zen Kaku Gothic New', sans-serif;
 
 /////レイアウト/////
 $inner-width:83.4%;
