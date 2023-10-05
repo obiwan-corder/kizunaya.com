@@ -2,7 +2,7 @@ body {
 	background-color: #000;
 }
 
-.c-searchBtn {
+.c-search-btn {
 	background: linear-gradient(180deg, #007ADF 0%, rgba(2, 200, 160, 0.79) 139.64%, rgba(0, 236, 188, 0.48) 194.29%);
 	display: inline-block;
 	height: 280px;
@@ -12,7 +12,7 @@ body {
 	width: 125px;
 }
 
-.c-searchBtn__link {
+.c-search-btn__link {
 	color: #ffffff;
 	display: grid;
 	font-family: "Zen Kaku Gothic New", sans-serif;

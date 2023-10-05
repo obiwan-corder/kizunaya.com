@@ -1,6 +1,6 @@
 @use "../global" as global;
 
-.c-searchBtn{
+.c-search-btn{
     display: inline-block;
     width: 125px;
     height: 280px;
@@ -10,7 +10,7 @@
     top: 430px;
 }
 
-.c-searchBtn__link{
+.c-search-btn__link{
     display: grid;
     place-items: center;
     width: 100%;
