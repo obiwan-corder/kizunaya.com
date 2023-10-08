@@ -1,1 +1,35 @@
 @use "../global" as global;
+
+.c-drawer-btn {
+    background-color: #272727;
+    width: 110px;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    &__bar {
+        // position: absolute;
+        height: 1px;
+        display: block;
+        margin: 0 auto;
+        background-color: #fff;
+        width: 33.45px;
+        position: relative;
+        &::before,
+        &::after{
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            content: "";
+            top: -1em;
+            left: 0;
+            background-color: inherit;
+        }
+        &::after{
+            top: 1em;
+        }
+    }
+}

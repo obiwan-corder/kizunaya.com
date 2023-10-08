@@ -1,1 +1,23 @@
 @use "../global" as global;
+
+.l-lower-header {
+    width: 100%;
+    aspect-ratio: 1440 / 500;
+    object-fit: cover;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+.l-lower-header__title {
+    color: global.$white-color;
+    // @include font(48, 400, 69.5, 6.24);
+    font-size: calc(48 / 16 * 1rem);
+    line-height: calc(69.5 / 48);
+    letter-spacing: calc(6.24/ 48 * 1em);
+    text-align: center;
+}
+
+#guest-room .l-lower-header {
+    background: url(../../../../public/assets/img/guest-room/header.jpg) no-repeat;
+    background-size: contain;
+}
