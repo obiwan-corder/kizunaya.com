@@ -5,14 +5,19 @@ $bg-sub-color:#2D2D32;
 $accent-color:#F9F9F9;
 
 $link-color:#000000;
-$text-color:#EDECFC;
+$text-color:#2D2D2E;
+$c-search-btn-color: linear-gradient(180deg, #007ADF 0%, rgba(2, 200, 160, 0.79) 139.64%, rgba(0, 236, 188, 0.48) 194.29%);
+$white-color: #ffffff;
+$pagination-color:#D9D9D9;
+$pagination-active-color:#6C6A6A;
 
 
 /////////フォント/////////
-$main-font:'Noto Sans JP', sans-serif;
-$en-font:'Lato', sans-serif;
-$label-font:'Hind', sans-serif;
-$fz-base: 16px;
+$main-font: "Zen Kaku Gothic New", sans-serif;
+$title-font: 'Shippori Mincho', serif;
+$en-font: "Lato", sans-serif;
+$label-font: "Hind", sans-serif;
+$fz-base: 15px;
 $fw-base: 400;
 
 /////インナー幅/////
