@@ -5,11 +5,195 @@
     text-align: center;
     line-height: calc( 34.545 / 15 );
     letter-spacing: 1.95px;
+    padding-top: 120px;
+    padding-bottom: 110px;
 }
 
 .p-spend-message__text {
-    
+    max-width: 583px;
+    margin-inline: auto;
 }
+
+// 過ごし方のスライドページ
+.p-spend-slide {
+    padding-top: 85px;
+    padding-bottom: 110px;
+    background: url(../img/spend/spend-slide-bg.png) no-repeat center center / cover;
+    display: flex;
+    overflow-x: hidden;
+    width: 900%;
+}
+
+.p-spend-slide__wrapper{
+    display: flex;
+    margin-left: 117px;
+  
+}
+
+.p-spend-slide__block {
+    width: 100%;
+    display: flex;
+}
+
+.p-spend-slide__block1 {
+}
+
+.p-spend-slide__card {
+    text-align: center;
+}
+
+.p-spend-slide__card1{
+    width: 408px;
+    margin-right: 28px;
+}
+.p-spend-slide__time {
+    font-size: 24px;
+    line-height: calc( 29 / 24);
+    letter-spacing: 2.88px;
+}
+
+.p-spend-slide__head {
+    font-size: 24px;
+    line-height: calc( 29 / 24);
+    letter-spacing: 2.88px;
+}
+
+.p-spend-slide__text {
+    text-align: left;
+    margin-top: 20px;
+    line-height: calc(34.545 / 15 );
+    letter-spacing: 1.95px;
+}
+
+.p-spend-slide__block__img {
+    margin-top: 5px;
+    img{
+        width: 100%;
+    }
+}
+
+.p-spend-slide__accent {
+    display: flex;
+    img{
+        &:first-of-type{
+            align-self: flex-end;
+        }
+        &:last-of-type{
+            align-self: flex-start;
+        }
+    }
+}
+
+.p-spend-slide__accent1 {
+
+}
+
+.p-spend-slide__block2 {
+
+}
+
+.p-spend-slide__card2{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent2 {
+
+}
+
+.p-spend-slide__block3 {
+
+}
+
+.p-spend-slide__card3{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent3 {
+
+}
+
+.p-spend-slide__block4 {
+
+}
+
+.p-spend-slide__card4{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent4 {
+
+}
+
+.p-spend-slide__block5 {
+
+}
+
+.p-spend-slide__card5{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent5 {
+
+}
+
+.p-spend-slide__block6 {
+
+}
+
+.p-spend-slide__card6{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent6 {
+
+}
+
+.p-spend-slide__block7 {
+
+}
+
+.p-spend-slide__card7{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent7 {
+
+}
+
+.p-spend-slide__block8 {
+
+}
+
+.p-spend-slide__card8{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__accent8 {
+
+}
+
+.p-spend-slide__card8{
+    width: 408px;
+    margin-right: 28px;
+}
+
+.p-spend-slide__block9 {
+
+}
+
+.p-spend-slide__card9{
+    width: 408px;
+    margin-right: 28px;
+}
+
+// 周辺観光
 
 .p-spend-tour {
 
