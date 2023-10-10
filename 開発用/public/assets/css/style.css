@@ -1,7 +1,38 @@
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+	font-family: "Shippori Mincho", serif;
+}
+
 .l-inner {
-	margin-inline: auto;
-	max-width: 1440px;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 75%;
+}
+
+.l-lower-header {
+	aspect-ratio: 1440/500;
 	width: 100%;
+	-o-object-fit: cover;
+	align-items: center;
+	display: grid;
+	object-fit: cover;
+	position: relative;
+}
+
+.l-lower-header__title {
+	color: #ffffff;
+	font-size: 3rem;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+	text-align: center;
+}
+
+#guest-room .l-lower-header {
+	background: url(../../../../public/assets/img/guest-room/header.jpg) no-repeat;
+	background-size: contain;
 }
 
 .c-search-btn {
@@ -228,5 +259,44 @@
 .p-spend-slide__card9 {
 	margin-right: 28px;
 	width: 408px;
+=======
+.c-drawer-btn {
+	align-items: center;
+	background-color: #272727;
+	display: grid;
+	height: 85px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 110px;
+}
+
+.c-drawer-btn__bar {
+	background-color: #fff;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	position: relative;
+	width: 33.45px;
+}
+
+.c-drawer-btn__bar::before,
+.c-drawer-btn__bar::after {
+	background-color: inherit;
+	content: "";
+	height: inherit;
+	left: 0;
+	position: absolute;
+	top: -1em;
+	width: inherit;
+}
+
+.c-drawer-btn__bar::after {
+	top: 1em;
+}
+
+.p-gnav {
+	display: none;
 }
 

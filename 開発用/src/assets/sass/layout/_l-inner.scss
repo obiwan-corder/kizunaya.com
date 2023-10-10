@@ -1,7 +1,6 @@
 @use "../global" as global;
-
-.l-inner{
-    max-width: 1440px;
-    width: 100%;
-    margin-inline: auto;
+.l-inner {
+    width: global.$pc-width;
+    max-width: 100%;
+    margin: 0 auto;
 }
