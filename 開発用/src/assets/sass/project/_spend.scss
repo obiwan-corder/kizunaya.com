@@ -234,19 +234,26 @@
 // 周辺観光
 
 .p-spend-tour {
-
+    padding-top: 190px;
 }
 
 .p-spend-tour__title {
-
+    font-family: global.$title-font;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .p-spend-tour__cards {
+    margin-top: 80px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
 
 .p-spend-tour__card {
-
+    max-width: 520px;
 }
 
 .p-spend-tour__img {
