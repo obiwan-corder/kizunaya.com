@@ -1,5 +1,9 @@
 @use "../global" as global;
 
+.spend-wrapper{
+    overflow-x: hidden;
+}
+
 .p-spend-message {
     font-size: 15px;
     text-align: center;
@@ -14,6 +18,50 @@
     margin-inline: auto;
 }
 
+// 過ごし方のプログレスバー
+
+.flow-progress {
+    
+}
+
+.flow-progress__item {
+
+}
+
+.trigger-checkin {
+
+}
+
+.flow-progress__text {
+
+}
+
+.flow-progress__dots {
+
+}
+
+.flow-progress__line {
+
+}
+
+.trigger-rest {
+
+}
+
+.trigger-dinner {
+
+}
+
+.trigger-retiring {
+
+}
+
+.trigger-breakfast {
+
+}
+
+
+
 // 過ごし方のスライドページ
 .p-spend-slide {
     padding-top: 85px;
@@ -21,7 +69,6 @@
     background: url(../img/spend/spend-slide-bg.png) no-repeat center center / cover;
     display: flex;
     flex: 1;
-    overflow-x: hidden;
     width: 900%;
 }
 
@@ -246,29 +293,36 @@
 
 .p-spend-tour__cards {
     margin-top: 80px;
-    margin-inline: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 110px;
 
 }
 
 .p-spend-tour__card {
     max-width: 520px;
-}
-
-.p-spend-tour__img {
-
+    margin-inline: auto;
 }
 
 .spend-tour__head {
-
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: calc( 35 / 24 );
+    font-weight: 600;
+    font-family: global.$title-font;
 }
 
 .p-spend-tour__text {
-
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: calc( 28.353 / 15 );
+    letter-spacing: 1.8px;
 }
 
 .p-spend-tour__detail {
-
+    margin-top: 30px;
+    font-size: 14px;
 }
 
