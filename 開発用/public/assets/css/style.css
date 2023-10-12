@@ -56,6 +56,51 @@ body h5 {
 	writing-mode: vertical-rl;
 }
 
+.c-drawer-btn {
+	align-items: center;
+	background-color: #272727;
+	display: grid;
+	height: 85px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 110px;
+}
+
+.c-drawer-btn__bar {
+	background-color: #fff;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	position: relative;
+	width: 33.45px;
+}
+
+.c-drawer-btn__bar::before,
+.c-drawer-btn__bar::after {
+	background-color: inherit;
+	content: "";
+	height: inherit;
+	left: 0;
+	position: absolute;
+	top: -1em;
+	width: inherit;
+}
+
+.c-drawer-btn__bar::after {
+	top: 1em;
+}
+
+.c-main-message {
+	font-size: 15px;
+	letter-spacing: 1.95px;
+	line-height: 2.303;
+	padding-bottom: 110px;
+	padding-top: 120px;
+	text-align: center;
+}
+
 .p-spend-message {
 	font-size: 15px;
 	letter-spacing: 1.95px;
@@ -259,41 +304,6 @@ body h5 {
 .p-spend-slide__card9 {
 	margin-right: 28px;
 	width: 408px;
-=======
-.c-drawer-btn {
-	align-items: center;
-	background-color: #272727;
-	display: grid;
-	height: 85px;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	top: 0;
-	width: 110px;
-}
-
-.c-drawer-btn__bar {
-	background-color: #fff;
-	display: block;
-	height: 1px;
-	margin: 0 auto;
-	position: relative;
-	width: 33.45px;
-}
-
-.c-drawer-btn__bar::before,
-.c-drawer-btn__bar::after {
-	background-color: inherit;
-	content: "";
-	height: inherit;
-	left: 0;
-	position: absolute;
-	top: -1em;
-	width: inherit;
-}
-
-.c-drawer-btn__bar::after {
-	top: 1em;
 }
 
 .p-gnav {
