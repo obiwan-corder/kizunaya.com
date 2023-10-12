@@ -1,18 +1,22 @@
 @use "../global" as global;
 
-.p-spend-message {
-    font-size: 15px;
-    text-align: center;
-    line-height: calc( 34.545 / 15 );
-    letter-spacing: 1.95px;
-    padding-top: 120px;
-    padding-bottom: 110px;
+.spend-wrapper{
+    overflow-x: hidden;
 }
 
-.p-spend-message__text {
-    max-width: 583px;
-    margin-inline: auto;
+
+// 過ごし方のプログレスバー
+
+
+.border-line{
+    position: absolute;
+    top: -27px;
+    left: 200px;
+    height: 1px;
+    width: 0;
+    background: #2D2D2E;
 }
+
 
 // 過ごし方のスライドページ
 .p-spend-slide {
@@ -21,8 +25,8 @@
     background: url(../img/spend/spend-slide-bg.png) no-repeat center center / cover;
     display: flex;
     flex: 1;
-    overflow-x: hidden;
     width: 900%;
+
 }
 
 .p-spend-slide__wrapper{
@@ -31,9 +35,24 @@
   
 }
 
+.p-spend-slide__wrapper li{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: -37px;
+        left: 200px;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: global.$text-color;
+        border-radius: 50%;
+    }
+}
 .p-spend-slide__block {
     width: 100%;
     display: flex;
+
 }
 
 .p-spend-slide__block1 {
@@ -234,34 +253,48 @@
 // 周辺観光
 
 .p-spend-tour {
-
+    padding-top: 190px;
 }
 
 .p-spend-tour__title {
-
+    font-family: global.$title-font;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .p-spend-tour__cards {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 110px;
 
 }
 
 .p-spend-tour__card {
-
-}
-
-.p-spend-tour__img {
-
+    max-width: 520px;
+    margin-inline: auto;
 }
 
 .spend-tour__head {
-
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: calc( 35 / 24 );
+    font-weight: 600;
+    font-family: global.$title-font;
 }
 
 .p-spend-tour__text {
-
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: calc( 28.353 / 15 );
+    letter-spacing: 1.8px;
 }
 
 .p-spend-tour__detail {
-
+    margin-top: 30px;
+    font-size: 14px;
 }
 
