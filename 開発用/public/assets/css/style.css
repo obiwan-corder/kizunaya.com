@@ -10,6 +10,29 @@ body li {
 	list-style: none;
 }
 
+.l-lower-header {
+	aspect-ratio: 1440/500;
+	width: 100%;
+	-o-object-fit: cover;
+	align-items: center;
+	display: grid;
+	object-fit: cover;
+	position: relative;
+}
+
+.l-lower-header__title {
+	color: #ffffff;
+	font-size: 3rem;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+	text-align: center;
+}
+
+#guest-room .l-lower-header {
+	background: url(../../../../public/assets/img/guest-room/header.jpg) no-repeat;
+	background-size: contain;
+}
+
 .l-inner {
 	margin: 0 auto;
 	max-width: 100%;
@@ -197,6 +220,31 @@ body li {
 	line-height: 2.303;
 	padding-bottom: 110px;
 	padding-top: 120px;
+	text-align: center;
+}
+
+.p-logo__wrap {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.p-mv__title {
+	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 3rem;
+	font-weight: 300;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+}
+
+.p-concept__lead {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.3026666667;
 	text-align: center;
 }
 
@@ -403,31 +451,6 @@ body li {
 .p-spend-slide__card9 {
 	margin-right: 28px;
 	width: 408px;
-}
-
-.p-logo__wrap {
-	position: relative;
-	text-align: center;
-	z-index: 1;
-}
-
-.p-mv__title {
-	color: #ffffff;
-	font-family: "Zen Kaku Gothic New", sans-serif;
-	font-size: 3rem;
-	font-weight: 300;
-	letter-spacing: 0.13em;
-	line-height: 1.4479166667;
-}
-
-.p-concept__lead {
-	color: #2D2D2E;
-	font-family: "Zen Kaku Gothic New", sans-serif;
-	font-size: 0.9375rem;
-	font-weight: 400;
-	letter-spacing: 0.13em;
-	line-height: 2.3026666667;
-	text-align: center;
 }
 
 .p-gnav {
