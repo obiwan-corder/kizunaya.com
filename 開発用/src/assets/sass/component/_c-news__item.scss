@@ -1,0 +1,10 @@
+@use "../global/" as global;
+.c-news__item {
+padding-bottom: 15px;
+width: 100%;
+border-bottom: 1px solid global.$border-color;
+
+&:not(:first-child){
+  padding-top: 22px;
+}
+}

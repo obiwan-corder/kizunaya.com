@@ -1,0 +1,6 @@
+@use "../global/" as global;
+
+.c-news__content {
+font-family: global.$main-font;
+@include global.font(15, 400, 22.5, 0);
+}
