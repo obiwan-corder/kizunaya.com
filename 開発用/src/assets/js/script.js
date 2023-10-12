@@ -13,3 +13,28 @@ if(spendWrapper){
         },
     });
 }
+
+function ScrollTimelineAnime(){
+    $('.p-spend-slide__wrapper li').each(function(){
+        var elemPos = $(this).offset().left;
+        var scroll = $(window).scrollLeft();
+        var windowWidth = $(window).width();
+        var startPoint = 100;
+        if(scroll >= elemPos - windowWidth - startPoint){
+            var H = $(this).outerWidth(true)
+            var percent = (scroll + startPoint - elemPos)/(H/2)*100;
+            if(percent > 100 ){
+                percent = 100;
+            }
+            // ボーダーの長さをセット
+            $(this).children('.border-line').css({
+                width:percent + "%",
+            });
+        }
+    });
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).on('scroll', function(){
+	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+});

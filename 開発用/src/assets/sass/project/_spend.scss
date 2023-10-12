@@ -7,46 +7,15 @@
 
 // 過ごし方のプログレスバー
 
-.flow-progress {
-    
+
+.border-line{
+    position: absolute;
+    top: -27px;
+    left: 200px;
+    height: 1px;
+    width: 0;
+    background: #2D2D2E;
 }
-
-.flow-progress__item {
-
-}
-
-.trigger-checkin {
-
-}
-
-.flow-progress__text {
-
-}
-
-.flow-progress__dots {
-
-}
-
-.flow-progress__line {
-
-}
-
-.trigger-rest {
-
-}
-
-.trigger-dinner {
-
-}
-
-.trigger-retiring {
-
-}
-
-.trigger-breakfast {
-
-}
-
 
 
 // 過ごし方のスライドページ
@@ -57,6 +26,7 @@
     display: flex;
     flex: 1;
     width: 900%;
+
 }
 
 .p-spend-slide__wrapper{
@@ -65,9 +35,24 @@
   
 }
 
+.p-spend-slide__wrapper li{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: -37px;
+        left: 200px;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: global.$text-color;
+        border-radius: 50%;
+    }
+}
 .p-spend-slide__block {
     width: 100%;
     display: flex;
+
 }
 
 .p-spend-slide__block1 {
