@@ -39,72 +39,14 @@ body li {
 	width: 75%;
 }
 
-.l-top__mv {
+.l-header__mv {
 	align-items: center;
 	display: flex;
 	height: 100vh;
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
-	width: 100vw;
-}
-
-.l-concept__wrap {
-	margin: 0 auto;
-	padding-bottom: 145px;
-	width: 40.49%;
-}
-
-.l-concept {
-	padding-bottom: 66px;
-	padding-top: 120px;
-}
-
-.l-slider {
-	position: relative;
-}
-
-.swiper-wrapper {
-	transition-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
-}
-
-.p-slider__container {
-	overflow: hidden;
-}
-
-.p-slider__item {
-	overflow: hidden;
-	transition: transform 1s;
-}
-
-.p-slider__item.start {
-	transform: translateX(-80px) !important;
-	transition: transform 4s linear;
-}
-
-.p-slider__item.start .p-slider__img--wrap {
-	transform: translateX(40px) !important;
-	transition: transform 4s linear;
-}
-
-.p-slider__img--wrap {
-	aspect-ratio: 896/758;
-	position: relative;
-	transition: transform 1s;
-}
-
-.c-slider__img {
-	height: 180%;
-	left: 50%;
-	max-width: 180%;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 180%;
-}
-
-:root {
-	--swiper-pagination-bottom: -30px;
+	width: 100%;
 }
 
 .c-top__bg--sp {
@@ -223,6 +165,16 @@ body li {
 	text-align: center;
 }
 
+.c-concept__lead {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.3026666667;
+	text-align: center;
+}
+
 .p-logo__wrap {
 	position: relative;
 	text-align: center;
@@ -238,14 +190,89 @@ body li {
 	line-height: 1.4479166667;
 }
 
-.p-concept__lead {
-	color: #2D2D2E;
-	font-family: "Zen Kaku Gothic New", sans-serif;
-	font-size: 0.9375rem;
-	font-weight: 400;
-	letter-spacing: 0.13em;
-	line-height: 2.3026666667;
-	text-align: center;
+/* ページネーションの余白 */
+
+.p-slider .swiper-pagination-bullet {
+	margin: 0 7.5px;
+}
+
+/* ページネーションのサイズと色 */
+
+.p-slider .swiper-pagination-bullet {
+	background-color: #D9D9D9;
+	height: 10px;
+	opacity: 1;
+	width: 10px;
+}
+
+.p-slider .swiper-pagination-bullet-active {
+	background-color: #6C6A6A;
+}
+
+.p-slider {
+	position: relative;
+}
+
+.p-slider__container {
+	overflow: hidden;
+}
+
+.swiper-backface-hidden .swiper-slide.p-slider__item {
+	overflow: hidden;
+	transition: transform 1s;
+}
+
+.swiper-backface-hidden .swiper-slide.p-slider__item.start {
+	transform: translateX(-80px);
+	transition: transform 4s linear;
+}
+
+.swiper-backface-hidden .swiper-slide.p-slider__item.start .p-slider__img--wrap {
+	transform: translateX(40px);
+	transition: transform 4s linear;
+}
+
+.p-slider__img--wrap {
+	aspect-ratio: 896/758;
+	position: relative;
+	transition: transform 1s;
+}
+
+.c-slider__img {
+	height: 180%;
+	left: 50%;
+	max-width: 180%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 180%;
+}
+
+:root {
+	--swiper-pagination-bottom: -30px;
+}
+
+.p-concept {
+	padding-bottom: 66px;
+	padding-top: 120px;
+}
+
+.p-concept__wrap {
+	margin: 0 auto;
+	padding-bottom: 145px;
+	width: 40.49%;
+}
+
+.p-news {
+	padding-bottom: 120px;
+	padding-top: 66px;
+}
+
+.p-news__wrap {
+	margin: 0 auto;
+	max-width: 639px;
+	padding-top: 64px;
+	width: 639px;
 }
 
 .p-spend-message {
@@ -457,6 +484,14 @@ body li {
 	display: none;
 }
 
+@media (min-width: 768px) and (max-width: 1280px) {
+
+.p-news__wrap {
+	width: 639px;
+}
+
+}
+
 @media (max-width: 767px) {
 
 .l-inner {
@@ -479,16 +514,8 @@ body li {
 	display: none;
 }
 
-}
-
-@keyframes moveSlider {
-
-0% {
-	transform: translateX(0);
-}
-
-100% {
-	transform: translateX(-100%);
+.p-news__wrap {
+	width: 89.3%;
 }
 
 }

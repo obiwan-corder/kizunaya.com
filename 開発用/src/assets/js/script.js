@@ -1,8 +1,7 @@
-var topStyle = new Swiper('.p-slider__container', {
+const topStyle = new Swiper('.p-slider__container', {
   init: false,
-  slidesPerView: 3,
-  slidesPerGroup: 1,
-  spaceBetween: 48,
+  // slidesPerView: 3,
+  // slidesPerGroup: 1,
   speed: 1000,
   grabCursor: true,
   loop: true,
@@ -16,45 +15,39 @@ var topStyle = new Swiper('.p-slider__container', {
       type: 'bullets',
       clickable: true
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: 24,
+    },
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 48,
+    }
+  }
 });
-//
-// var sliderItems = document.querySelector('.p-slider__items');
-// var swiperSliders = document.querySelectorAll('.p-slider__container .p-slider__item');
-// const xmoveRatio = 200 / document.querySelectorAll('.swiper-pagination-bullet').length;
-//
-// topStyle.on('slideChange', function() {
-//   var move = -400 * (topStyle.realIndex);
-//   sliderItems.style.transform = 'translate(' + move + 'px,0)';
-//
-//   var xmove = xmoveRatio * (topStyle.realIndex + 1);
-//   console.log(xmove);
-//   parallax(xmove);
-// });
-//
-// function parallax(xmove) {
-//   for (var i = 0; i > swiperSliders.length; i++) {
-//       gsap.to('.p-slider__container .p-slider__item img', {
-//           x: "-" + xmove + "%",
-//           duration: 5,
-//           ease: "power3.out", // イージングを追加
-//       });
-//   }
-// }
+
 
 const $items = document.querySelectorAll('.p-slider__item');
+let timerId;
 
 topStyle.on('init', () => {
-  console.log('init');
-  $items.forEach(item => {
-    item.classList.add('start');
-  });
+  timerId = window.setTimeout(() => {
+    $items.forEach(item => {
+      item.classList.add('start');
+    });
+  }, 100);
 });
 
 topStyle.on('slideChangeTransitionEnd', () => {
-  console.log('end');
   $items.forEach(item => {
     item.classList.add('start');
   });
+
+  if (timerId) {
+    clearTimeout(timerId);
+  }
 });
 
 topStyle.on('slideChangeTransitionStart', () => {
