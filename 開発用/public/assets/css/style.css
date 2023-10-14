@@ -152,7 +152,20 @@ body h5 {
 
 .p-spend-slide__block {
 	display: flex;
+	position: relative;
 	width: 100%;
+}
+
+.p-spend-slide__block::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 200px;
+	position: absolute;
+	top: -37px;
+	transform: translateX(-50%);
+	width: 20px;
 }
 
 .p-spend-slide__block1 {

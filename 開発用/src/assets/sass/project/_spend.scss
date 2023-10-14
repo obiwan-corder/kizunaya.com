@@ -52,6 +52,18 @@
 .p-spend-slide__block {
     width: 100%;
     display: flex;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: -37px;
+        left: 200px;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: global.$text-color;
+        border-radius: 50%;
+    }
 
 }
 
