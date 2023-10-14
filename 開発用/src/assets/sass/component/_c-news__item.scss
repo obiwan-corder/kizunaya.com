@@ -1,10 +1,17 @@
 @use "../global/" as global;
-.c-news__item {
-padding-bottom: 15px;
-width: 100%;
-border-bottom: 1px solid global.$border-color;
 
-&:not(:first-child){
-  padding-top: 22px;
-}
+.c-news__item {
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid global.$border-bottom-color;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
+
+  &:not(:first-child) {
+    padding-top: 22px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }

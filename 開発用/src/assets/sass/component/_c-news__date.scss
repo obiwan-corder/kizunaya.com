@@ -2,5 +2,5 @@
 .c-news__date {
 font-family: global.$main-font;
 @include global.font(16, 400, 25, 0);
-color: global.$text-sub-color;
+color: global.$sub-text-color;
 }
