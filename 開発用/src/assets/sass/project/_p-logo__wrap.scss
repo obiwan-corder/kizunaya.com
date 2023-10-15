@@ -1,0 +1,6 @@
+@use "../global/" as global;
+.p-logo__wrap {
+  position: relative; 
+  z-index: 1;  
+  text-align: center;
+}

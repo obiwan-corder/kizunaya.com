@@ -6,10 +6,8 @@ body h5 {
 	font-family: "Shippori Mincho", serif;
 }
 
-.l-inner {
-	margin: 0 auto;
-	max-width: 100%;
-	width: 75%;
+body li {
+	list-style: none;
 }
 
 .l-lower-header {
@@ -33,6 +31,72 @@ body h5 {
 #guest-room .l-lower-header {
 	background: url(../../../../public/assets/img/guest-room/header.jpg) no-repeat;
 	background-size: contain;
+}
+
+.l-inner {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 75%;
+}
+
+.l-header__mv {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.c-top__bg--sp {
+	display: none;
+}
+
+.c-top__logo {
+	height: auto;
+	width: 66px;
+}
+
+.c-top__bg {
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.c-scrolldown {
+	bottom: 10px; /*全体の高さ*/
+	height: 150px;
+	left: 50%;
+	position: absolute;
+}
+
+.c-scrolldown span {
+	bottom: 43px;
+	color: #ffffff;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	left: 10px;
+	letter-spacing: 0.13em;
+	line-height: 1.4476923077;
+	position: absolute;
+	writing-mode: vertical-rl;
+}
+
+.c-scrolldown::after { /*線の動き1.6秒かけて動く。永遠にループ*/
+	animation: pathmove 1.6s ease-in-out infinite;
+	background: #eee;
+	content: "";
+	height: 150px;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 1px;
 }
 
 .c-search-btn {
@@ -102,7 +166,183 @@ body h5 {
 	text-align: center;
 }
 
+
+.c-concept__lead {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.3026666667;
+	text-align: center;
+}
+
+.c-section__title {
+	color: #2D2D2E;
+	font-family: "Shippori Mincho", serif;
+	font-size: 2rem;
+	font-size: calc(24px + 8 * (100vw - 375px) / 1065);
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023125;
+	text-align: center;
+}
+
+.c-news__date {
+	color: #181818;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1.5625;
+}
+
+.c-news__label {
+	color: #CA1818;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	line-height: 1.448125;
+	padding-left: 23px;
+}
+
+.c-news__item {
+	border-bottom: 1px solid #0A0A0A;
+	display: block;
+	padding-bottom: 15px;
+	transition: opacity 0.3s ease-in-out;
+	width: 100%;
+}
+
+.c-news__item:not(:first-child) {
+	padding-top: 22px;
+}
+
+.c-news__item:hover {
+	opacity: 0.6;
+}
+
+.c-news__content {
+	color: #181818;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1.5;
+}
+
+.p-logo__wrap {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.p-mv__title {
+	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 3rem;
+	font-weight: 300;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+}
+
+/* ページネーションの余白 */
+
+.p-slider .swiper-pagination-bullet {
+	margin: 0 7.5px;
+}
+
+/* ページネーションのサイズと色 */
+
+.p-slider .swiper-pagination-bullet {
+	background-color: #D9D9D9;
+	height: 10px;
+	opacity: 1;
+	width: 10px;
+}
+
+.p-slider .swiper-pagination-bullet-active {
+	background-color: #6C6A6A;
+}
+
+.p-slider {
+	position: relative;
+}
+
+.p-slider__container {
+	overflow: hidden;
+}
+
+.swiper-backface-hidden .swiper-slide.p-slider__item {
+	overflow: hidden;
+	transition: transform 1s;
+}
+
+.swiper-backface-hidden .swiper-slide.p-slider__item.start {
+	transform: translateX(-80px);
+	transition: transform 4s linear;
+}
+
+.swiper-backface-hidden .swiper-slide.p-slider__item.start .p-slider__img--wrap {
+	transform: translateX(40px);
+	transition: transform 4s linear;
+}
+
+.p-slider__img--wrap {
+	aspect-ratio: 896/758;
+	position: relative;
+	transition: transform 1s;
+}
+
+.c-slider__img {
+	height: 180%;
+	left: 50%;
+	max-width: 180%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 180%;
+}
+
+:root {
+	--swiper-pagination-bottom: -30px;
+}
+
+.p-concept {
+	padding-bottom: 66px;
+	padding-top: 120px;
+}
+
+.p-concept__wrap {
+	margin: 0 auto;
+	padding-bottom: 145px;
+	width: 40.49%;
+}
+
+.p-news {
+	padding-bottom: 120px;
+	padding-top: 66px;
+}
+
+.p-news__wrap {
+	margin: 0 auto;
+	max-width: 639px;
+	padding-top: 74px;
+	width: 639px;
+}
+
+.p-spend-message {
+	font-size: 15px;
+	letter-spacing: 1.95px;
+	line-height: 2.303;
+	padding-bottom: 110px;
+	padding-top: 120px;
+	text-align: center;
+}
+
+
 .c-main-message__text {
+
 	margin-inline: auto;
 	max-width: 583px;
 }
@@ -374,5 +614,62 @@ body h5 {
 
 .p-gnav {
 	display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+.p-news__wrap {
+	width: 639px;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.l-inner {
+	width: 89.3%;
+}
+
+.c-top__bg--sp {
+	display: block;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100vw;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.c-top__bg {
+	display: none;
+}
+
+.p-news__wrap {
+	width: 89.3%;
+}
+
+}
+
+@keyframes pathmove {
+
+0% {
+	height: 0;
+	opacity: 0;
+	top: 0;
+}
+
+30% {
+	height: 150px;
+	opacity: 1;
+}
+
+100% {
+	height: 0;
+	opacity: 0;
+	top: 180px;
+}
+
 }
 

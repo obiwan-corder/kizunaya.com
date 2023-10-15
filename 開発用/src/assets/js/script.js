@@ -1,3 +1,62 @@
+const topStyle = new Swiper('.p-slider__container', {
+  init: false,
+  // slidesPerView: 3,
+  // slidesPerGroup: 1,
+  speed: 1000,
+  grabCursor: true,
+  loop: true,
+
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: '.p-slider__pagination',
+      type: 'bullets',
+      clickable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: 24,
+    },
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 48,
+    }
+  }
+});
+
+
+const $items = document.querySelectorAll('.p-slider__item');
+let timerId;
+
+topStyle.on('init', () => {
+  timerId = window.setTimeout(() => {
+    $items.forEach(item => {
+      item.classList.add('start');
+    });
+  }, 100);
+});
+
+topStyle.on('slideChangeTransitionEnd', () => {
+  $items.forEach(item => {
+    item.classList.add('start');
+  });
+
+  if (timerId) {
+    clearTimeout(timerId);
+  }
+});
+
+topStyle.on('slideChangeTransitionStart', () => {
+  $items.forEach(item => {
+    item.classList.remove('start');
+  });
+})
+
+topStyle.init();
 const spendWrapper = document.querySelector(".p-spend-slide");
 if(spendWrapper){
     const spendSlides = gsap.utils.toArray(".p-spend-slide__block");
@@ -13,6 +72,7 @@ if(spendWrapper){
         },
     });
 }
+
 
 function ScrollTimelineAnime(){
     $('.p-spend-slide__wrapper li').each(function(){
@@ -38,3 +98,4 @@ function ScrollTimelineAnime(){
 $(window).on('scroll', function(){
 	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
+

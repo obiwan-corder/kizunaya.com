@@ -1,0 +1,7 @@
+@use "../global/" as global;
+.p-mv__title {
+@include global.font(48, 300, 69.5, 6.24);
+font-family: global.$main-font;
+color: global.$white-color;
+
+}
