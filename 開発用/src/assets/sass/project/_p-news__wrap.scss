@@ -1,8 +1,7 @@
 @use "../global/" as global;
 
 .p-news__wrap {
-width: 639px;
-max-width: 639px;
+width: 44.38%;
 margin: 0 auto;
 padding-top: 74px;
 @include global.mq('tab') {

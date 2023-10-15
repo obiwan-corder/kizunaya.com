@@ -1,0 +1,16 @@
+@use "../global/" as global;
+
+.c-content__img {
+  background: url(../img/top/top1.png) center center / contain no-repeat;
+  background-size: cover;
+  width: 66.25%;
+  height: auto;
+  padding-top: 35.96%;
+  position: relative;
+
+@include global.mq('sp') {
+  width: global.$sp-width;
+  margin: 0 auto;
+  padding-top: 51%;
+}
+}
