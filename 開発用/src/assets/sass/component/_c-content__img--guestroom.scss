@@ -1,0 +1,5 @@
+@use "../global/" as global;
+.c-content__img--guestroom {
+  background: url(../img/top/top3.png) center center / contain no-repeat;
+  background-size: cover;
+}
