@@ -42,7 +42,7 @@ body li {
 .l-header__mv {
 	align-items: center;
 	display: flex;
-	height: 100vh;
+	height: 100.2vh;
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
@@ -77,11 +77,11 @@ body li {
 }
 
 .c-scrolldown span {
-	bottom: 43px;
+	bottom: 31px;
 	color: #ffffff;
 	font-size: 0.8125rem;
 	font-weight: 400;
-	left: 10px;
+	left: 3px;
 	letter-spacing: 0.13em;
 	line-height: 1.4476923077;
 	position: absolute;
@@ -177,7 +177,7 @@ body li {
 	font-size: 0.9375rem;
 	font-weight: 400;
 	letter-spacing: 0.13em;
-	line-height: 2.3026666667;
+	line-height: 2.32;
 	text-align: center;
 }
 
@@ -189,6 +189,7 @@ body li {
 	font-weight: 400;
 	letter-spacing: 0.13em;
 	line-height: 2.023125;
+	padding-left: 8px;
 	text-align: center;
 }
 
@@ -199,6 +200,7 @@ body li {
 	font-weight: 400;
 	letter-spacing: 0em;
 	line-height: 1.5625;
+	padding-left: 2px;
 }
 
 .c-news__label {
@@ -207,7 +209,7 @@ body li {
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	line-height: 1.448125;
-	padding-left: 23px;
+	padding-left: 21px;
 }
 
 .c-news__item {
@@ -233,13 +235,14 @@ body li {
 	font-weight: 400;
 	letter-spacing: 0em;
 	line-height: 1.5;
+	padding-left: 2px;
 }
 
 .c-content__img {
 	background: url(../img/top/top1.png) center center/contain no-repeat;
 	background-size: cover;
 	height: auto;
-	padding-top: 35.96%;
+	padding-top: 37.5%;
 	position: relative;
 	width: 66.25%;
 }
@@ -249,14 +252,13 @@ body li {
 	font-size: 2.5rem;
 	font-size: calc(24px + 16 * (100vw - 375px) / 1065);
 	font-weight: 400;
-	left: 50%;
-	left: 50%;
+	left: 45.5%;
 	letter-spacing: 0.13em;
 	line-height: 2.023;
 	position: absolute;
 	top: 50%;
 	transform: translateX(-50%);
-	transform: translateY(-50%);
+	transform: translateY(-42%);
 }
 
 .c-content__lead {
@@ -267,6 +269,7 @@ body li {
 	font-weight: 400;
 	letter-spacing: 0.13em;
 	line-height: 1.8979166667;
+	padding-left: 2px;
 	position: relative;
 }
 
@@ -274,9 +277,9 @@ body li {
 	background: #A6A6A6;
 	content: "";
 	height: 0.5px;
-	left: 70px;
+	left: 79px;
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	transform: translateY(-50%);
 	width: 138.67px;
 }
@@ -288,6 +291,7 @@ body li {
 	font-weight: 400;
 	letter-spacing: 0.13em;
 	line-height: 2.0233333333;
+	padding-left: 2px;
 	padding-top: 20px;
 }
 
@@ -300,6 +304,7 @@ body li {
 	letter-spacing: 0.13em;
 	line-height: 2.0228571429;
 	margin: 0 auto;
+	padding-left: 2px;
 	padding-top: 80px;
 	position: relative;
 	text-align: center;
@@ -309,7 +314,7 @@ body li {
 
 .c-content__link::before {
 	background: #2D2D2E;
-	bottom: -15px;
+	bottom: -14px;
 	content: "";
 	height: 0.5px;
 	left: 5px;
@@ -317,6 +322,7 @@ body li {
 	position: absolute;
 	transition: all 0.3s;
 	width: 87.84%;
+	width: 238.93px;
 }
 
 .c-content__link::after {
@@ -325,7 +331,7 @@ body li {
 	content: "";
 	height: 0.5px;
 	position: absolute;
-	right: 15px;
+	right: -17px;
 	transform: rotate(43deg);
 	transition: all 0.3s;
 	width: 29.24px;
@@ -395,6 +401,7 @@ body li {
 .p-logo__wrap {
 	position: relative;
 	text-align: center;
+	top: -36px;
 	z-index: 1;
 }
 
@@ -403,23 +410,18 @@ body li {
 	font-family: "Zen Kaku Gothic New", sans-serif;
 	font-size: 3rem;
 	font-weight: 300;
+	left: 3px;
 	letter-spacing: 0.13em;
 	line-height: 1.4479166667;
+	position: relative;
 }
-
-/* ページネーションの余白 */
-
-.p-slider .swiper-pagination-bullet {
-	margin: 0 7.5px;
-}
-
-/* ページネーションのサイズと色 */
 
 .p-slider .swiper-pagination-bullet {
 	background-color: #D9D9D9;
-	height: 10px;
+	height: 5px;
+	margin: 5px 3px !important;
 	opacity: 1;
-	width: 10px;
+	width: 5px;
 }
 
 .p-slider .swiper-pagination-bullet-active {
@@ -450,7 +452,7 @@ body li {
 }
 
 .p-slider__img--wrap {
-	aspect-ratio: 896/758;
+	aspect-ratio: 892/758;
 	position: relative;
 	transition: transform 1s;
 }
@@ -471,7 +473,7 @@ body li {
 
 .p-concept {
 	padding-bottom: 66px;
-	padding-top: 120px;
+	padding-top: 123px;
 }
 
 .p-concept__wrap {
@@ -482,12 +484,12 @@ body li {
 
 .p-news {
 	padding-bottom: 120px;
-	padding-top: 66px;
+	padding-top: 16px;
 }
 
 .p-news__wrap {
 	margin: 0 auto;
-	padding-top: 74px;
+	padding-top: 65px;
 	width: 44.38%;
 }
 
@@ -785,14 +787,14 @@ body li {
 }
 
 .p-content__text {
-	max-width: 272px;
+	max-width: 325px;
 	padding-left: 33px;
 	padding-top: 153px;
 	z-index: 1;
 }
 
 .p-content__cooking {
-	gap: 8.2%;
+	gap: 9.1%;
 	justify-content: end;
 }
 
@@ -802,8 +804,9 @@ body li {
 }
 
 .p-content__text--cooking {
-	max-width: 255px;
 	padding-left: 0;
+	padding-top: 119px;
+	width: 300px;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {

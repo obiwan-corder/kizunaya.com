@@ -1,7 +1,7 @@
 @use "../global/" as global;
 
 .c-concept__lead {
-  @include global.font(15, 400, 34.54, 1.95);
+  @include global.font(15, 400, 34.8, 1.95);
   font-family: global.$main-font;
   color: global.$text-color;
   text-align: center;

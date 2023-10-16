@@ -5,13 +5,14 @@ font-family: global.$title-font;
 @include global.font(24, 400, 45.55, 3.12);
 color: global.$text-color;
 font-size: calc(18px + (24 - 18) * ((100vw - 375px)) / (1440 - 375));
+padding-left: 2px;
 position: relative;
 
 &::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 70px;
+  top: 47%;
+  left: 79px;
   transform: translateY(-50%);
   width: 138.67px;
   height: 0.5px;
