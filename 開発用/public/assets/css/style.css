@@ -604,6 +604,55 @@ body li {
 	display: none;
 }
 
+.p-access {
+	padding: 120px 0;
+}
+
+.p-access__map {
+	align-items: center;
+	display: flex;
+}
+
+.p-access__map__block {
+	max-width: 804px;
+	padding-top: min(61.94%, 498px);
+	position: relative;
+	width: 100%;
+}
+
+.p-access__map__block > iframe {
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-access__map__address {
+	letter-spacing: 1.8px;
+	margin-left: 42px;
+}
+
+.p-access__route {
+	line-height: 1.563;
+	margin-top: 80px;
+}
+
+.p-access__route dt {
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 7.3px;
+}
+
+.p-access__route dt:not(:first-of-type) {
+	margin-top: 34px;
+}
+
+.p-access__route dd {
+	letter-spacing: 5.475px;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
 
 .p-news__wrap {
