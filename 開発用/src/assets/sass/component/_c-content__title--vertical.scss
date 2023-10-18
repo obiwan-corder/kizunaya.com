@@ -1,0 +1,7 @@
+@use "../global/" as global;
+
+.c-content__title--vertical {
+  writing-mode: vertical-rl;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
