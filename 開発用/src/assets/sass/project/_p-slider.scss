@@ -1,0 +1,61 @@
+@use "../global/" as global;
+
+
+.p-slider .swiper-pagination-bullet {
+  background-color: global.$pagination-color;
+  opacity: 1;
+  height: 5px;
+  width: 5px;
+  margin: 5px 3px!important;  
+}
+
+.p-slider .swiper-pagination-bullet-active {
+  background-color: global.$pagination-active-color;
+}
+
+.p-slider {
+  position: relative;
+}
+
+.p-slider__container {
+  overflow: hidden;
+}
+
+.swiper-backface-hidden {
+  .swiper-slide {
+    &.p-slider__item {
+      overflow: hidden;
+      transition: transform 1s;
+
+      &.start {
+        transform: translateX(-80px);
+        transition: transform 4s linear;
+
+        .p-slider__img--wrap {
+          transform: translateX(40px);
+          transition: transform 4s linear;
+        }
+      }
+    }
+  }
+}
+
+.p-slider__img--wrap {
+  position: relative;
+  aspect-ratio: 892/758;
+  transition: transform 1s;
+}
+
+.c-slider__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  max-width: 180%;
+  height: 180%;
+  transform: translate(-50%, -50%);
+}
+
+:root {
+  --swiper-pagination-bottom: -30px;
+}

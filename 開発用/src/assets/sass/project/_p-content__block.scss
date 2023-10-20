@@ -1,0 +1,9 @@
+@use "../global/" as global;
+
+.p-content__block {
+  display: flex;
+
+  &:not(:first-child) {
+    padding-top: 117px;
+  }
+}

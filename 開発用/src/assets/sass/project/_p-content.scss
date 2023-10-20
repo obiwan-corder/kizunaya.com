@@ -1,0 +1,21 @@
+@use "../global/" as global;
+
+
+.p-content {
+  position: relative;
+padding-bottom: 122px;
+  &::before {
+    content: "";
+    background: url(../img/top/section_bg.png) center center / contain no-repeat;
+    background-size: cover;
+    width: 74.65%;
+    height: 91%;
+    position: absolute;
+    top: 128px;
+    right: 0;
+    @include global.mq('sp') {
+      width: 100%;
+      top:0;
+    }
+  }
+}

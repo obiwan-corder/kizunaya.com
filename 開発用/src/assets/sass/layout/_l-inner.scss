@@ -3,4 +3,8 @@
     width: global.$pc-width;
     max-width: 100%;
     margin: 0 auto;
+
+  @include global.mq('sp') {
+    width: global.$sp-width;
+  }
 }

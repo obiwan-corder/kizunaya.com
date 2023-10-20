@@ -1,0 +1,6 @@
+@use "../global/" as global;
+.p-content__wrap {
+@include global.mq('sp') {
+  padding-top: 15px;
+}
+}

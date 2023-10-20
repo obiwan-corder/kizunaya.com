@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.p-news__wrap {
+width: 44.38%;
+margin: 0 auto;
+padding-top: 65px;
+@include global.mq('tab') {
+width: 639px;
+}
+@include global.mq('sp') {
+  width: global.$sp-width;
+}
+}
