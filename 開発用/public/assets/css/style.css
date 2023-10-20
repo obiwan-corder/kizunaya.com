@@ -389,3 +389,32 @@ body h5 {
 	display: none;
 }
 
+@media (max-width: 767px) {
+
+.p-spend-tour {
+	padding-top: 39px;
+}
+
+.p-spend-tour__title {
+	font-size: 24px;
+	line-height: 1.4583333333;
+}
+
+.p-spend-tour__cards {
+	grid-template-columns: 1fr;
+	margin-top: 34px;
+	row-gap: 40px;
+}
+
+.spend-tour__head {
+	font-size: 20px;
+	line-height: 1.45;
+	margin-top: 15px;
+}
+
+.p-spend-tour__detail {
+	margin-top: 15px;
+}
+
+}
+

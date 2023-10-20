@@ -266,6 +266,9 @@
 
 .p-spend-tour {
     padding-top: 190px;
+    @include global.mq('sp'){
+        padding-top: 39px;
+    }
 }
 
 .p-spend-tour__title {
@@ -273,6 +276,10 @@
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+    @include global.mq('sp'){
+        font-size: 24px;
+        line-height: calc( 35/ 24 );
+    }
 }
 
 .p-spend-tour__cards {
@@ -282,6 +289,11 @@
     justify-content: center;
     column-gap: 40px;
     row-gap: 110px;
+    @include global.mq('sp'){
+        margin-top: 34px;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
 
 }
 
@@ -296,6 +308,11 @@
     line-height: calc( 35 / 24 );
     font-weight: 600;
     font-family: global.$title-font;
+    @include global.mq('sp'){
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: calc(29 / 20);
+    }
 }
 
 .p-spend-tour__text {
@@ -308,5 +325,8 @@
 .p-spend-tour__detail {
     margin-top: 30px;
     font-size: 14px;
+    @include global.mq('sp'){
+        margin-top: 15px;
+    }
 }
 
