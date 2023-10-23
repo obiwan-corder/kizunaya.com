@@ -75,7 +75,7 @@ if(spendWrapper){
 
 
 function ScrollTimelineAnime(){
-    $('.p-spend-slide__wrapper li').each(function(){
+    $('.p-spend-slide__block').each(function(){
         var elemPos = $(this).offset().left;
         var scroll = $(window).scrollLeft();
         var windowWidth = $(window).width();
@@ -84,7 +84,7 @@ function ScrollTimelineAnime(){
             var H = $(this).outerWidth(true)
             var percent = (scroll + startPoint - elemPos)/(H/2)*100;
             if(percent > 100 ){
-                percent = 100;
+                percent = 105;
             }
             // ボーダーの長さをセット
             $(this).children('.border-line').css({
