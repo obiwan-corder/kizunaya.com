@@ -1,5 +1,5 @@
 const spendWrapper = document.querySelector(".p-spend-slide");
-if(spendWrapper){
+if(spendWrapper && window.innerWidth > 768){
     const spendSlides = gsap.utils.toArray(".p-spend-slide__block");
     const wrapperWidth = spendWrapper.offsetWidth;
     gsap.to(spendSlides,{
