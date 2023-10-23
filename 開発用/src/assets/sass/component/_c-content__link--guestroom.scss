@@ -1,0 +1,33 @@
+@use "../global/" as global;
+
+.c-content__link--guestroom {
+  padding-right: 71px;
+  padding-top: 78px;
+position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    bottom: -14px;
+    width: 74.84%;
+    transition: all .3s;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 60px;
+    transition: all .3s;
+  }
+  &:hover::before {
+    left: 10%;
+  }
+
+  &:hover::after {
+    right: 14%;
+  }
+  &:hover{
+    opacity: 0.7;
+  }
+}

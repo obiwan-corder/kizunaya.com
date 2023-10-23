@@ -1,0 +1,9 @@
+@use "../global/" as global;
+
+.p-news {
+  padding-top: 18px;
+  padding-bottom: 120px;
+  @include global.mq('sp') {
+    padding-bottom: 60px;
+  }
+}

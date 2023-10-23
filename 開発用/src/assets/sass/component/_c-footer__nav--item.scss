@@ -1,0 +1,21 @@
+@use "../global" as global;
+
+.c-footer__nav--item {
+color: global.$white-color;
+@include global.font(15, 300, 21.72, 1.95);
+font-family: global.$main-font;
+display: block; 
+margin-bottom: 35px;
+width: max-content;
+@include global.mq('sp') {
+  margin-bottom: 0px;
+  font-size: 14px;
+  span{
+    display: none;
+  }
+}
+}
+
+.c-footer__nav--item:last-child {
+  margin-bottom: 0;
+}

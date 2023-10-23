@@ -1,0 +1,58 @@
+@use "../global/" as global;
+
+.c-scrolldown {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  height: 150px;
+  @include global.mq('sp') {
+    left: 47.5%;
+    height: 100px;
+  }
+}
+
+.c-scrolldown span {
+  position: absolute;
+  left: 3px;
+  bottom: 33px;
+  color: global.$white-color;
+  @include global.font(13, 400, 18.82, 1.7);
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  @include global.mq('sp') {
+    bottom: 12px;
+    left: -2px;
+  }
+}
+
+.c-scrolldown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 150px;
+  background: #eee;
+  animation: pathmove 2s ease-in-out infinite;
+  opacity: 0;
+}
+
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 150px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 180px;
+    opacity: 0;
+  }
+}

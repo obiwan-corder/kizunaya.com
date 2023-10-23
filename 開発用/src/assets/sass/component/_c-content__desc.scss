@@ -1,0 +1,8 @@
+@use "../global/" as global;
+
+.c-content__desc {
+  @include global.font(15, 400, 30.35, 1.95);
+  font-family: global.$main-font;
+  color: global.$text-color;
+  padding-top: 20px;
+}

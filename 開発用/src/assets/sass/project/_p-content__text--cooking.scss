@@ -1,0 +1,11 @@
+@use "../global/" as global;
+
+.p-content__text--cooking {
+  width: 340px;
+  padding-left: 96px;
+  padding-top: 119px;
+
+  @include global.mq('tab') {
+    width: 37%;
+  }
+}

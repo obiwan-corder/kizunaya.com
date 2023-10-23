@@ -1,0 +1,49 @@
+@use "../global/" as global;
+
+.c-content__link {
+  @include global.font(14, 400, 28.32, 1.82);
+  color: global.$text-color;
+  font-family: global.$main-font;
+  padding-top: 80px;
+  padding-right: 33px;
+  position: relative;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  display: block;
+  text-align: center;
+  width: 87.84%;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 9px;
+    height: 0.5px;
+    width: 87.84%;
+    max-width: 238.89px;
+    background: global.$text-color;
+    transition: all .3s;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 19px;
+    width: 29.24px;
+    height: 0.5px;
+    background: global.$text-color;
+    transform: rotate(43deg);
+    transition: all .3s;
+  }
+  &:hover::before {
+    left: 11%;
+  }
+
+  &:hover::after {
+    right: 0%;
+  }
+  &:hover{
+    opacity: 0.7;
+  }
+}

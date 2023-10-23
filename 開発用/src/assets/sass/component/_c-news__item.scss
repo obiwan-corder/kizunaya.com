@@ -1,0 +1,22 @@
+@use "../global/" as global;
+
+.c-news__item {
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid global.$border-bottom-color;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
+@include global.mq('sp') {
+  padding-bottom: 4px;
+}
+  &:not(:first-child) {
+    padding-top: 21px;
+    @include global.mq('sp') {
+      padding-top: 11px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

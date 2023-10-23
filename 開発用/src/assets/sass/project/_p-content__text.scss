@@ -1,0 +1,18 @@
+@use "../global/" as global;
+
+
+.p-content__text {
+  z-index: 1;
+  padding-top: 154px;
+  padding-left: 33px;
+  max-width: 340px;
+  width: 340px;
+
+  @include global.mq('tab') {
+    width: 45%;
+  }
+
+  @include global.mq('sp') {
+    display: none;
+  }
+}

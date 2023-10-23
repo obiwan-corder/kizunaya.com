@@ -1,0 +1,19 @@
+@use "../global/" as global;
+
+.c-content__title {
+  position: absolute;
+  top: 50%;
+  left: 45.5%;
+  transform: translateX(-50%);
+  transform: translateY(-42%);
+  @include global.font(40, 400, 80.92, 5.2);
+  color: global.$white-color;
+  font-size: calc(24px + (40 - 24) * ((100vw - 375px)) / (1440 - 375));
+
+  @include global.mq('sp') {
+    @include global.font(24, 400, 48.55, 3.12);
+    top: 47%;
+    left: 42.5%;
+  }
+}
+

@@ -1,0 +1,10 @@
+@use "../global/" as global;
+
+.c-news__label {
+color: global.$label-color;
+@include global.font(16, 700, 23.17, 0.48);
+padding-left: 20px;
+@include global.mq('sp') {
+  padding-left: 1px;
+}
+}
