@@ -1,0 +1,14 @@
+@use "../global" as global;
+
+.c-mv__title {
+  @include global.font(48, 300, 69.5, 6.24);
+  font-family: global.$main-font;
+  color: global.$white-color;
+  position: relative;
+  left: 3px;
+  @include global.mq('sp') {
+    font-size: 24px;
+    top: 1px;
+    left: 1px;
+  }
+}

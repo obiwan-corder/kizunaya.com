@@ -4,19 +4,26 @@
   position: absolute;
   left: 50%;
   bottom: 10px;
-  /*全体の高さ*/
   height: 150px;
+  @include global.mq('sp') {
+    left: 47.5%;
+    height: 100px;
+  }
 }
 
 .c-scrolldown span {
   position: absolute;
   left: 3px;
-  bottom: 31px;
+  bottom: 33px;
   color: global.$white-color;
-  @include global.font(13, 400, 18.82, 1.69);
+  @include global.font(13, 400, 18.82, 1.7);
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
+  @include global.mq('sp') {
+    bottom: 12px;
+    left: -2px;
+  }
 }
 
 .c-scrolldown::after {
@@ -26,8 +33,7 @@
   width: 1px;
   height: 150px;
   background: #eee;
-  /*線の動き1.6秒かけて動く。永遠にループ*/
-  animation: pathmove 1.6s ease-in-out infinite;
+  animation: pathmove 2s ease-in-out infinite;
   opacity: 0;
 }
 

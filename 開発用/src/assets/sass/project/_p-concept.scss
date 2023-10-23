@@ -1,6 +1,9 @@
 @use "../global/" as global;
 
 .p-concept {
-padding-top: 123px;
+padding-top: 122px;
 padding-bottom: 66px;
+@include global.mq('sp') {
+  padding-top: 56px;
+}
 }

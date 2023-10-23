@@ -4,4 +4,10 @@
   background: url(../img/top/top2.png) center center / contain no-repeat;
   background-size: cover;
   width: 61.39%;
+  @include global.mq('sp') {
+    background: url(../img/top/top2_sp.png) center center / contain no-repeat;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
 }

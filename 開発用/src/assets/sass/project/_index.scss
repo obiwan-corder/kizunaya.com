@@ -1,5 +1,4 @@
 @use "p-logo__wrap";
-@use "p-mv__title";
 @use "p-slider";
 @use "p-concept";
 @use "p-concept__wrap";
@@ -12,5 +11,11 @@
 @use "p-content__block";
 @use "p-content__text";
 @use "p-content__cooking";
+@use "p-content__guestroom";
 @use "p-content__text--guestroom";
 @use "p-content__text--cooking";
+@use "p-footer__info";
+@use "p-footer__nav--wrap";
+@use "p-footer__wrap";
+@use "p-footer__link--nav";
+@use "p-footer__sns--items";

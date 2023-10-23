@@ -16,18 +16,26 @@
 </head>
 
 <body>
+	<div id="splash">
+		<div id="splash_logo">
+			<img src="./assets/img/top/logo.png" alt="KIZUNAYAロゴ" class="fadeUp">
+			<h1 class="c-mv__title fadeUp">KIZUNAYA</h1>
+		</div>
+	</div>
 	<!-- メインビジュアル -->
-	<header class="l-header__mv">
+	<header class="l-header__mv" id="header">
 		<!-- ドロワーメニュー -->
-
 		<img src="./assets/img/top/FV.png" alt="トップ背景画像" class="c-top__bg">
 		<img src="./assets/img/top/FV_sp.png" alt="トップ背景画像" class="c-top__bg--sp">
 		<div class="p-logo__wrap">
 			<img class="c-top__logo" src="./assets/img/top/logo.png" alt="KIZUNAYAロゴ">
-			<h1 class="p-mv__title">KIZUNAYA</h1>
+			<h1 class="c-mv__title">KIZUNAYA</h1>
 		</div>
 		<div class="c-scrolldown"><span>SCROLL</span></div>
 	</header>
+	<button class="c-search-btn">
+		<a href="#" class="c-search-btn__link">空 室 検 索</a>
+	</button>
 	<div class="p-concept">
 		<div class="p-concept__wrap">
 			<p class="c-concept__lead">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
@@ -96,7 +104,7 @@
 			<div class="p-content__block p-content__cooking">
 				<div class="p-content__text p-content__text--cooking">
 					<h4 class="c-content__lead">料理</h4>
-					<p class="c-content__desc">目の前の海で採れた海の幸を<br>
+					<p class="c-content__desc c-content__desc--cooking">目の前の海で採れた海の幸を<br>
 						ご堪能ください<br>
 						季節ごとに変わる一品料理も<br>
 						オススメです</p>
@@ -108,20 +116,49 @@
 			</div>
 			<div class="p-content__block  p-content__guestroom">
 				<a href="#" class="c-content__img c-content__img--guestroom">
-					<h3 class="c-content__title c-content__title--vertical">客室</h3>
+					<h3 class="c-content__title c-content__title--vertical c-content__title--guestroom">客室</h3>
 				</a>
 				<div class="p-content__text p-content__text--guestroom">
 					<h4 class="c-content__lead">客室</h4>
-					<p class="c-content__desc">窓を開けると波の音が聞こえてきます
+					<p class="c-content__desc c-content__desc--guestroom">窓を開けると波の音が聞こえてきます<br>
 						自然に包まれながらお休みください</p>
-					<a href="" class="c-content__link">詳しく見る</a>
+					<a href="" class="c-content__link c-content__link--guestroom">詳しく見る</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<footer class="l-footer">
-
+		<div class="p-footer__wrap">
+			<div class="p-footer__info">
+				<div class="c-footer__logo">
+					<img src="assets/img/top/logo.png" alt="フッターロゴ">
+				</div>
+				<h3 class="c-mv__title c-mv__title--footer">KIZUNAYA</h3>
+				<p class="c-address__number">
+					〒123-4567</p>
+				<p class="c-address">静岡県下田市白浜1-1</p>
+				<p class="c-tel__number">TEL 0123-45-6789</p>
+			</div>
+			<div class="p-footer__nav--wrap">
+				<div class="p-footer__link--nav">
+					<a class="c-footer__nav--item" href="#"><span>ー</span>　温泉</a>
+					<a class="c-footer__nav--item" href="#"><span>ー</span>　料理</a>
+					<a class="c-footer__nav--item" href="#"><span>ー</span>　客室</a>
+				</div>
+				<div class="p-footer__link--nav">
+					<a class="c-footer__nav--item" href="#"><span>ー</span>　過ごし方</a>
+					<a class="c-footer__nav--item" href="#"><span>ー</span>　アクセス</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-footer__sns--items">
+			<a href="#"><i class="fa-brands fa-facebook-f fa-3x" style="color:#fafafa;"></i></a>
+			<a href=""><i class="fa-brands fa-instagram fa-3x" style="color:#ffffff;"></i></a>
+		</div>
+		<p class="c-copyright">©︎2023 KIZUNAYA</p>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://kit.fontawesome.com/c67cd22077.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<!-- GSAPライブラリの読み込み -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

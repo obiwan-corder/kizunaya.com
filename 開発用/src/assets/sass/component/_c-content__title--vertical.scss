@@ -3,5 +3,9 @@
 .c-content__title--vertical {
   writing-mode: vertical-rl;
   text-align: center;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-1%) translateY(-35%);
+  letter-spacing: 1em;
+  @include global.mq('sp') {
+    writing-mode: horizontal-tb;
+  }
 }
