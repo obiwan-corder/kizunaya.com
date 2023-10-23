@@ -99,3 +99,8 @@ $(window).on('scroll', function(){
 	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
 
+$(document).ready(function() {
+  setTimeout(function(){
+    $("#splash").fadeOut('slow');
+  }, 3000); // 3秒後に実行
+});

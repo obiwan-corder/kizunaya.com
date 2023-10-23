@@ -10,10 +10,10 @@
   color: global.$white-color;
   font-size: calc(24px + (40 - 24) * ((100vw - 375px)) / (1440 - 375));
 
-
   @include global.mq('sp') {
     @include global.font(24, 400, 48.55, 3.12);
+    top: 47%;
+    left: 42.5%;
   }
-
-
 }
+

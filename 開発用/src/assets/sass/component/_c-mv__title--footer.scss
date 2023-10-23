@@ -1,0 +1,12 @@
+@use "../global" as global;
+
+.c-mv__title--footer {
+font-size: calc(24px + (48 - 24) * ((100vw - 375px)) / (1440 - 375));
+
+@include global.mq('sp') {
+  font-size: 24px;
+  @include global.mq('sp') {
+    text-align: center;
+  }
+}
+}
