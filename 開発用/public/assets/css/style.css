@@ -949,6 +949,152 @@ body li {
 
 .p-gnav {
 	display: none;
+
+@media (max-width: 767px) {
+
+.border-line {
+	display: none;
+}
+
+.p-spend-slide {
+	align-items: center;
+	flex-direction: column;
+	padding: 85px 22px 110px 22px;
+	width: 100%;
+}
+
+.p-spend-slide__wrapper {
+	align-items: center;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	row-gap: 60px;
+}
+
+.p-spend-slide__block {
+	justify-content: center;
+}
+
+.p-spend-slide__block::after {
+	display: none;
+}
+
+.p-spend-slide__block1 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card1 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__time {
+	font-size: 20px;
+	letter-spacing: 2.4px;
+	line-height: 1.89025;
+}
+
+.p-spend-slide__head {
+	font-size: 20px;
+	letter-spacing: 2.4px;
+	line-height: 1.89025;
+}
+
+.p-spend-slide__block__img {
+	margin-top: 20px;
+}
+
+.p-spend-slide__accent {
+	display: none;
+}
+
+.p-spend-slide__block2 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card2 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__block3 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card3 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__block4 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card4 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__block5 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card5 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__block6 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card6 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__block7 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card7 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__block8 {
+	margin-right: 0;
+}
+
+.p-spend-slide__card8 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-slide__card9 {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-spend-tour {
+	padding-top: 39px;
+}
+
+.p-spend-tour__title {
+	font-size: 24px;
+	line-height: 1.4583333333;
+}
+
+.p-spend-tour__cards {
+	grid-template-columns: 1fr;
+	margin-top: 34px;
+	row-gap: 40px;
+}
+
+.spend-tour__head {
+	font-size: 20px;
+	line-height: 1.45;
+	margin-top: 15px;
 }
 
 .p-access {
