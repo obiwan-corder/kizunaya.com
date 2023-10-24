@@ -5,7 +5,7 @@
   @include global.font(14, 300, 20.27, 1.69);
   color: global.$white-color;
   padding-left: 4px;
-  padding-top: 6px;
+  padding-top: 5px;
   @include global.mq('sp') {
     display: none;
   }

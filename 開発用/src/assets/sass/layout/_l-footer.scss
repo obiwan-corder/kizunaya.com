@@ -5,11 +5,11 @@
   position: relative;
   height: 500px;
   padding-top: 104px;
-  margin-top: 764px;
+  margin-top: 767px;
 
   @include global.mq('sp') {
     padding-top: 40px;
-    margin-top: 211px;
-    height: 61vh;
+    margin-top: 209px;
+    height: auto;
   }
 }
