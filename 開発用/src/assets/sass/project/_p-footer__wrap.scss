@@ -1,0 +1,17 @@
+@use "../global" as global;
+
+.p-footer__wrap {
+  display: flex;
+  width: 75.31%;
+  margin: 0 auto;
+  gap: 34%;
+
+  @include global.mq('tab') {
+    gap: 20%;
+  }
+
+  @include global.mq('sp') {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
