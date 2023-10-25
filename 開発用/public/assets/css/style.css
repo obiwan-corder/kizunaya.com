@@ -110,6 +110,23 @@ body li {
 	z-index: 10;
 }
 
+.c-search-btn:before {
+	background: #fff;
+	bottom: 0;
+	content: "";
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: opacity 0.3s ease 0s;
+}
+
+.c-search-btn:hover::before {
+	opacity: 0.7;
+}
+
 .c-search-btn__link {
 	color: #ffffff;
 	display: grid;
@@ -960,6 +977,16 @@ dialog::backdrop {
 
 .c-top__bg {
 	display: none;
+}
+
+.c-search-btn {
+	height: 160px;
+	top: 76px;
+	width: 57px;
+}
+
+.c-search-btn__link {
+	font-size: 14px;
 }
 
 .c-content__img {
