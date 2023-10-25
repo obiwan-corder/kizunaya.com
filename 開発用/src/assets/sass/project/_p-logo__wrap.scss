@@ -1,7 +1,10 @@
 @use "../global/" as global;
 .p-logo__wrap {
   position: relative; 
-  top: -36px;
+  top: -4.9%;
   z-index: 1;  
   text-align: center;
+  @include global.mq('sp') {
+    top: -1px;
+  }
 }

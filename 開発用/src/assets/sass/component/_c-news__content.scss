@@ -1,8 +1,12 @@
 @use "../global/" as global;
 
 .c-news__content {
-font-family: global.$main-font;
-color:global.$sub-text-color;
-@include global.font(15, 400, 22.5, 0);
-padding-left: 2px;
+  font-family: global.$main-font;
+  color: global.$sub-text-color;
+  @include global.font(15, 400, 22.5, 0);
+  padding-left: 2px;
+
+  @include global.mq('sp') {
+    padding-left: 0;
+  }
 }

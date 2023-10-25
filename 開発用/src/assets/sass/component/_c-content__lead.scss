@@ -11,10 +11,11 @@ position: relative;
 &::after {
   content: '';
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 79px;
   transform: translateY(-50%);
-  width: 138.67px;
+  max-width: 138.67px;
+  width: 52%;
   height: 0.5px;
   background: global.$border-accent-color;
 }

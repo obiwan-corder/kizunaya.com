@@ -1,33 +1,38 @@
 @use "../global/" as global;
 
 .c-content__link--cooking {
+  padding-right: 33px;
+  padding-top: 78px;
+
   &::before {
     content: '';
     position: absolute;
-    bottom: -15px;
-    left: 5px;
+    bottom: -14px;
+    left: -11px;
     height: 0.5px;
-    width: 100%;
-    max-width: 255px;
+    width:104%;
+    max-width: 224px;
     background: global.$text-color;
-    transition: all .3s;
+    transition: all .5s;
   }
+
   &::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    right: -9px;
+    bottom: -3.5px;
+    right: -2px;
     width: 29.24px;
     height: 0.5px;
     background: global.$text-color;
-    transform: rotate(43deg);
-    transition: all .3s;
+    transform: rotate(45deg);
+    transition: all .5s;
   }
+
   &:hover::before {
     left: 10%;
   }
 
   &:hover::after {
-    right: -12%;
+    right: -16%;
   }
 }

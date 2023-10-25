@@ -4,4 +4,9 @@
   width: 40.49%;
   margin: 0 auto;
   padding-bottom: 145px;
+  @include global.mq('sp') {
+    width: global.$sp-width;
+    width: 81%;
+    padding-bottom: 32px;
+  }
 }

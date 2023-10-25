@@ -5,7 +5,7 @@
   color: global.$text-color;
   font-family: global.$main-font;
   padding-top: 80px;
-  padding-left: 2px;
+  padding-right: 33px;
   position: relative;
   transition: all .3s cubic-bezier(.4,0,.2,1);
   display: block;
@@ -16,12 +16,11 @@
   &::before {
     content: '';
     position: absolute;
-    bottom: -14px;
-    left: 5px;
+    bottom: -12px;
+    left: 9px;
     height: 0.5px;
     width: 87.84%;
     max-width: 238.89px;
-    width: 238.93px;
     background: global.$text-color;
     transition: all .3s;
   }
@@ -29,8 +28,8 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    right: -17px;
+    bottom: -2px;
+    right: 19px;
     width: 29.24px;
     height: 0.5px;
     background: global.$text-color;
@@ -38,11 +37,11 @@
     transition: all .3s;
   }
   &:hover::before {
-    left: 10%;
+    left: 11%;
   }
 
   &:hover::after {
-    right: -0.5%;
+    right: 0%;
   }
   &:hover{
     opacity: 0.7;

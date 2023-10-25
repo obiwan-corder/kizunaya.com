@@ -58,7 +58,7 @@ topStyle.on('slideChangeTransitionStart', () => {
 
 topStyle.init();
 const spendWrapper = document.querySelector(".p-spend-slide");
-if(spendWrapper){
+if(spendWrapper && window.innerWidth > 768){
     const spendSlides = gsap.utils.toArray(".p-spend-slide__block");
     const wrapperWidth = spendWrapper.offsetWidth;
     gsap.to(spendSlides,{
@@ -75,7 +75,7 @@ if(spendWrapper){
 
 
 function ScrollTimelineAnime(){
-    $('.p-spend-slide__wrapper li').each(function(){
+    $('.p-spend-slide__block').each(function(){
         var elemPos = $(this).offset().left;
         var scroll = $(window).scrollLeft();
         var windowWidth = $(window).width();
@@ -84,7 +84,7 @@ function ScrollTimelineAnime(){
             var H = $(this).outerWidth(true)
             var percent = (scroll + startPoint - elemPos)/(H/2)*100;
             if(percent > 100 ){
-                percent = 100;
+                percent = 105;
             }
             // ボーダーの長さをセット
             $(this).children('.border-line').css({
@@ -99,3 +99,8 @@ $(window).on('scroll', function(){
 	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
 
+$(document).ready(function() {
+  setTimeout(function(){
+    $("#splash").fadeOut('slow');
+  }, 3000); // 3秒後に実行
+});

@@ -2,28 +2,31 @@
 
 .p-footer__link--nav {
   display: inline-block;
+  padding-right: 2px;
+
 
   @include global.mq('sp') {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 21%;
+    gap: 21.5%;
     width: 91%;
-    padding-left: 9px;
+    padding-left:11px;
     white-space: nowrap;
     &:nth-child(2){
         padding-top: 30px;
-        padding-bottom: 118px;
+        padding-bottom: 121px;
         width: 84%;
-        padding-left: 10%;
+        padding-left: 10.7%;
         justify-content: center;
-        gap: 11%;
+        gap: 11.8%;
     }
   }
 }
 
 .p-footer__link--nav:first-child {
-  margin-right: 116px;
+
+  margin-right: 112px;
   @include global.mq('sp') {
     margin-right: 0;
   }
