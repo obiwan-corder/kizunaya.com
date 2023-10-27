@@ -11,12 +11,14 @@
 
   @include global.mq('tab') {
     gap: 20%;
-  
+
   }
 
   @include global.mq('sp') {
     display: flex;
     flex-direction: column-reverse;
+
     padding-bottom: 0;
+
   }
 }
