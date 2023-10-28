@@ -1,5 +1,58 @@
 @use "../global" as global;
 
 .p-gnav {
-    display: none;
+    // background: rgba($color: #2A2926, $alpha: .8);
+    background: #2a2926;
+    position: absolute;
+    // z-index: -1;
+    z-index: 10;
+    // opacity: 0;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    width: 859px;
+    height: 723px;
+    pointer-events: none;
+    padding: 109px 251px 154px 86px;
+    display: flex;
+    color: global.$white-color;
+    font-family: global.$main-font;
+
+    @include global.mq(tab){
+        width: 100%;
+        height: 100vh;
+        padding: 109px 27vw 154px 10vw;
+    }
+    @include global.mq(sp){
+        width: 100%;
+        height: 100vh;
+        padding: 109px 17% 154px 9%;
+    }
+}
+// ハンガーガーメニュー表示
+.js-panelactive {
+    // transition: all 0.1s;
+    position: fixed;
+    z-index: 99;
+    opacity: 1;
+    transition: all 0.3s;
+    pointer-events: visible;
+    display: grid;
+    align-items: center;
+}
+
+.p-gnav__logo-img {
+    display: block;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+}
+.p-gnav__nav-list {
+    // padding-left: 163px;
+    font-size: calc(24 / 16 * 1rem);
+    line-height: 1.5;
+    padding-bottom: 70px;
+    @include global.mq(sp){
+        font-size: 1.1rem;
+    }
 }

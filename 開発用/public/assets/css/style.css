@@ -179,6 +179,7 @@ body li {
 	text-align: center;
 	top: 0;
 	width: 110px;
+	z-index: 11;
 }
 
 .c-drawer-btn__bar {
@@ -203,6 +204,23 @@ body li {
 
 .c-drawer-btn__bar::after {
 	top: 1em;
+}
+
+.js-active {
+	transition: all 0.3s;
+}
+
+.js-active .c-drawer-open {
+	background-color: transparent;
+	opacity: 1;
+}
+
+.js-active .c-drawer-open::before {
+	transform: rotate(45deg);
+}
+
+.js-active .c-drawer-open::before {
+	transform: rotate(-45deg);
 }
 
 .c-main-message {
@@ -949,7 +967,42 @@ body li {
 }
 
 .p-gnav {
-	display: none;
+	background: #2a2926;
+	color: #ffffff;
+	display: flex;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	height: 723px;
+	opacity: 1;
+	padding: 109px 251px 154px 86px;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 859px;
+	z-index: 10;
+}
+
+.js-panelactive {
+	align-items: center;
+	display: grid;
+	opacity: 1;
+	pointer-events: visible;
+	position: fixed;
+	transition: all 0.3s;
+	z-index: 99;
+}
+
+.p-gnav__logo-img {
+	display: block;
+	height: 76px;
+	margin: 0 auto;
+	width: 66px;
+}
+
+.p-gnav__nav-list {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding-bottom: 70px;
 }
 
 .p-access {
@@ -1207,6 +1260,12 @@ dialog::backdrop {
 
 .p-news__wrap {
 	width: 639px;
+}
+
+.p-gnav {
+	height: 100vh;
+	padding: 109px 27vw 154px 10vw;
+	width: 100%;
 }
 
 .p-content__text {
@@ -1587,6 +1646,16 @@ dialog::backdrop {
 
 .p-spend-tour__detail {
 	margin-top: 15px;
+}
+
+.p-gnav {
+	height: 100vh;
+	padding: 109px 17% 154px 9%;
+	width: 100%;
+}
+
+.p-gnav__nav-list {
+	font-size: 1.1rem;
 }
 
 .p-access__map {

@@ -7,6 +7,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 11;
     display: grid;
     align-items: center;
     text-align: center;
@@ -30,6 +31,19 @@
         }
         &::after{
             top: 1em;
+        }
+    }
+}
+.js-active {
+    transition: all 0.3s;
+    .c-drawer-open {
+        opacity: 1;
+        background-color: transparent;
+        &::before{
+            transform: rotate(45deg);
+        }
+        &::before{
+            transform: rotate(-45deg);
         }
     }
 }

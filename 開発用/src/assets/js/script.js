@@ -1,3 +1,31 @@
+// 
+// ハンバーガーメニュー
+// 
+$(".c-drawer-open").click(function () {
+  //ボタンがクリックされたら
+  $(this).toggleClass("js-active"); //ボタン自身に activeクラスを付与し
+  $("#drawer-nav").toggleClass("js-panelactive"); //ナビゲーションにpanelactiveクラスを付与
+  $("#drawer-nav").toggleClass("js-backactive"); 
+});
+
+$(".p-drawer__link").click(function () {
+  //ナビゲーションのリンクがクリックされたら
+  $(".c-drawer-open").removeClass("js-active"); //ボタンの activeクラスを除去し
+  $("#drawer-nav").removeClass("js-panelactive"); //ナビゲーションのpanelactiveクラスも除去
+});
+// 
+// 
+// 
+
+$(".js-drawer-close").click(function () {
+  //閉じるボタンがクリックされたら
+  $(".c-drawer-open").removeClass("js-active"); //ボタンの activeクラスを除去し
+  $("#drawer-nav").removeClass("js-panelactive"); //ナビゲーションのpanelactiveクラスも除去
+});
+
+
+
+
 const topStyle = new Swiper('.p-slider__container', {
   init: false,
   // slidesPerView: 3,
