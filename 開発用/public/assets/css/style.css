@@ -950,153 +950,6 @@ body li {
 
 .p-gnav {
 	display: none;
-
-
-@media (max-width: 767px) {
-
-.border-line {
-	display: none;
-}
-
-.p-spend-slide {
-	align-items: center;
-	flex-direction: column;
-	padding: 85px 22px 110px 22px;
-	width: 100%;
-}
-
-.p-spend-slide__wrapper {
-	align-items: center;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	row-gap: 60px;
-}
-
-.p-spend-slide__block {
-	justify-content: center;
-}
-
-.p-spend-slide__block::after {
-	display: none;
-}
-
-.p-spend-slide__block1 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card1 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__time {
-	font-size: 20px;
-	letter-spacing: 2.4px;
-	line-height: 1.89025;
-}
-
-.p-spend-slide__head {
-	font-size: 20px;
-	letter-spacing: 2.4px;
-	line-height: 1.89025;
-}
-
-.p-spend-slide__block__img {
-	margin-top: 20px;
-}
-
-.p-spend-slide__accent {
-	display: none;
-}
-
-.p-spend-slide__block2 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card2 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block3 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card3 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block4 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card4 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block5 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card5 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block6 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card6 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block7 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card7 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block8 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card8 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__card9 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-tour {
-	padding-top: 39px;
-}
-
-.p-spend-tour__title {
-	font-size: 24px;
-	line-height: 1.4583333333;
-}
-
-.p-spend-tour__cards {
-	grid-template-columns: 1fr;
-	margin-top: 34px;
-	row-gap: 40px;
-}
-
-.spend-tour__head {
-	font-size: 20px;
-	line-height: 1.45;
-	margin-top: 15px;
 }
 
 .p-access {
@@ -1290,63 +1143,6 @@ dialog::backdrop {
 	object-fit: cover;
 }
 
-.p-dialog {
-	align-items: center;
-	background-color: rgba(96, 93, 93, 0);
-	border: none;
-	left: 50%;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 0;
-	position: fixed;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 50vw; /*スクロールバー非表示（IE・Edge）*/
-	-ms-overflow-style: none; /*スクロールバー非表示（Firefox）*/
-	scrollbar-width: none;
-}
-
-.p-dialog::-webkit-scrollbar {
-	display: none;
-}
-
-.p-dialog:focus-visible {
-	outline: none;
-}
-
-dialog::backdrop {
-	background-color: rgba(96, 93, 93, 0.7);
-}
-
-.p-dialog__inner {
-	padding: 47px 0;
-	position: relative;
-}
-
-.p-dialog__close {
-	height: 40px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 40px;
-}
-
-.p-dialog__img {
-	aspect-ratio: 580/370;
-	display: block;
-	height: auto;
-	margin: 0 auto;
-	max-width: 100%;
-	text-align: center;
-	width: 509px;
-}
-
-.p-dialog__img img {
-	height: inherit;
-	-o-object-fit: cover;
-	object-fit: cover;
-}
-
 @media (min-width: 768px) and (max-width: 1280px) {
 
 .p-news__wrap {
@@ -1419,6 +1215,15 @@ dialog::backdrop {
 	display: none;
 }
 
+.c-scrolldown {
+	height: 100px;
+	left: 47.5%;
+}
+
+.c-scrolldown span {
+	bottom: 11px;
+	left: -2px;
+}
 
 .c-search-btn {
 	height: 160px;
@@ -1428,15 +1233,6 @@ dialog::backdrop {
 
 .c-search-btn__link {
 	font-size: 14px;
-
-.c-scrolldown {
-	height: 100px;
-	left: 47.5%;
-}
-
-.c-scrolldown span {
-	bottom: 11px;
-	left: -2px;
 }
 
 .c-concept__lead {
@@ -1466,7 +1262,6 @@ dialog::backdrop {
 
 .c-news__content {
 	padding-left: 0;
-
 }
 
 .c-content__img {
@@ -1584,40 +1379,6 @@ dialog::backdrop {
 .p-content__wrap {
 	padding-top: 15px;
 }
-
-
-
-.p-access__map {
-	align-items: flex-start;
-	flex-direction: column;
-}
-
-.p-access__map__address {
-	font-size: 14px;
-	letter-spacing: 1.68px;
-	line-height: 1.8902142857;
-	margin-left: 0;
-	text-align: left;
-}
-
-.p-access__route {
-	line-height: 1.563;
-	margin-top: 40px;
-}
-
-.p-access__route dt {
-	font-size: 18px;
-	letter-spacing: 6.57px;
-}
-
-.p-access__route dt:not(:first-of-type) {
-	margin-top: 20px;
-}
-
-.p-access__route dd {
-	font-size: 13px;
-	letter-spacing: 1.755px;
-	margin-left: 14px;
 
 .border-line {
 	display: none;
@@ -1743,7 +1504,6 @@ dialog::backdrop {
 	width: 100%;
 }
 
-
 .p-spend-tour {
 	padding-top: 39px;
 }
@@ -1769,9 +1529,41 @@ dialog::backdrop {
 	margin-top: 15px;
 }
 
+.p-access__map {
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.p-access__map__address {
+	font-size: 14px;
+	letter-spacing: 1.68px;
+	line-height: 1.8902142857;
+	margin-left: 0;
+	text-align: left;
+}
+
+.p-access__route {
+	line-height: 1.563;
+	margin-top: 40px;
+}
+
+.p-access__route dt {
+	font-size: 18px;
+	letter-spacing: 6.57px;
+}
+
+.p-access__route dt:not(:first-of-type) {
+	margin-top: 20px;
+}
+
+.p-access__route dd {
+	font-size: 13px;
+	letter-spacing: 1.755px;
+	margin-left: 14px;
+}
+
 .p-content__block:not(:first-child) {
 	padding-top: 21px;
-
 }
 
 .p-content__text {
