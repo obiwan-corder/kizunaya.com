@@ -4,10 +4,10 @@
     // background: rgba($color: #2A2926, $alpha: .8);
     background: #2a2926;
     position: absolute;
-    // z-index: -1;
-    z-index: 10;
-    // opacity: 0;
-    opacity: 1;
+    z-index: -1;
+    // z-index: 10;
+    opacity: 0;
+    // opacity: 1;
     top: 0;
     right: 0;
     width: 859px;
@@ -33,12 +33,13 @@
 .js-panelactive {
     // transition: all 0.1s;
     position: fixed;
-    z-index: 99;
+    z-index: 10;
     opacity: 1;
     transition: all 0.3s;
     pointer-events: visible;
-    display: grid;
-    align-items: center;
+    // display: grid;
+    justify-content: space-between;
+    // align-items: center;
 }
 
 .p-gnav__logo-img {

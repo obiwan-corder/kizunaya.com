@@ -11,6 +11,16 @@
     display: grid;
     align-items: center;
     text-align: center;
+
+    @include global.mq(tab) {
+        width: 66px;
+        height: 51px;
+    }
+    @include global.mq(sp) {
+        width: 66px;
+        height: 51px;
+    }
+
     &__bar {
         // position: absolute;
         height: 1px;
@@ -19,31 +29,72 @@
         background-color: #fff;
         width: 33.45px;
         position: relative;
+        transition: all 0.3s;
+
+        @include global.mq(tab) {
+            width: 20px;
+        }
+        @include global.mq(sp) {
+            width: 20px;
+        }
+
         &::before,
-        &::after{
+        &::after {
+            transition: all 0.3s;
             height: inherit;
             width: inherit;
             position: absolute;
             content: "";
-            top: -1em;
+            top: -14.5px;
             left: 0;
             background-color: inherit;
+
+            @include global.mq(tab) {
+                top: -8.8px;
+            }
+            @include global.mq(sp) {
+                top: -8.8px;
+            }
         }
-        &::after{
-            top: 1em;
+        &::after {
+            top: 14.5px;
+
+            @include global.mq(tab) {
+                top: 8.8px;
+            }
+            @include global.mq(sp) {
+                top: 8.8px;
+            }
         }
     }
 }
 .js-active {
-    transition: all 0.3s;
-    .c-drawer-open {
-        opacity: 1;
-        background-color: transparent;
-        &::before{
-            transform: rotate(45deg);
-        }
-        &::before{
-            transform: rotate(-45deg);
+    background-color: transparent;
+    .c-drawer-btn {
+        &__bar {
+            background-color: transparent;
+            &::before {
+                transform: translateY(14.5px) rotate(45deg);
+                background-color: #fff;
+
+                @include global.mq(tab){
+                    transform: translateY(8.8px) rotate(45deg);
+                }
+                @include global.mq(sp){
+                    transform: translateY(8.8px) rotate(45deg);
+                }
+            }
+            &::after {
+                transform: translateY(-14.5px) rotate(-45deg);
+                background-color: #fff;
+                
+                @include global.mq(tab){
+                    transform: translateY(-8.8px) rotate(-45deg);
+                }
+                @include global.mq(sp){
+                    transform: translateY(-8.8px) rotate(-45deg);
+                }
+            }
         }
     }
 }
