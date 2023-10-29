@@ -179,7 +179,7 @@ header {
 	background-color: #272727;
 	display: grid;
 	height: 85px;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	text-align: center;
 	top: 0;
@@ -1165,7 +1165,7 @@ header {
 	font-size: 2.4em;
 }
 
-.p-dialog {
+.dialog {
 	align-items: center;
 	background-color: rgba(96, 93, 93, 0);
 	border: none;
@@ -1181,11 +1181,11 @@ header {
 	scrollbar-width: none;
 }
 
-.p-dialog::-webkit-scrollbar {
+.dialog::-webkit-scrollbar {
 	display: none;
 }
 
-.p-dialog:focus-visible {
+.dialog:focus-visible {
 	outline: none;
 }
 
@@ -1312,6 +1312,7 @@ dialog::backdrop {
 }
 
 .p-room__sentence {
+	align-self: center;
 	width: min(38%, 430px);
 }
 
@@ -1344,6 +1345,46 @@ dialog::backdrop {
 	letter-spacing: 0.12em;
 	line-height: 1.89;
 	padding-top: 40px;
+}
+
+.p-facility {
+	margin-bottom: 100px;
+}
+
+.p-facility__title {
+	font-size: 1.5rem;
+	line-height: 1.9166666667;
+	text-align: center;
+}
+
+.p-facility__text {
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 0.12em;
+	line-height: 1.8902142857;
+}
+
+.p-check-io {
+	margin-bottom: 165px;
+}
+
+.p-check-io__wrapper {
+	align-items: center;
+	background-image: url(../../assets/img/guest-room/check-io-bg.svg);
+	display: flex;
+	gap: 100px;
+	padding: 50px 186px;
+}
+
+.p-check-io__contents {
+	color: #fff;
+	text-align: center;
+}
+
+.p-check-io__icon {
+	height: 82px;
+	margin: 0 auto 30px;
+	width: 82px;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {

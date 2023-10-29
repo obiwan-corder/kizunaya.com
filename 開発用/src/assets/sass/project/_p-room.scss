@@ -37,6 +37,7 @@
 }
 .p-room__sentence {
     width: min(38%, 430px);
+    align-self: center;
 }
 .p-room__title {
     // @include font(48, 400, 69.5, 6.24);

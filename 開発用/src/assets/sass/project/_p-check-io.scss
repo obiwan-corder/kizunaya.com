@@ -1,0 +1,21 @@
+@use "../global/" as global;
+
+.p-check-io {
+    margin-bottom: 165px;
+}
+.p-check-io__wrapper {
+    background-image: url(../../assets/img/guest-room/check-io-bg.svg);
+    display: flex;
+    align-items: center;
+    padding: 50px 186px;
+    gap: 100px;
+}
+.p-check-io__contents {
+    color: #fff;
+    text-align: center;
+}
+.p-check-io__icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 30px;
+}
