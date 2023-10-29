@@ -1,0 +1,70 @@
+@use "../global" as global;
+
+.p-room__version {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    // width: global.$pc-width;
+    margin: 0 auto;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
+.p-room__imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr max(150px, 1px);
+    gap: 10px;
+    width: min(55%, 580px);
+    // min-height: 530px;
+}
+.p-room__img {
+    overflow: hidden;
+    // width: 100%;
+    // height: 100%;
+    // display: block;
+    // vertical-align: top;
+    vertical-align: bottom;
+    // min-height: 0;
+    &:first-of-type {
+        grid-column: 1 / 3;
+        align-self: flex-end;
+        // height: auto;
+        // aspect-ratio: (570 / 370);
+        // object-fit: cover;
+    }
+}
+.p-room__sentence {
+    width: min(38%, 430px);
+}
+.p-room__title {
+    // @include font(48, 400, 69.5, 6.24);
+    font-size: calc(32 / 15 * 1rem);
+    font-weight: 800;
+    line-height: calc(46.34 / 32);
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+.p-room__title-eng {
+    font-size: calc(15 / 15 * 1rem);
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 1em;
+}
+.p-room__text {
+    font-size: calc(15 / 15 * 1rem);
+    font-weight: 400;
+    line-height: calc(28.35 / 15);
+    letter-spacing: calc(1.8 / 15 * 1em);
+    font-family: global.$main-font;
+}
+.p-room__text-bottom {
+    padding-top: 40px;
+    font-size: calc(14 / 15 * 1rem);
+    font-weight: 400;
+    line-height: calc(26.46 / 14);
+    letter-spacing: calc(1.68 / 14 * 1em);
+    .p-room__text {
+    }
+}

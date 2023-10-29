@@ -2,6 +2,7 @@
 
 .l-lower-header {
     width: 100%;
+    animation: fadeInAnime 2s;
     aspect-ratio: 1440 / 500;
     object-fit: cover;
     display: grid;
@@ -34,5 +35,14 @@
     @include global.mq(sp) {
         background-image: url(../../assets/img/guest-room/header_sp.jpg);
         background-size: cover;
+    }
+}
+
+@keyframes fadeInAnime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

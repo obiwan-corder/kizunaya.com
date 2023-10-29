@@ -15,7 +15,7 @@
 </head>
 
 <body id="guest-room">
-	<header class="l-lower-header" id="header">
+	<header class="l-lower-header fadeInAnime" id="header">
 		<h1 class="l-lower-header__title">客 室</h1>
 		<!-- ハンバーガーメニュー -->
 		<div class="c-drawer-btn l-lower-headerr__btn">
@@ -63,24 +63,27 @@
 		</nav>
 	</header>
 	<!-- /.l-header -->
+	<!-- <button class="c-search-btn">
+            <a href="#" class="c-search-btn__link">空 室 検 索</a>
+        </button> -->
 	<main class="l-main">
-		<div class="p-opening-sentence">
-			<div class="l-inner">
-				<p class="p-opening-sentence__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-			</div>
+		<div class="c-main-message">
+			<p class="c-main-message__text">
+				テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+			</p>
 		</div>
 		<section class="p-room">
 			<div class="l-inner">
 				<div class="p-room__version">
 					<div class="p-room__imgs">
-						<div class="p-room__img">
+						<div data-dialog="#js-dialog1-1" class="p-room__img js-dialog-open">
 							<img src="./assets/img/guest-room/sazanami1.jpg" alt="漣のベッドルーム">
 						</div>
-						<div class="p-room__img">
-							<img src="./assets/img/guest-room/sazanami2.jpg" alt="漣の客室">
+						<div data-dialog="#js-dialog1-2" class="p-room__img js-dialog-open">
+							<img src="./assets/img/guest-room/sazanami2.jpg" alt="漣の客室内">
 						</div>
-						<div class="p-room__img">
-							<img src="./assets/img/guest-room/sazanami3.jpg" alt="鹿威し">
+						<div data-dialog="#js-dialog1-3" class="p-room__img js-dialog-open">
+							<img src="./assets/img/guest-room/sazanami3.jpg" alt="漣のバスルーム">
 						</div>
 					</div>
 					<div class="p-room__sentence">
@@ -95,22 +98,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-room__version">
+				<div class="p-room__version p-room__version--reverse">
 					<div class="p-room__imgs">
-						<div class="p-room__img">
+						<div data-dialog="#js-dialog2-1" class="p-room__img js-dialog-open">
 							<img src="./assets/img/guest-room/nagi1.jpg" alt="凪のベッドルーム">
 						</div>
-						<div class="p-room__img">
+						<div data-dialog="#js-dialog2-2" class="p-room__img js-dialog-open">
 							<img src="./assets/img/guest-room/nagi2.jpg" alt="タオル">
 						</div>
-						<div class="p-room__img">
+						<div data-dialog="#js-dialog2-3" class="p-room__img js-dialog-open">
 							<img src="./assets/img/guest-room/nagi3.jpg" alt="ソファ">
 						</div>
 					</div>
 					<div class="p-room__sentence">
 						<h2 class="p-room__title">
 							凪
-							<span class="p-room__title__eng">Nagi</span>
+							<span class="p-room__title-eng">Nagi</span>
 						</h2>
 						<!-- /.room-title -->
 						<p class="p-room__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -122,20 +125,20 @@
 				</div>
 				<div class="p-room__version">
 					<div class="p-room__imgs">
-						<div class="p-room__img">
-							<img src="./assets/img/guest-room/sazanami1.jpg" alt="渚のベッドルーム">
+						<div data-dialog="#js-dialog3-1" class="p-room__img js-dialog-open">
+							<img src="./assets/img/guest-room/nagisa1.jpg" alt="渚のベッドルーム">
 						</div>
-						<div class="p-room__img">
-							<img src="./assets/img/guest-room/sazanami2.jpg" alt="渚の客室内">
+						<div data-dialog="#js-dialog3-2" class="p-room__img js-dialog-open">
+							<img src="./assets/img/guest-room/nagisa2.jpg" alt="渚の客室内">
 						</div>
-						<div class="p-room__img">
-							<img src="./assets/img/guest-room/sazanami3.jpg" alt="渚のバスルーム">
+						<div data-dialog="#js-dialog3-3" class="p-room__img js-dialog-open">
+							<img src="./assets/img/guest-room/nagisa3.jpg" alt="渚のバスルーム">
 						</div>
 					</div>
 					<div class="p-room__sentence">
 						<h2 class="p-room__title">
 							渚
-							<span class="p-room__title__eng">Nagisa</span>
+							<span class="p-room__title-eng">Nagisa</span>
 						</h2>
 						<p class="p-room__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 						<div class="p-room__text-bottom">
@@ -145,6 +148,96 @@
 					</div>
 				</div>
 			</div>
+			<dialog id="js-dialog1-1" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/sazanami1.jpg" alt="漣のベッドルーム">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog1-2" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/sazanami2.jpg" alt="漣の客室内">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog1-3" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/sazanami3.jpg" alt="漣のバスルーム">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog2-1" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/nagi1.jpg" alt="凪のベッドルーム">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog2-2" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/nagi2.jpg" alt="タオル">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog2-3" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/nagi3.jpg" alt="ソファ">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog3-1" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/nagisa1.jpg" alt="渚のベッドルーム">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog3-2" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/nagisa2.jpg" alt="渚の客室内">
+					</div>
+				</div>
+			</dialog>
+			<dialog id="js-dialog3-2" class="p-dialog p-room__dialog">
+				<div class="p-dialog__inner">
+					<div class="p-dialog__close js-dialog-close">
+						<img src="./assets/img/common/icon-close.svg" alt="閉じる">
+					</div>
+					<div class="p-dialog__img">
+						<img src="./assets/img/guest-room/nagisa3.jpg" alt="渚のバスルーム">
+					</div>
+				</div>
+			</dialog>
 		</section>
 		<section class="p-facility">
 			<div class="l-inner">
