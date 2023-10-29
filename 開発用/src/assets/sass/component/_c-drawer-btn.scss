@@ -15,21 +15,22 @@
     @include global.mq(tab) {
         width: 66px;
         height: 51px;
+        right: 20px;
     }
     @include global.mq(sp) {
         width: 66px;
         height: 51px;
+        right: 20px;
     }
 
     &__bar {
-        // position: absolute;
-        height: 1px;
+        height: 2px;
+        transform: scaleY(0.5) translateY(1px);
         display: block;
         margin: 0 auto;
         background-color: #fff;
         width: 33.45px;
         position: relative;
-        transition: all 0.3s;
 
         @include global.mq(tab) {
             width: 20px;
@@ -40,61 +41,81 @@
 
         &::before,
         &::after {
-            transition: all 0.3s;
+            transition: all 0.5s;
             height: inherit;
             width: inherit;
             position: absolute;
             content: "";
-            top: -14.5px;
+            // top: -14.5px;
+            top: -29px;
             left: 0;
             background-color: inherit;
 
             @include global.mq(tab) {
-                top: -8.8px;
+                // top: -8.8px;
+                top: -17.6px;
             }
             @include global.mq(sp) {
-                top: -8.8px;
+                // top: -8.8px;
+                top: -17.6px;
             }
         }
         &::after {
-            top: 14.5px;
+            // top: 14.5px;
+            top: 29px;
 
             @include global.mq(tab) {
-                top: 8.8px;
+                // top: 8.8px;
+                top: 17.6px;
             }
             @include global.mq(sp) {
-                top: 8.8px;
+                // top: 8.8px;
+                top: 17.6px;
+
             }
         }
     }
 }
+// ドロワー開閉
 .js-active {
     background-color: transparent;
     .c-drawer-btn {
         &__bar {
             background-color: transparent;
+            width: 67px;
+
+            @include global.mq(tab){
+                width: 33.45px;
+            }
+            @include global.mq(sp){
+                width: 33.45px;
+            }
             &::before {
-                transform: translateY(14.5px) rotate(45deg);
+                transform: translateY(29px) rotate(-64deg);
                 background-color: #fff;
 
-                @include global.mq(tab){
-                    transform: translateY(8.8px) rotate(45deg);
+                @include global.mq(tab) {
+                    transform: translateY(17.6px) rotate(-64deg);
                 }
-                @include global.mq(sp){
-                    transform: translateY(8.8px) rotate(45deg);
+                @include global.mq(sp) {
+                    transform: translateY(17.6px) rotate(-64deg);
+
                 }
             }
             &::after {
-                transform: translateY(-14.5px) rotate(-45deg);
+                transform: translateY(-29px) rotate(64deg);
+
                 background-color: #fff;
-                
-                @include global.mq(tab){
-                    transform: translateY(-8.8px) rotate(-45deg);
+
+                @include global.mq(tab) {
+                    transform: translateY(-17.6px) rotate(64deg);
                 }
-                @include global.mq(sp){
-                    transform: translateY(-8.8px) rotate(-45deg);
+                @include global.mq(sp) {
+                    transform: translateY(-17.6px) rotate(64deg);
+
                 }
             }
         }
     }
 }
+

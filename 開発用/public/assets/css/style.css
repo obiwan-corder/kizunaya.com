@@ -10,6 +10,10 @@ body li {
 	list-style: none;
 }
 
+header {
+	overflow: hidden;
+}
+
 .l-lower-header {
 	aspect-ratio: 1440/500;
 	width: 100%;
@@ -22,7 +26,7 @@ body li {
 
 .l-lower-header__title {
 	color: #ffffff;
-	font-size: 3rem;
+	font-size: calc(24px + 24 * (100vw - 768px) / 672);
 	letter-spacing: 0.13em;
 	line-height: 1.4479166667;
 	text-align: center;
@@ -185,10 +189,10 @@ body li {
 .c-drawer-btn__bar {
 	background-color: #fff;
 	display: block;
-	height: 1px;
+	height: 2px;
 	margin: 0 auto;
 	position: relative;
-	transition: all 0.3s;
+	transform: scaleY(0.5) translateY(1px);
 	width: 33.45px;
 }
 
@@ -199,13 +203,13 @@ body li {
 	height: inherit;
 	left: 0;
 	position: absolute;
-	top: -14.5px;
-	transition: all 0.3s;
+	top: -29px;
+	transition: all 0.5s;
 	width: inherit;
 }
 
 .c-drawer-btn__bar::after {
-	top: 14.5px;
+	top: 29px;
 }
 
 .js-active {
@@ -214,16 +218,17 @@ body li {
 
 .js-active .c-drawer-btn__bar {
 	background-color: transparent;
+	width: 67px;
 }
 
 .js-active .c-drawer-btn__bar::before {
 	background-color: #fff;
-	transform: translateY(14.5px) rotate(45deg);
+	transform: translateY(29px) rotate(-64deg);
 }
 
 .js-active .c-drawer-btn__bar::after {
 	background-color: #fff;
-	transform: translateY(-14.5px) rotate(-45deg);
+	transform: translateY(-29px) rotate(64deg);
 }
 
 .c-main-message {
@@ -976,35 +981,52 @@ body li {
 	font-family: "Zen Kaku Gothic New", sans-serif;
 	height: 723px;
 	opacity: 0;
-	padding: 109px 251px 154px 86px;
+	overflow: hidden;
+	padding: 110px 302px 151px 84px;
 	pointer-events: none;
 	position: absolute;
-	right: 0;
+	right: -120%;
 	top: 0;
-	width: 859px;
+	transition: all 1s;
+	width: 900px;
 	z-index: -1;
 }
 
 .js-panelactive {
+	display: flex;
 	justify-content: space-between;
 	opacity: 1;
 	pointer-events: visible;
 	position: fixed;
-	transition: all 0.3s;
+	right: 0;
 	z-index: 10;
+}
+
+.js-panelactive .p-gnav__nav-list {
+	opacity: 1;
+	transition: all 0.3s ease 0s;
 }
 
 .p-gnav__logo-img {
 	display: block;
 	height: 76px;
-	margin: 0 auto;
+	margin: 0 auto 5px;
 	width: 66px;
 }
 
 .p-gnav__nav-list {
 	font-size: 1.5rem;
 	line-height: 1.5;
+	opacity: 0;
 	padding-bottom: 70px;
+}
+
+.p-nav-anm {
+	animation-delay: 1s;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-name: navAnm;
+	animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .p-access {
@@ -1262,6 +1284,7 @@ dialog::backdrop {
 
 .c-drawer-btn {
 	height: 51px;
+	right: 20px;
 	width: 66px;
 }
 
@@ -1271,19 +1294,23 @@ dialog::backdrop {
 
 .c-drawer-btn__bar::before,
 .c-drawer-btn__bar::after {
-	top: -8.8px;
+	top: -17.6px;
 }
 
 .c-drawer-btn__bar::after {
-	top: 8.8px;
+	top: 17.6px;
+}
+
+.js-active .c-drawer-btn__bar {
+	width: 33.45px;
 }
 
 .js-active .c-drawer-btn__bar::before {
-	transform: translateY(8.8px) rotate(45deg);
+	transform: translateY(17.6px) rotate(-64deg);
 }
 
 .js-active .c-drawer-btn__bar::after {
-	transform: translateY(-8.8px) rotate(-45deg);
+	transform: translateY(-17.6px) rotate(64deg);
 }
 
 .p-news__wrap {
@@ -1329,18 +1356,19 @@ dialog::backdrop {
 }
 
 .l-lower-header {
-	aspect-ratio: 375/500;
-	height: 500px;
+	aspect-ratio: unset;
+	height: 75vh;
+}
+
+.l-lower-header__title {
+	font-size: 1.5rem;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
 }
 
 #guest-room .l-lower-header {
 	background-image: url(../../assets/img/guest-room/header_sp.jpg);
 	background-size: cover;
-}
-
-#guest-room .l-lower-header img {
-	-o-object-fit: cover;
-	object-fit: cover;
 }
 
 .l-inner {
@@ -1399,6 +1427,7 @@ dialog::backdrop {
 
 .c-drawer-btn {
 	height: 51px;
+	right: 20px;
 	width: 66px;
 }
 
@@ -1408,19 +1437,23 @@ dialog::backdrop {
 
 .c-drawer-btn__bar::before,
 .c-drawer-btn__bar::after {
-	top: -8.8px;
+	top: -17.6px;
 }
 
 .c-drawer-btn__bar::after {
-	top: 8.8px;
+	top: 17.6px;
+}
+
+.js-active .c-drawer-btn__bar {
+	width: 33.45px;
 }
 
 .js-active .c-drawer-btn__bar::before {
-	transform: translateY(8.8px) rotate(45deg);
+	transform: translateY(17.6px) rotate(-64deg);
 }
 
 .js-active .c-drawer-btn__bar::after {
-	transform: translateY(-8.8px) rotate(-45deg);
+	transform: translateY(-17.6px) rotate(64deg);
 }
 
 .c-concept__lead {
@@ -1893,6 +1926,20 @@ dialog::backdrop {
 	height: 0;
 	opacity: 0;
 	top: 180px;
+}
+
+}
+
+@keyframes navAnm {
+
+0% {
+	filter: blur(15px);
+	opacity: 0;
+}
+
+100% {
+	filter: blur(0);
+	opacity: 1;
 }
 
 }
