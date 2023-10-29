@@ -80,6 +80,12 @@ body li {
 	position: relative;
 }
 
+.l-header {
+	background: url(../img/onsen/header_mv.png) center center/cover no-repeat;
+	height: 500px;
+	position: relative;
+}
+
 .c-top__bg--sp {
 	display: none;
 }
@@ -566,6 +572,185 @@ body li {
 .c-content__title--guestroom {
 	left: 41.5%;
 	top: 54%;
+}
+
+.c-header__heading {
+	color: #ffffff;
+	font-family: "Shippori Mincho", serif;
+	font-size: 3rem;
+	font-size: calc(24px + 24 * (100vw - 375px) / 1065);
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+	position: absolute;
+	top: 50%;
+	transform: translate(-48%, -50%);
+	z-index: 1;
+}
+
+.c-onsen__block-title {
+	color: #2D2D2E;
+	font-family: "Shippori Mincho", serif;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 0.009375em;
+	line-height: 1.448125;
+	padding-left: 0.1rem;
+}
+
+.c-onsen__block-desc {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-bottom: 3.1rem;
+	padding-left: 0.1rem;
+	padding-top: 1rem;
+}
+
+.c-onsen__block-time {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-left: 0.1rem;
+}
+
+.c-onsen__block-maintenance {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-left: 0.1rem;
+	padding-top: 0.5rem;
+}
+
+.c-onsen__properties-title {
+	color: #2D2D2E;
+	font-family: "Shippori Mincho", serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.0041666667em;
+	line-height: 1.9166666667;
+	text-align: center;
+}
+
+.c-onsen__desc {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.c-price__content--title {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 0.003125em;
+	line-height: 1.448125;
+	position: relative;
+	text-align: center;
+}
+
+.c-price__content--title::before {
+	background: url(../img/onsen/onsen_icon.png) center center/cover no-repeat;
+	content: "";
+	height: 37.56px;
+	left: 50%;
+	position: absolute;
+	top: -65%;
+	transform: translate(-50%, -50%);
+	width: 39.14px;
+}
+
+.c-operating__hours {
+	color: #2D2D2E;
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.c-operating__time {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 41px;
+}
+
+.c-price__label {
+	color: #2D2D2E;
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.c-price__weekday-label {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 116px;
+}
+
+.c-price__weekday-details {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 116px;
+}
+
+.c-price__holiday-label {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 118px;
+}
+
+.c-price__holiday-details {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 60px;
+}
+
+.c-price__note {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-top: 20px;
 }
 
 .p-logo__wrap {
@@ -1141,6 +1326,113 @@ dialog::backdrop {
 	object-fit: cover;
 }
 
+.p-onsen__block {
+	display: flex;
+	justify-content: right;
+}
+
+.p-onsen__block:not(:first-child) {
+	margin-top: 7.8rem;
+}
+
+.p-onsen__block:nth-child(2) {
+	justify-content: left;
+}
+
+.p-onsen__block:last-child {
+	margin-top: 7.7rem;
+}
+
+.p-onsen__img {
+	max-width: 830px;
+	width: 77.64%;
+}
+
+.p-onsen__info {
+	padding-bottom: 3rem;
+	padding-left: 6%;
+	padding-right: 2rem;
+	padding-top: 13.58%;
+	width: 36%;
+}
+
+.p-onsen__info:nth-child(2) {
+	padding-left: 2.5rem;
+	padding-right: 12%;
+	padding-top: 14.2%;
+	width: 42%;
+}
+
+.p-concept__onsen--wrap {
+	margin: 0 auto;
+	padding-bottom: 146px;
+	padding-right: 40px;
+	width: 43.49%;
+}
+
+.p-onsen__content {
+	padding-bottom: 118px;
+}
+
+.p-onsen__properties {
+	border-top: 0.5px solid #2D2D2E;
+	margin: 0 auto;
+	max-width: 974px;
+	padding-top: 80px;
+	width: 67.64%;
+}
+
+.p-onsen__desc--wrap {
+	padding-bottom: 85px;
+	padding-top: 49px;
+	text-align: center;
+}
+
+.p-onsen__price {
+	background: url(../img/onsen/background.png) center center/cover no-repeat;
+	margin: 0 auto;
+	padding-top: 100px;
+	width: 1080px;
+}
+
+.p-price__wrap {
+	border-top: 0.5px solid #2D2D2E;
+	margin: 0 auto;
+	margin-top: 28px;
+	min-width: 560px;
+	padding-bottom: 100px;
+	padding-left: 12px;
+	padding-top: 30px;
+	width: 54.26%;
+}
+
+.p-operating__hours--block {
+	padding-left: 16px;
+}
+
+.p-price__list {
+	padding-left: 16px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.p-price__block--wrap {
+	display: flex;
+}
+
+.p-price__weekday--wrap {
+	position: absolute;
+	top: 18.7%;
+}
+
+.p-onsen__info--last {
+	padding-top: 13.68%;
+}
+
+.p-price__holiday__wrap {
+	padding-top: 20px;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
 
 .p-news__wrap {
@@ -1161,6 +1453,10 @@ dialog::backdrop {
 
 .p-footer__wrap {
 	gap: 20%;
+}
+
+.p-onsen__price {
+	width: 75%;
 }
 
 }
@@ -1323,6 +1619,72 @@ dialog::backdrop {
 	font-size: 24px;
 }
 
+.c-header__heading {
+	font-size: 24px;
+}
+
+.c-onsen__block-title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.0416666667em;
+	line-height: 1.4479166667;
+}
+
+.c-onsen__block-desc {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 1.89;
+}
+
+.c-operating__time {
+	display: inline;
+	margin-left: 0;
+}
+
+.c-price__label {
+	display: inherit;
+}
+
+.c-price__weekday-label {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0;
+}
+
+.c-price__weekday-details {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0px;
+}
+
+.c-price__holiday-label {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0;
+}
+
+.c-price__holiday-details {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0;
+}
+
+.c-price__note {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	line-height: 1.89;
+}
+
 .p-logo__wrap {
 	top: -1px;
 }
@@ -1439,6 +1801,31 @@ dialog::backdrop {
 
 .p-footer__sns--items .fa-3x {
 	font-size: 1.6em;
+}
+
+.p-onsen__price {
+	width: 100%;
+}
+
+.p-price__wrap {
+	min-width: 89.3%;
+	width: 89.3%;
+}
+
+.p-operating__hours--block {
+	padding-left: 0;
+}
+
+.p-price__list {
+	padding-left: 0;
+}
+
+.p-price__weekday--wrap {
+	position: inherit;
+}
+
+.p-price__detail--block {
+	margin-left: auto;
 }
 
 }

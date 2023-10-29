@@ -1,0 +1,17 @@
+@use "../global/" as global;
+
+.p-price__wrap {
+  padding-top: 30px;
+  margin-top: 28px;
+  padding-bottom: 100px;
+  width: 54.26%;
+  margin: 0 auto;
+  border-top: 0.5px solid global.$text-color;
+  padding-left: 12px;
+  min-width: 560px;
+
+  @include global.mq('sp') {
+    width: global.$sp-width;
+    min-width: global.$sp-width;
+  }
+}

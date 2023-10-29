@@ -1,0 +1,16 @@
+@use "../global/" as global;
+
+.p-onsen__block {
+  display: flex;
+  justify-content: right;
+
+  &:not(:first-child) {
+    margin-top: 7.8rem;
+  }
+  &:nth-child(2){
+    justify-content: left;
+  }
+  &:last-child{
+    margin-top: 7.7rem;
+  }
+}

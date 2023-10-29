@@ -1,0 +1,7 @@
+@use "../global/" as global;
+
+.p-price__detail--block{
+  @include global.mq('sp') {
+    margin-left: auto;
+  }
+}

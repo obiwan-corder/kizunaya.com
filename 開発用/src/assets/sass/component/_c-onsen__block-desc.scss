@@ -1,0 +1,14 @@
+@use "../global/" as global;
+
+.c-onsen__block-desc {
+  font-family: global.$main-font;
+  color: global.$text-color;
+  @include global.font(15, 400, 28.35, 1.8);
+  padding-top: 1rem;
+  padding-left: 0.1rem;
+  padding-bottom: 3.1rem;
+
+  @include global.mq('sp') {
+    @include global.font(15, 400, 28.35, 0.9);
+  }
+}

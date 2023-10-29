@@ -1,0 +1,16 @@
+@use "../global/" as global;
+
+.p-onsen__price {
+  margin: 0 auto;
+  background: url(../img/onsen/background.png) center center / cover no-repeat;
+  padding-top: 100px;
+  width: 1080px;
+
+  @include global.mq('tab') {
+    width: global.$pc-width;
+  }
+
+  @include global.mq('sp') {
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+@use "../global/" as global;
+
+.c-onsen__properties-title {
+  @include global.font(24, 400, 46, 0.1);
+  font-family: global.$title-font;
+  color: global.$text-color;
+  text-align: center;
+}
