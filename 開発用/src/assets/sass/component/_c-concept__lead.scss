@@ -5,4 +5,7 @@
   font-family: global.$main-font;
   color: global.$text-color;
   text-align: center;
+  @include global.mq('sp') {
+    line-height: 2.33;
+  }
 }

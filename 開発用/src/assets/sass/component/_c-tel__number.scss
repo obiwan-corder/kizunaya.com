@@ -1,0 +1,14 @@
+@use "../global/" as global;
+
+.c-tel__number{
+  font-family: global.$main-font;
+  @include global.font(14, 300, 20.27, 1.69);
+  color: global.$white-color;
+  padding-left: 4px;
+@include global.mq('sp') {
+    padding-left: 0;
+    text-align: center;
+    @include global.font(15, 400, 28.35, 1.8);
+    padding-top: 12px;
+  }
+}

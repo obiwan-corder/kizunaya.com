@@ -1,0 +1,72 @@
+@use "../global/" as global;
+
+.p-reservation {
+    background: url(../img/common/reservation-bg.jpg) center center / cover no-repeat;
+    width: 100%;
+    position: relative;
+    color: global.$white-color;
+    padding-top: 134px;
+    padding-bottom: 201px;
+    margin-bottom: 120px;
+    font-family: global.$main-font;
+
+    @include global.mq(sp){
+        padding-top: 49.5px;
+        padding-bottom: 51px;
+        margin-bottom: 20px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.73);
+    }
+}
+.p-reservation .l-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.p-reservation__title {
+    font-size: calc(24px + (36 - 24) * ((100vw - 375px)) / (1440 - 375));
+    line-height: 2.023;
+    letter-spacing: calc(4.68 / 36 * 1em);
+    padding-bottom: 28px;
+    @include global.mq(sp){
+        letter-spacing: calc(3.12 / 24 * 1em);
+        padding-bottom: 20px;
+    }
+}
+.p-reservation__text {
+    margin-bottom: 16px;
+    @include global.font(24,400,48.552,3.12);
+
+    @include global.mq(sp){
+        padding-bottom: 15px;
+        @include global.font(14,400,28.322,1.82);
+    }
+
+    &--small{
+        @include global.font(18,400,36.414,2.34);
+
+        @include global.mq(sp){
+            @include global.font(14,400,28.322,1.82);
+        }
+    }
+}
+.c-reservation-btn {
+    border-radius: 2px;
+    border: 1px solid #fff;
+    padding: 1em 4.5em;
+    display: inline-block;
+    margin-bottom: 12px;
+    @include global.font(24,400,48.552,3.12);
+
+    @include global.mq(sp){
+        @include global.font(14,400,28.322,1.82);
+        padding-bottom: 5px;
+    }
+}

@@ -1,5 +1,15 @@
 @use "../global/" as global;
 
 .l-footer {
+  background: url(../img/top/footer_bg.png) center center / cover no-repeat;
+  position: relative;
+  height: 500px;
+  padding-top: 104px;
+  margin-top: 767px;
 
+  @include global.mq('sp') {
+    padding-top: 40px;
+    margin-top: 209px;
+    height: auto;
+  }
 }

@@ -9,6 +9,26 @@
     right: 0;
     top: 430px;
     z-index: 10;
+    @include global.mq('sp'){
+        width: 57px;
+        height: 160px;
+        top: 76px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease 0s;
+    }
+    &:hover::before{
+        opacity: 0.7;
+    }
 }
 
 .c-search-btn__link{
@@ -20,4 +40,7 @@
     font-size: 24px;
     color: global.$white-color;
     font-family: global.$text-font;
+    @include global.mq('sp'){
+        font-size: 14px;
+    }
 }
