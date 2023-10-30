@@ -14,14 +14,18 @@ body {
   }
 }
 
-.is-sp{
-  @include global.mq('pc'){
+.is-sp {
+  @include global.mq("pc") {
     display: none;
   }
 
-.is-pc{
-  @include global.mq('sp'){
-    display: none;
+  .is-pc {
+    @include global.mq("sp") {
+      display: none;
+    }
   }
 }
+
+header{
+  overflow: hidden;
 }

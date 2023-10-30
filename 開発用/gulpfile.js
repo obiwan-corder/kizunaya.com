@@ -23,7 +23,6 @@ function compileSass(){
   .pipe(gulp.dest("./public/assets/css/"))
 }
 
-
 function watch() {
   gulp.watch("./src/assets/sass/**/*.scss", gulp.series(compileSass, browserReload));
   gulp.watch("./src/assets/js/**/*.js", gulp.series(minJS, browserReload));

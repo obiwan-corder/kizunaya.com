@@ -10,6 +10,10 @@ body li {
 	list-style: none;
 }
 
+header {
+	overflow: hidden;
+}
+
 .l-lower-header {
 	aspect-ratio: 1440/500;
 	width: 100%;
@@ -22,14 +26,14 @@ body li {
 
 .l-lower-header__title {
 	color: #ffffff;
-	font-size: 3rem;
+	font-size: calc(24px + 24 * (100vw - 768px) / 672);
 	letter-spacing: 0.13em;
 	line-height: 1.4479166667;
 	text-align: center;
 }
 
 #guest-room .l-lower-header {
-	background: url(../../../../public/assets/img/guest-room/header.jpg) no-repeat;
+	background: url(../../assets/img/guest-room/header.jpg) no-repeat;
 	background-size: contain;
 }
 
@@ -179,14 +183,16 @@ body li {
 	text-align: center;
 	top: 0;
 	width: 110px;
+	z-index: 11;
 }
 
 .c-drawer-btn__bar {
 	background-color: #fff;
 	display: block;
-	height: 1px;
+	height: 2px;
 	margin: 0 auto;
 	position: relative;
+	transform: scaleY(0.5) translateY(1px);
 	width: 33.45px;
 }
 
@@ -197,12 +203,32 @@ body li {
 	height: inherit;
 	left: 0;
 	position: absolute;
-	top: -1em;
+	top: -29px;
+	transition: all 0.5s;
 	width: inherit;
 }
 
 .c-drawer-btn__bar::after {
-	top: 1em;
+	top: 29px;
+}
+
+.js-active {
+	background-color: transparent;
+}
+
+.js-active .c-drawer-btn__bar {
+	background-color: transparent;
+	width: 67px;
+}
+
+.js-active .c-drawer-btn__bar::before {
+	background-color: #fff;
+	transform: translateY(29px) rotate(-64deg);
+}
+
+.js-active .c-drawer-btn__bar::after {
+	background-color: #fff;
+	transform: translateY(-29px) rotate(64deg);
 }
 
 .c-main-message {
@@ -949,7 +975,58 @@ body li {
 }
 
 .p-gnav {
-	display: none;
+	background: #2a2926;
+	color: #ffffff;
+	display: flex;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	height: 723px;
+	opacity: 0;
+	overflow: hidden;
+	padding: 110px 302px 151px 84px;
+	pointer-events: none;
+	position: absolute;
+	right: -120%;
+	top: 0;
+	transition: all 1s;
+	width: 900px;
+	z-index: -1;
+}
+
+.js-panelactive {
+	display: flex;
+	justify-content: space-between;
+	opacity: 1;
+	pointer-events: visible;
+	position: fixed;
+	right: 0;
+	z-index: 10;
+}
+
+.js-panelactive .p-gnav__nav-list {
+	opacity: 1;
+	transition: all 0.3s ease 0s;
+}
+
+.p-gnav__logo-img {
+	display: block;
+	height: 76px;
+	margin: 0 auto 5px;
+	width: 66px;
+}
+
+.p-gnav__nav-list {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	opacity: 0;
+	padding-bottom: 70px;
+}
+
+.p-nav-anm {
+	animation-delay: 1s;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-name: navAnm;
+	animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .p-access {
@@ -1143,10 +1220,108 @@ dialog::backdrop {
 	object-fit: cover;
 }
 
+
+.p-reservation {
+	background: url(../img/common/reservation-bg.jpg) center center/cover no-repeat;
+	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	margin-bottom: 120px;
+	padding-bottom: 201px;
+	padding-top: 134px;
+	position: relative;
+	width: 100%;
+}
+
+.p-reservation::after {
+	background-color: rgba(0, 0, 0, 0.73);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-reservation .l-inner {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.p-reservation__title {
+	font-size: calc(24px + 12 * (100vw - 375px) / 1065);
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	padding-bottom: 28px;
+}
+
+.p-reservation__text {
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	margin-bottom: 16px;
+}
+
+.p-reservation__text--small {
+	font-size: 1.125rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+}
+
+.c-reservation-btn {
+	border: 1px solid #fff;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	margin-bottom: 12px;
+	padding: 1em 4.5em;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
+
+.c-drawer-btn {
+	height: 51px;
+	right: 20px;
+	width: 66px;
+}
+
+.c-drawer-btn__bar {
+	width: 20px;
+}
+
+.c-drawer-btn__bar::before,
+.c-drawer-btn__bar::after {
+	top: -17.6px;
+}
+
+.c-drawer-btn__bar::after {
+	top: 17.6px;
+}
+
+.js-active .c-drawer-btn__bar {
+	width: 33.45px;
+}
+
+.js-active .c-drawer-btn__bar::before {
+	transform: translateY(17.6px) rotate(-64deg);
+}
+
+.js-active .c-drawer-btn__bar::after {
+	transform: translateY(-17.6px) rotate(64deg);
+}
 
 .p-news__wrap {
 	width: 639px;
+}
+
+.p-gnav {
+	height: 100vh;
+	padding: 109px 27vw 154px 10vw;
+	width: 100%;
 }
 
 .p-content__text {
@@ -1179,6 +1354,22 @@ dialog::backdrop {
 
 .is-sp .is-pc {
 	display: none;
+}
+
+.l-lower-header {
+	aspect-ratio: unset;
+	height: 75vh;
+}
+
+.l-lower-header__title {
+	font-size: 1.5rem;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+}
+
+#guest-room .l-lower-header {
+	background-image: url(../../assets/img/guest-room/header_sp.jpg);
+	background-size: cover;
 }
 
 .l-inner {
@@ -1233,6 +1424,39 @@ dialog::backdrop {
 
 .c-search-btn__link {
 	font-size: 14px;
+
+}
+
+.c-drawer-btn {
+	height: 51px;
+	right: 20px;
+	width: 66px;
+}
+
+.c-drawer-btn__bar {
+	width: 20px;
+}
+
+.c-drawer-btn__bar::before,
+.c-drawer-btn__bar::after {
+	top: -17.6px;
+}
+
+.c-drawer-btn__bar::after {
+	top: 17.6px;
+}
+
+.js-active .c-drawer-btn__bar {
+	width: 33.45px;
+}
+
+.js-active .c-drawer-btn__bar::before {
+	transform: translateY(17.6px) rotate(-64deg);
+}
+
+.js-active .c-drawer-btn__bar::after {
+	transform: translateY(-17.6px) rotate(64deg);
+
 }
 
 .c-concept__lead {
@@ -1529,6 +1753,16 @@ dialog::backdrop {
 	margin-top: 15px;
 }
 
+
+.p-gnav {
+	height: 100vh;
+	padding: 109px 17% 154px 9%;
+	width: 100%;
+}
+
+.p-gnav__nav-list {
+	font-size: 1.1rem;
+}
 .p-access__map {
 	align-items: flex-start;
 	flex-direction: column;
@@ -1622,6 +1856,40 @@ dialog::backdrop {
 	font-size: 1.6em;
 }
 
+.p-reservation {
+	margin-bottom: 20px;
+	padding-bottom: 51px;
+	padding-top: 49.5px;
+}
+
+.p-reservation__title {
+	letter-spacing: 0.13em;
+	padding-bottom: 20px;
+}
+
+.p-reservation__text {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	padding-bottom: 15px;
+}
+
+.p-reservation__text--small {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+}
+
+.c-reservation-btn {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	padding-bottom: 5px;
+}
+
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
@@ -1661,6 +1929,20 @@ dialog::backdrop {
 	height: 0;
 	opacity: 0;
 	top: 180px;
+}
+
+}
+
+@keyframes navAnm {
+
+0% {
+	filter: blur(15px);
+	opacity: 0;
+}
+
+100% {
+	filter: blur(0);
+	opacity: 1;
 }
 
 }

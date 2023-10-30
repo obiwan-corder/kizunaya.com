@@ -7,17 +7,32 @@
     display: grid;
     align-items: center;
     position: relative;
+
+    @include global.mq(sp) {
+        height: 75vh;
+        aspect-ratio: unset;
+    }
 }
 .l-lower-header__title {
     color: global.$white-color;
-    // @include font(48, 400, 69.5, 6.24);
-    font-size: calc(48 / 16 * 1rem);
+    font-size: calc(24px + (48 - 24) * ((100vw - 768px)) / (1440 - 768));
     line-height: calc(69.5 / 48);
-    letter-spacing: calc(6.24/ 48 * 1em);
+    letter-spacing: calc(6.24 / 48 * 1em);
     text-align: center;
+
+    @include global.mq(sp) {
+        font-size: calc(24 / 16 * 1rem);
+        line-height: calc(34.75 / 24);
+        letter-spacing: calc(3.12 / 24 * 1em);
+    }
 }
 
 #guest-room .l-lower-header {
-    background: url(../../../../public/assets/img/guest-room/header.jpg) no-repeat;
+    background: url(../../assets/img/guest-room/header.jpg) no-repeat;
     background-size: contain;
+
+    @include global.mq(sp) {
+        background-image: url(../../assets/img/guest-room/header_sp.jpg);
+        background-size: cover;
+    }
 }
