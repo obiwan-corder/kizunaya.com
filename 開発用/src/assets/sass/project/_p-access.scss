@@ -7,6 +7,10 @@
 .p-access__map {
     display: flex;
     align-items: center;
+    @include global.mq('sp'){
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 }
 
@@ -29,21 +33,45 @@
 .p-access__map__address {
     margin-left: 42px;
     letter-spacing: 1.8px;
+    white-space: nowrap;
+    @include global.mq('sp'){
+        margin-left: 0;
+        text-align: left;
+        letter-spacing: 1.68px;
+        font-size: 14px;
+        line-height: calc(26.463 / 14 );
+    }
 }
 
 .p-access__route {
     margin-top: 80px;
     line-height: calc( 31.26 / 20 );
+    @include global.mq('sp'){
+        margin-top: 40px;
+        line-height: calc(28.134 / 18 );
+    }
     dt{
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 7.3px;
+        @include global.mq('sp'){
+            font-size: 18px;
+            letter-spacing: 6.57px;
+        }
         &:not(:first-of-type){
             margin-top: 34px;
+            @include global.mq('sp'){
+                margin-top: 20px;
+            }
         }
     }
     dd{
         letter-spacing: 5.475px;
+        @include global.mq('sp'){
+            letter-spacing: 1.755px;
+            font-size: 13px;
+            margin-left: 14px;
+        }
     }
 }
 

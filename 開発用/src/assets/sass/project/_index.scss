@@ -7,7 +7,7 @@
 @use "p-content";
 @use "p-content__wrap";
 @use "spend";
-@use "./p-gnav";
+@use "p-gnav";
 @use "p-access";
 @use "p-content__block";
 @use "p-content__text";
@@ -37,3 +37,6 @@
 @use "p-price__detail--block";
 @use "p-onsen__info--last";
 @use "p-price__holiday__wrap";
+@use "p-dialog";
+@use "p-reservation";
+

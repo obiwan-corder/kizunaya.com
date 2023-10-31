@@ -9,6 +9,49 @@
         <link rel="stylesheet" href="../public/assets/css/style.min.css">
     </head>
     <body>
+        <header class="l-lower-header fadeInAnime" id="header">
+            <h1 class="l-lower-header__title">客 室</h1>
+            <!-- ハンバーガーメニュー -->
+            <div class="c-drawer-btn l-lower-headerr__btn">
+                <span class="c-drawer-btn__bar"></span>
+            </div>
+            <nav class="p-gnav">
+                <a class="p-gnav__logo" href="./index.html">
+                    <p class="p-gnav__logo-img">
+                        <img src="./assets/img/common/logo-white.png" alt="きずなや">
+                    </p>
+                    <p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
+                </a>
+                <ul class="p-gnav__nav js-link" id="gnav">
+                    <li class="p-gnav__nav-list">
+                        <a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
+                            温泉
+                        </a>
+                    </li>
+                    <li class="p-gnav__nav-list">
+                        <a href="./guest-room.html" class="p-gnav__nav-link g-nav-anm">
+                            客室
+                        </a>
+                    </li>
+                    <li class="p-gnav__nav-list">
+                        <a href="./cooking.html" class="p-gnav__nav-link g-nav-anm">
+                            料理
+                        </a>
+                    </li>
+                    <li class="p-gnav__nav-list">
+                        <a href="./spend.html" class="p-gnav__nav-link g-nav-anm">
+                            過ごし方
+                        </a>
+                    </li>
+                    <li class="p-gnav__nav-list">
+                        <a href="./access.html" class="p-gnav__nav-link g-nav-anm">
+                            アクセス
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /.l-header -->
         <button class="c-search-btn">
             <a href="#" class="c-search-btn__link">空 室 検 索</a>
         </button>
@@ -25,12 +68,54 @@
                 </div>
                 <dl class="p-access__route">
                     <dt>車でお越しの場合</dt>
-                    <dd>東名厚木インターから小田原・熱海経由　約2時間30分</dd>
+                    <dd>東名厚木インターから小田原・熱海経由　<br class="is-sp">約2時間30分</dd>
                     <dt>電車でお越しの場合</dt>
-                    <dd>東京方面から　：小田急線利用　JR熱海駅乗換　→ 伊豆急下田駅　約3時間30分</dd>
-                    <dd>名古屋方面から：新幹線利用　　JR熱海駅乗換　→ 伊豆急下田駅　約3時間</dd>
+                    <dd>東京方面から　：小田急線利用　<br class="is-sp">JR熱海駅乗換　→ 伊豆急下田駅　約3時間30分</dd>
+                    <dd>名古屋方面から：新幹線利用　　<br class="is-sp">JR熱海駅乗換　→ 伊豆急下田駅　約3時間</dd>
                 </dl>
             </div>
         </main>
+        <section class="p-reservation">
+            <div class="l-inner">
+                <h2 class="p-reservation__title">ご予約</h2>
+                <p class="p-reservation__text">
+                    ご予約は専用フォームにて承ります
+                </p>
+                <a class="c-reservation-btn" href="#">ご予約はこちら</a>
+                <p class="p-reservation__text p-reservation__text--small">
+                    24時間受付中
+                </p>
+            </div>
+        </section>
+        <footer class="l-footer">
+            <div class="p-footer__wrap">
+              <div class="p-footer__info">
+                <div class="c-footer__logo">
+                  <img src="assets/img/top/logo.png" alt="KIZUNAYAロゴ">
+                </div>
+                <h3 class="c-mv__title c-mv__title--footer">KIZUNAYA</h3>
+                <p class="c-address__number">
+                  〒123-4567</p>
+                <p class="c-address">静岡県下田市白浜1-1</p>
+                <p class="c-tel__number">TEL 0123-45-6789</p>
+              </div>
+              <div class="p-footer__nav--wrap">
+                <div class="p-footer__link--nav">
+                  <a class="c-footer__nav--item" href="#"><span>ー</span>　温泉</a>
+                  <a class="c-footer__nav--item" href="#"><span>ー</span>　料理</a>
+                  <a class="c-footer__nav--item" href="#"><span>ー</span>　客室</a>
+                </div>
+                <div class="p-footer__link--nav">
+                  <a class="c-footer__nav--item" href="#"><span>ー</span>　過ごし方</a>
+                  <a class="c-footer__nav--item" href="#"><span>ー</span>　アクセス</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-footer__sns--items">
+              <a href="#"><i class="fa-brands fa-facebook-f fa-3x" style="color:#ffffff;"></i></a>
+              <a href=""><i class="fa-brands fa-instagram fa-3x" style="color:#ffffff;"></i></a>
+            </div>
+            <p class="c-copyright">©︎2023 KIZUNAYA</p>
+          </footer>
     </body>
 </html>

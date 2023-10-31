@@ -6,7 +6,7 @@
   color: global.$white-color;
   padding-left: 4px;
   padding-top: 5px;
-  @include global.mq('sp') {
+ @include global.mq('sp') {
     display: none;
   }
 }

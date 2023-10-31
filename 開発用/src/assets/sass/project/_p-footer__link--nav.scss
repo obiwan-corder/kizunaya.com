@@ -4,6 +4,7 @@
   display: inline-block;
   padding-right: 2px;
 
+
   @include global.mq('sp') {
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@
 }
 
 .p-footer__link--nav:first-child {
+
   margin-right: 112px;
   @include global.mq('sp') {
     margin-right: 0;
