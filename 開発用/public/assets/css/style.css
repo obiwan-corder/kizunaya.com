@@ -1220,7 +1220,6 @@ dialog::backdrop {
 	object-fit: cover;
 }
 
-
 .p-reservation {
 	background: url(../img/common/reservation-bg.jpg) center center/cover no-repeat;
 	color: #ffffff;
@@ -1424,7 +1423,6 @@ dialog::backdrop {
 
 .c-search-btn__link {
 	font-size: 14px;
-
 }
 
 .c-drawer-btn {
@@ -1456,7 +1454,6 @@ dialog::backdrop {
 
 .js-active .c-drawer-btn__bar::after {
 	transform: translateY(-17.6px) rotate(64deg);
-
 }
 
 .c-concept__lead {
@@ -1753,7 +1750,6 @@ dialog::backdrop {
 	margin-top: 15px;
 }
 
-
 .p-gnav {
 	height: 100vh;
 	padding: 109px 17% 154px 9%;
@@ -1763,6 +1759,7 @@ dialog::backdrop {
 .p-gnav__nav-list {
 	font-size: 1.1rem;
 }
+
 .p-access__map {
 	align-items: flex-start;
 	flex-direction: column;
