@@ -1161,153 +1161,58 @@ header {
 }
 
 .p-gnav {
-	display: none;
-
-@media (max-width: 767px) {
-
-.border-line {
-	display: none;
+	background: #2a2926;
+	color: #ffffff;
+	display: flex;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	height: 723px;
+	opacity: 0;
+	overflow: hidden;
+	padding: 110px 302px 151px 84px;
+	pointer-events: none;
+	position: absolute;
+	right: -120%;
+	top: 0;
+	transition: all 1s;
+	width: 900px;
+	z-index: -1;
 }
 
-.p-spend-slide {
-	align-items: center;
-	flex-direction: column;
-	padding: 85px 22px 110px 22px;
-	width: 100%;
+.js-panelactive {
+	display: flex;
+	justify-content: space-between;
+	opacity: 1;
+	pointer-events: visible;
+	position: fixed;
+	right: 0;
+	z-index: 10;
 }
 
-.p-spend-slide__wrapper {
-	align-items: center;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	row-gap: 60px;
+.js-panelactive .p-gnav__nav-list {
+	opacity: 1;
+	transition: all 0.3s ease 0s;
 }
 
-.p-spend-slide__block {
-	justify-content: center;
+.p-gnav__logo-img {
+	display: block;
+	height: 76px;
+	margin: 0 auto 5px;
+	width: 66px;
 }
 
-.p-spend-slide__block::after {
-	display: none;
+.p-gnav__nav-list {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	opacity: 0;
+	padding-bottom: 70px;
 }
 
-.p-spend-slide__block1 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card1 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__time {
-	font-size: 20px;
-	letter-spacing: 2.4px;
-	line-height: 1.89025;
-}
-
-.p-spend-slide__head {
-	font-size: 20px;
-	letter-spacing: 2.4px;
-	line-height: 1.89025;
-}
-
-.p-spend-slide__block__img {
-	margin-top: 20px;
-}
-
-.p-spend-slide__accent {
-	display: none;
-}
-
-.p-spend-slide__block2 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card2 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block3 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card3 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block4 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card4 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block5 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card5 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block6 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card6 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block7 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card7 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__block8 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card8 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-slide__card9 {
-	margin-right: 0;
-	width: 100%;
-}
-
-.p-spend-tour {
-	padding-top: 39px;
-}
-
-.p-spend-tour__title {
-	font-size: 24px;
-	line-height: 1.4583333333;
-}
-
-.p-spend-tour__cards {
-	grid-template-columns: 1fr;
-	margin-top: 34px;
-	row-gap: 40px;
-}
-
-.spend-tour__head {
-	font-size: 20px;
-	line-height: 1.45;
-	margin-top: 15px;
+.p-nav-anm {
+	animation-delay: 1s;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-name: navAnm;
+	animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .p-access {
@@ -1444,6 +1349,113 @@ header {
 	font-size: 2.4em;
 }
 
+.p-onsen__block {
+	display: flex;
+	justify-content: right;
+}
+
+.p-onsen__block:not(:first-child) {
+	margin-top: 7.8rem;
+}
+
+.p-onsen__block:nth-child(2) {
+	justify-content: left;
+}
+
+.p-onsen__block:last-child {
+	margin-top: 7.7rem;
+}
+
+.p-onsen__img {
+	max-width: 830px;
+	width: 77.64%;
+}
+
+.p-onsen__info {
+	padding-bottom: 3rem;
+	padding-left: 6%;
+	padding-right: 2rem;
+	padding-top: 13.58%;
+	width: 36%;
+}
+
+.p-onsen__info:nth-child(2) {
+	padding-left: 2.5rem;
+	padding-right: 12%;
+	padding-top: 14.2%;
+	width: 42%;
+}
+
+.p-concept__onsen--wrap {
+	margin: 0 auto;
+	padding-bottom: 146px;
+	padding-right: 40px;
+	width: 43.49%;
+}
+
+.p-onsen__content {
+	padding-bottom: 118px;
+}
+
+.p-onsen__properties {
+	border-top: 0.5px solid #2D2D2E;
+	margin: 0 auto;
+	max-width: 974px;
+	padding-top: 80px;
+	width: 67.64%;
+}
+
+.p-onsen__desc--wrap {
+	padding-bottom: 85px;
+	padding-top: 49px;
+	text-align: center;
+}
+
+.p-onsen__price {
+	background: url(../img/onsen/background.png) center center/cover no-repeat;
+	margin: 0 auto;
+	padding-top: 100px;
+	width: 1080px;
+}
+
+.p-price__wrap {
+	border-top: 0.5px solid #2D2D2E;
+	margin: 0 auto;
+	margin-top: 28px;
+	min-width: 560px;
+	padding-bottom: 100px;
+	padding-left: 12px;
+	padding-top: 30px;
+	width: 54.26%;
+}
+
+.p-operating__hours--block {
+	padding-left: 16px;
+}
+
+.p-price__list {
+	padding-left: 16px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.p-price__block--wrap {
+	display: flex;
+}
+
+.p-price__weekday--wrap {
+	position: absolute;
+	top: 18.7%;
+}
+
+.p-onsen__info--last {
+	padding-top: 13.68%;
+}
+
+.p-price__holiday__wrap {
+	padding-top: 20px;
+}
+
 .p-dialog {
 	align-items: center;
 	background-color: rgba(96, 93, 93, 0);
@@ -1499,6 +1511,66 @@ dialog::backdrop {
 	height: inherit;
 	-o-object-fit: cover;
 	object-fit: cover;
+}
+
+.p-reservation {
+	background: url(../img/common/reservation-bg.jpg) center center/cover no-repeat;
+	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	margin-bottom: 120px;
+	padding-bottom: 201px;
+	padding-top: 134px;
+	position: relative;
+	width: 100%;
+}
+
+.p-reservation::after {
+	background-color: rgba(0, 0, 0, 0.73);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-reservation .l-inner {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.p-reservation__title {
+	font-size: calc(24px + 12 * (100vw - 375px) / 1065);
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	padding-bottom: 28px;
+}
+
+.p-reservation__text {
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	margin-bottom: 16px;
+}
+
+.p-reservation__text--small {
+	font-size: 1.125rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+}
+
+.c-reservation-btn {
+	border: 1px solid #fff;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	margin-bottom: 12px;
+	padding: 1em 4.5em;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -1558,6 +1630,18 @@ dialog::backdrop {
 
 .p-footer__wrap {
 	gap: 20%;
+}
+
+.p-onsen__price {
+	width: 75%;
+}
+
+}
+
+@media (min-width: 1280px) {
+
+.is-sp {
+	display: none;
 }
 
 }
@@ -2130,6 +2214,65 @@ dialog::backdrop {
 
 .p-footer__sns--items .fa-3x {
 	font-size: 1.6em;
+}
+
+.p-onsen__price {
+	width: 100%;
+}
+
+.p-price__wrap {
+	min-width: 89.3%;
+	width: 89.3%;
+}
+
+.p-operating__hours--block {
+	padding-left: 0;
+}
+
+.p-price__list {
+	padding-left: 0;
+}
+
+.p-price__weekday--wrap {
+	position: inherit;
+}
+
+.p-price__detail--block {
+	margin-left: auto;
+}
+
+.p-reservation {
+	margin-bottom: 20px;
+	padding-bottom: 51px;
+	padding-top: 49.5px;
+}
+
+.p-reservation__title {
+	letter-spacing: 0.13em;
+	padding-bottom: 20px;
+}
+
+.p-reservation__text {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	padding-bottom: 15px;
+}
+
+.p-reservation__text--small {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+}
+
+.c-reservation-btn {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.13em;
+	line-height: 2.023;
+	padding-bottom: 5px;
 }
 
 }
