@@ -37,6 +37,16 @@ header {
 	background-size: contain;
 }
 
+#spend-page .l-lower-header {
+	background: url(../../assets/img/spend/header.jpg) no-repeat;
+	background-size: contain;
+}
+
+#access .l-lower-header {
+	background: url(../../assets/img/access/header.jpg) no-repeat;
+	background-size: contain;
+}
+
 .l-inner {
 	margin: 0 auto;
 	max-width: 100%;
@@ -1220,7 +1230,6 @@ dialog::backdrop {
 	object-fit: cover;
 }
 
-
 .p-reservation {
 	background: url(../img/common/reservation-bg.jpg) center center/cover no-repeat;
 	color: #ffffff;
@@ -1372,6 +1381,16 @@ dialog::backdrop {
 	background-size: cover;
 }
 
+#spend-page .l-lower-header {
+	background-image: url(../../assets/img/spend/header_sp.jpg);
+	background-size: cover;
+}
+
+#access .l-lower-header {
+	background-image: url(../../assets/img/access/header_sp.jpg);
+	background-size: cover;
+}
+
 .l-inner {
 	width: 89.3%;
 }
@@ -1424,7 +1443,6 @@ dialog::backdrop {
 
 .c-search-btn__link {
 	font-size: 14px;
-
 }
 
 .c-drawer-btn {
@@ -1456,7 +1474,6 @@ dialog::backdrop {
 
 .js-active .c-drawer-btn__bar::after {
 	transform: translateY(-17.6px) rotate(64deg);
-
 }
 
 .c-concept__lead {
@@ -1753,7 +1770,6 @@ dialog::backdrop {
 	margin-top: 15px;
 }
 
-
 .p-gnav {
 	height: 100vh;
 	padding: 109px 17% 154px 9%;
@@ -1763,6 +1779,7 @@ dialog::backdrop {
 .p-gnav__nav-list {
 	font-size: 1.1rem;
 }
+
 .p-access__map {
 	align-items: flex-start;
 	flex-direction: column;
