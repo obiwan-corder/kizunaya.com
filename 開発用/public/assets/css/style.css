@@ -37,6 +37,16 @@ header {
 	background-size: contain;
 }
 
+#spend-page .l-lower-header {
+	background: url(../../assets/img/spend/header.jpg) no-repeat;
+	background-size: contain;
+}
+
+#access .l-lower-header {
+	background: url(../../assets/img/access/header.jpg) no-repeat;
+	background-size: contain;
+}
+
 .l-inner {
 	margin: 0 auto;
 	max-width: 100%;
@@ -1368,6 +1378,16 @@ dialog::backdrop {
 
 #guest-room .l-lower-header {
 	background-image: url(../../assets/img/guest-room/header_sp.jpg);
+	background-size: cover;
+}
+
+#spend-page .l-lower-header {
+	background-image: url(../../assets/img/spend/header_sp.jpg);
+	background-size: cover;
+}
+
+#access .l-lower-header {
+	background-image: url(../../assets/img/access/header_sp.jpg);
 	background-size: cover;
 }
 
