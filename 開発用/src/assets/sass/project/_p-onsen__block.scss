@@ -6,11 +6,31 @@
 
   &:not(:first-child) {
     margin-top: 7.8rem;
+
+    @include global.mq('sp') {
+      margin-top: 1.8rem;
+    }
   }
-  &:nth-child(2){
+
+  &:nth-child(2) {
     justify-content: left;
+
+    @include global.mq('sp') {
+      display: block;
+    }
   }
-  &:last-child{
+
+  &:last-child {
     margin-top: 7.7rem;
+
+    @include global.mq('sp') {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &:first-child {
+    @include global.mq('sp') {
+      flex-direction: column-reverse;
+    }
   }
 }

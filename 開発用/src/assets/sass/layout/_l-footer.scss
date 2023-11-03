@@ -4,12 +4,11 @@
   background: url(../img/top/footer_bg.png) center center / cover no-repeat;
   position: relative;
   height: 500px;
-  padding-top: 104px;
-  margin-top: 767px;
+  padding-top: 120px;
 
   @include global.mq('sp') {
     padding-top: 40px;
-    margin-top: 209px;
+    margin-top: 20px;
     height: auto;
   }
 }

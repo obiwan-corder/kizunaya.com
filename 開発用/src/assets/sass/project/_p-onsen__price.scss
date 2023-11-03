@@ -5,6 +5,7 @@
   background: url(../img/onsen/background.png) center center / cover no-repeat;
   padding-top: 100px;
   width: 1080px;
+  margin-bottom: 120px;
 
   @include global.mq('tab') {
     width: global.$pc-width;
@@ -12,5 +13,7 @@
 
   @include global.mq('sp') {
     width: 100%;
+    margin-bottom: 20px;
+    padding-top: 56px;
   }
 }

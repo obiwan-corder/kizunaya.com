@@ -3,4 +3,8 @@
 
 .p-onsen__content {
   padding-bottom: 118px;
+
+  @include global.mq('sp') {
+    padding-bottom: 60px;
+  }
 }

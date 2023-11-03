@@ -9,5 +9,6 @@
 
   @include global.mq('sp') {
     @include global.font(14, 400, 26.46, 0.56);
+    padding-left: 0;
   }
 }

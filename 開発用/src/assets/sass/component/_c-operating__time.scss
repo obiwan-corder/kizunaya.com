@@ -7,7 +7,7 @@
   @include global.font(16, 400, 30.24, 1.92);
 
   @include global.mq('sp') {
-    display: inline;
+    display: block;
     margin-left: 0;
   }
 }

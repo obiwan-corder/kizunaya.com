@@ -3,4 +3,8 @@
 .p-onsen__img {
   max-width: 830px;
   width: 77.64%;
+
+  @include global.mq('sp') {
+    width: 100%;
+  }
 }
