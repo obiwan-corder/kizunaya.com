@@ -5,74 +5,163 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<title>絆屋</title>
+	<title>温泉ページ</title>
 	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Hind:wght@700&family=Kiwi+Maru&family=Noto+Sans+JP&family=Satisfy&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Hind:wght@700&family=Kiwi+Maru&family=Noto+Sans+JP&family=Satisfy&family=Shippori+Mincho:wght@400;700;800&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/animate.css">
+	<script src="./assets/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 
-<body></body>
-<header>
-	<h1>温 泉</h1>
-</header>
-<div class="p-concept">
-	<div class="p-concept__wrap">
-		<p class="c-concept__lead">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-		</p>
+<body>
+	<header class="l-header wow animated fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+		<h1 class="c-header__heading">温 泉</h1>
+		<!-- ハンバーガーメニュー -->
+		<div class="c-drawer-btn l-lower-headerr__btn">
+			<span class="c-drawer-btn__bar"></span>
+		</div>
+		<nav class="p-gnav">
+			<a class="p-gnav__logo" href="./index.html">
+				<p class="p-gnav__logo-img">
+					<img src="./assets/img/common/logo-white.png" alt="きずなや">
+				</p>
+				<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
+			</a>
+			<ul class="p-gnav__nav js-link" id="gnav">
+				<li class="p-gnav__nav-list">
+					<a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
+						温泉
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./guest-room.html" class="p-gnav__nav-link g-nav-anm">
+						客室
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./cooking.html" class="p-gnav__nav-link g-nav-anm">
+						料理
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./spend.html" class="p-gnav__nav-link g-nav-anm">
+						過ごし方
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./access.html" class="p-gnav__nav-link g-nav-anm">
+						アクセス
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<button class="c-search-btn">
+		<a href="#" class="c-search-btn__link">空 室 検 索</a>
+	</button>
+	<div class="p-concept">
+		<div class="p-concept__wrap p-concept__onsen--wrap">
+			<p class="c-concept__lead wow animated fadeInUp" data-wow-delay="1s" data-wow-duration="2s">
+				広い海の近くに位置する当館。<br>
+				どの温泉からも自然を感じることができます。<br>
+				波の音色をBGMに、特別な時間を心ゆくまでご堪能ください。
+			</p>
+		</div>
 	</div>
-	<div class="p-onsen__content">
+	<div class="p-onsen__content l-inner">
 		<div class="p-onsen__content--wrap">
-			<div class="p-onsen__block">
+			<div class="p-onsen__block wow animated fadeInUp" data-wow-delay="1s">
 				<div class="p-onsen__info">
-					<h3 class="p-onsen__block-title">ヒノキ湯</h3>
-					<p class="p-onsen__block-desc">木の温もりに囲まれた半露天風呂。流れる風が四季の香りを運びます。</p>
-					<p class="p-onsen__block-time">利用時間　24時間</p>
-					<p class="p-onsen__block-maintenance">※9:00~10:00メンテナンスが入ります。</p>
+					<h3 class="c-onsen__block-title">ヒノキ湯</h3>
+					<p class="c-onsen__block-desc">木の温もりに囲まれた半露天風呂。流れる風が四季の香りを運びます。</p>
+					<p class="c-onsen__block-time">利用時間　24時間</p>
+					<p class="c-onsen__block-maintenance">※9:00~10:00メンテナンスが入ります。</p>
 				</div>
 				<div class="p-onsen__img">
-					<img src="./assets/img/top/onsen_1" alt="ヒノキ湯">
+					<img src="./assets/img/onsen/onsen_1.png" alt="ヒノキ湯">
 				</div>
 			</div>
-			<div class="p-onsen__block">
+			<div class="p-onsen__block wow animated fadeInUp" data-wow-delay="1s">
 				<div class="p-onsen__img">
-					<img src="./assets/img/top/onsen_2" alt="露天風呂">
+					<img src="./assets/img/onsen/onsen_2.png" alt="露天風呂">
 				</div>
 				<div class="p-onsen__info">
-					<h3 class="p-onsen__block-title">露天風呂</h3>
-					<p class="p-onsen__block-desc">遠くから聞こえる波の音に耳を澄ませる至福のひととき。海風を感じる贅沢な湯。</p>
-					<p class="p-onsen__block-time">利用時間　24時間</p>
-					<p class="p-onsen__block-maintenance">※9:00~10:00メンテナンスが入ります。</p>
+					<h3 class="c-onsen__block-title">露天風呂</h3>
+					<p class="c-onsen__block-desc">遠くから聞こえる波の音に耳を澄ませる至福のひととき。海風を感じる贅沢な湯。</p>
+					<p class="c-onsen__block-time">利用時間　24時間</p>
+					<p class="c-onsen__block-maintenance">※9:00~10:00メンテナンスが入ります。</p>
 				</div>
 			</div>
-			<div class="p-onsen__block">
-				<div class="p-onsen__info">
-					<h3 class="p-onsen__block-title">大浴場</h3>
-					<p class="p-onsen__block-desc">木の温もりに囲まれた半露天風呂。流れる風が四季の香りを運びます。</p>
-					<p class="p-onsen__block-time">利用時間　24時間</p>
-					<p class="p-onsen__block-maintenance">※9:00~10:00メンテナンスが入ります。</p>
+			<div class="p-onsen__block wow animated fadeInUp" data-wow-delay="1s">
+				<div class="p-onsen__info p-onsen__info--last">
+					<h3 class="c-onsen__block-title">大浴場</h3>
+					<p class="c-onsen__block-desc">大きな窓から自然を感じながらゆったりとした時間を愉しめます。</p>
+					<p class="c-onsen__block-time">利用時間　24時間</p>
+					<p class="c-onsen__block-maintenance">※9:00~10:00メンテナンスが入ります。</p>
 				</div>
 				<div class="p-onsen__img">
-					<img src="./assets/img/top/onsen_3" alt="大浴場">
+					<img src="./assets/img/onsen/onsen_3.png" alt="大浴場">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="p-onsen__properties">
-		<h3 class="p-onsen__properties-title">温泉の泉質・効能</h3>
+
+	<div class="p-onsen__properties l-inner wow animated fadeInUp" data-wow-delay="1s">
+		<h3 class="c-onsen__properties-title">温泉の泉質・効能</h3>
 		<div class="p-onsen__desc--wrap">
-			<p class="p-onsen__desc">泉質／ナトリウム・塩化物硫酸塩泉（弱酸性低張性高温泉）<br>効能／きりきず、やけど、慢性皮膚病、虚弱児童、慢性婦人病、神経痛、筋肉痛、関節痛、五十肩、運動麻痺、<br>関節のこわばり、うちみ、くじき 慢性消化器病、痔疾、冷え性、病後回復期、疲労回復、健康増進</p>
+			<p class="c-onsen__desc">
+				泉質／ナトリウム・塩化物硫酸塩泉（弱酸性低張性高温泉）</p>
+			<p class="c-onsen__desc">効能／きりきず、やけど、慢性皮膚病、虚弱児童、慢性婦人病、神経痛、筋肉痛、関節痛、五十肩、運動麻痺、</p>
+			<p class="c-onsen__desc">関節のこわばり、うちみ、くじき 慢性消化器病、痔疾、冷え性、病後回復期、疲労回復、健康増進</p>
 		</div>
 	</div>
-	<section class="p-onsen__price">
-		<h3>日帰り温泉</h3>
+	<section class="p-onsen__price wow animated fadeInUp" data-wow-delay="1s">
+		<h3 class="c-price__content--title">日帰り温泉</h3>
 		<div class="p-price__wrap">
-			<div class="p-operating__hours">
-				<p>営業時間</p>
-				<p>11:00~16:00</p>
+			<div class="p-operating__hours--block">
+				<p class="c-operating__hours">営業時間</p>
+				<p class="c-operating__time">11:00~16:00</p>
 			</div>
+			<div class="p-price__list">
+				<div class="p-price__label--block">
+					<p class="c-price__label">料金</p>
+				</div>
+				<div class="p-price__block--wrap p-price__weekday--wrap">
+					<div class="p-price__weekday--block">
+						<p class="c-price__weekday-label">平日</p>
+					</div>
+					<div class="p-price__detail--block">
+						<p class="c-price__weekday-details">大人　1,100円／小人　400円</p>
+					</div>
+				</div>
+				<div class="p-price__block--wrap p-price__holiday__wrap">
+					<div class="p-price__label--block">
+						<p class="c-price__holiday-label">休日・祝日</p>
+					</div>
+					<div class="p-price__detail--block">
+						<p class="c-price__holiday-details">大人　1,200円／小人　600円</p>
+					</div>
+				</div>
+			</div>
+			<p class="c-price__note">※週に１回はメンテナンスのため営業を行なっていない場合がございます。</p>
+		</div>
+	</section>
+	<section class="p-reservation">
+		<div class="l-inner">
+			<h2 class="p-reservation__title">ご予約</h2>
+			<p class="p-reservation__text">
+				ご予約は専用フォームにて承ります
+			</p>
+			<a class="c-reservation-btn" href="#">ご予約はこちら</a>
+			<p class="p-reservation__text p-reservation__text--small">
+				24時間受付中
+			</p>
 		</div>
 	</section>
 	<footer class="l-footer">
@@ -105,6 +194,7 @@
 		</div>
 		<p class="c-copyright">©︎2023 KIZUNAYA</p>
 	</footer>
+	<button class="c-scroll__btn wow animated fadeIn"></button>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://kit.fontawesome.com/c67cd22077.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -112,6 +202,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 	<script src="./assets/js/script.min.js"></script>
-	</body>
+</body>
 
 </html>

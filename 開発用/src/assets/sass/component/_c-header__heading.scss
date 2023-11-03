@@ -1,0 +1,17 @@
+@use "../global" as global;
+
+.c-header__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -50%);
+  z-index: 1;
+  font-family: global.$title-font;
+  @include global.font(48, 400, 69.5, 6.24);
+  color: global.$white-color;
+  font-size: calc(24px + (48 - 24) * ((100vw - 375px)) / (1440 - 375));
+
+  @include global.mq('sp') {
+    font-size: 24px;
+  }
+}

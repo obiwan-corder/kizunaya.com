@@ -1,0 +1,37 @@
+@use "../global/" as global;
+
+.c-scroll__btn {
+  width: 80px;
+  height: 80px;
+  background-color: global.$c-scroll__btn-color;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+
+  &::after {
+    content: '';
+    width: 34.67px;
+    height: 21.67px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/top/scroll_icon.png) center center / contain no-repeat;
+  }
+
+  @include global.mq('sp') {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+
+    &::after {
+      width: 21.67px;
+      height: 13.54px;
+    }
+  }
+}
+

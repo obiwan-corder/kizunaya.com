@@ -123,3 +123,19 @@ $(document).ready(function () {
     $("#splash").fadeOut("slow");
   }, 3000); // 3秒後に実行
 });
+
+
+jQuery(window).on("scroll", function() {
+	if (jQuery(this).scrollTop() > 200) {
+		jQuery('.c-scroll__btn').fadeIn(500); // フェードイン
+	} else {
+		jQuery('.c-scroll__btn').fadeOut(500); // フェードアウト
+	}
+});
+
+jQuery('.c-scroll__btn').click(function () {
+	jQuery('body,html').animate({
+		scrollTop: 0
+	}, 500);
+	return false;
+});
