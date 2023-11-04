@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.c-price__holiday-details {
+  display: inline-block;
+  margin-left: 60px;
+  font-family: global.$main-font;
+  @include global.font(16, 400, 30.24, 1.92);
+
+  @include global.mq('sp') {
+    @include global.font(15, 400, 28.35, 1.8);
+    margin-left: 0;
+  }
+}

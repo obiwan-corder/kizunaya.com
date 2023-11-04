@@ -1,0 +1,12 @@
+@use "../global/" as global;
+
+
+.p-price__list {
+  padding-left: 16px;
+  padding-top: 20px;
+  position: relative;
+
+  @include global.mq('sp') {
+    padding-left: 0;
+  }
+}
