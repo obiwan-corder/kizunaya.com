@@ -5,4 +5,7 @@
   background: url(../img/onsen/header_mv.png) center center / cover no-repeat;
   height: 500px;
   position: relative;
+  @include global.mq('sp') {
+    background: url(../img/onsen/top_mv-sp.png) center center / cover no-repeat;
+  }
 }
