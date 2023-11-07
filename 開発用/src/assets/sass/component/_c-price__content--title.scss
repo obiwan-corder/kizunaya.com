@@ -1,0 +1,30 @@
+@use "../global/" as global;
+
+.c-price__content--title {
+  @include global.font(32, 800, 46.34, 0.1);
+  color: global.$text-color;
+  font-family: global.$main-font;
+  text-align: center;
+  position: relative;
+  font-size: calc(24px + (32 - 24) * ((100vw - 375px)) / (1440 - 375));
+
+  @include global.mq('sp') {
+    @include global.font(24, 800, 34.75, 0.1);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 39.14px;
+    height: 37.56px;
+    background: url(../img/onsen/onsen_icon.png) center center / cover no-repeat;
+
+    @include global.mq('sp') {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use "../global/" as global;
+
+
+.c-onsen__desc {
+@include global.font(14, 400, 26.46, 1.68);
+font-family: global.$main-font;
+color: global.$text-color;
+
+}

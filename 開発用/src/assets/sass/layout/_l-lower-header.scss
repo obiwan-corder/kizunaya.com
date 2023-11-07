@@ -36,3 +36,22 @@
         background-size: cover;
     }
 }
+#spend-page .l-lower-header {
+    background: url(../../assets/img/spend/header.jpg) no-repeat;
+    background-size: contain;
+
+    @include global.mq(sp) {
+        background-image: url(../../assets/img/spend/header_sp.jpg);
+        background-size: cover;
+    }
+}
+
+#access .l-lower-header {
+    background: url(../../assets/img/access/header.jpg) no-repeat;
+    background-size: contain;
+
+    @include global.mq(sp) {
+        background-image: url(../../assets/img/access/header_sp.jpg);
+        background-size: cover;
+    }
+}
