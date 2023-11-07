@@ -7,6 +7,7 @@
   padding-left: 0.1rem;
 
   @include global.mq('sp') {
-    @include global.font(24, 800, 34.75, 1);
+    @include global.font(24, 800, 34.75, 0.1);
+    padding-left: 0;
   }
 }

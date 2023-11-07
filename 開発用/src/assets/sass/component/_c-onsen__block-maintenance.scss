@@ -5,5 +5,5 @@
   color: global.$text-color;
   @include global.font(13, 400, 24.57, 1.56);
   padding-left: 0.1rem;
-  padding-top: 0.5rem;
+  line-height: 0.89;
 }

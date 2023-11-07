@@ -578,8 +578,13 @@ header {
 	letter-spacing: 0.13em;
 	line-height: 1.448;
 	margin-bottom: 35px;
+	transition: opacity 0.5s ease;
 	width: -moz-max-content;
 	width: max-content;
+}
+
+.c-footer__nav--item:hover {
+	opacity: 0.7;
 }
 
 .c-footer__nav--item:last-child {
@@ -680,8 +685,8 @@ header {
 	font-weight: 400;
 	letter-spacing: 0.12em;
 	line-height: 1.89;
+	line-height: 0.89;
 	padding-left: 0.1rem;
-	padding-top: 0.5rem;
 }
 
 .c-onsen__properties-title {
@@ -691,6 +696,7 @@ header {
 	font-weight: 400;
 	letter-spacing: 0.0041666667em;
 	line-height: 1.9166666667;
+	padding-left: 14px;
 	text-align: center;
 }
 
@@ -701,6 +707,17 @@ header {
 	font-weight: 400;
 	letter-spacing: 0.12em;
 	line-height: 1.89;
+}
+
+.c-onsen__desc:nth-child(2) {
+	padding-right: 12px;
+	padding-top: 2px;
+}
+
+.c-onsen__desc:last-child {
+	display: inline;
+	padding-right: 0px;
+	padding-top: 2px;
 }
 
 .c-price__content--title {
@@ -829,6 +846,10 @@ header {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 34.67px;
+}
+
+.c-scroll__btn:hover {
+	background-color: rgba(38, 38, 38, 0.8);
 }
 
 .p-logo__wrap {
@@ -1383,6 +1404,16 @@ header {
 	font-size: 2.4em;
 }
 
+.p-footer__sns--items .fa-instagram::before,
+.p-footer__sns--items .fa-facebook-f::before {
+	transition: color 0.5s ease;
+}
+
+.p-footer__sns--items .fa-instagram:hover::before,
+.p-footer__sns--items .fa-facebook-f:hover::before {
+	color: #CACACA;
+}
+
 .p-onsen__block {
 	display: flex;
 	justify-content: right;
@@ -1422,8 +1453,8 @@ header {
 
 .p-concept__onsen--wrap {
 	margin: 0 auto;
-	padding-bottom: 146px;
-	padding-right: 40px;
+	padding-bottom: 52px;
+	padding-left: 1px;
 	width: 43.49%;
 }
 
@@ -1435,12 +1466,13 @@ header {
 	border-top: 0.5px solid #2D2D2E;
 	margin: 0 auto;
 	max-width: 974px;
+	padding-left: 2px;
 	padding-top: 80px;
 	width: 67.64%;
 }
 
 .p-onsen__desc--wrap {
-	padding-bottom: 85px;
+	padding-bottom: 81px;
 	padding-top: 49px;
 	text-align: center;
 }
@@ -1488,7 +1520,7 @@ header {
 }
 
 .p-price__holiday__wrap {
-	padding-top: 20px;
+	padding-top: 18px;
 }
 
 .p-dialog {
@@ -1606,6 +1638,11 @@ dialog::backdrop {
 	line-height: 2.023;
 	margin-bottom: 12px;
 	padding: 1em 4.5em;
+}
+
+.p-onsen__content--wrap {
+	margin: 0 auto;
+	width: 90%;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -1731,6 +1768,10 @@ dialog::backdrop {
 	padding-top: 40px;
 }
 
+.l-header {
+	background: url(../img/onsen/top_mv-sp.png) center center/cover no-repeat;
+}
+
 .c-top__bg--sp {
 	display: block;
 	height: 100%;
@@ -1799,7 +1840,14 @@ dialog::backdrop {
 }
 
 .c-concept__lead {
-	line-height: 2.33;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.065em;
+	line-height: 2.3026666667;
+}
+
+.c-concept__lead .pc-break {
+	display: none;
 }
 
 .c-section__title {
@@ -1917,8 +1965,9 @@ dialog::backdrop {
 .c-onsen__block-title {
 	font-size: 1.5rem;
 	font-weight: 800;
-	letter-spacing: 0.0416666667em;
+	letter-spacing: 0.0041666667em;
 	line-height: 1.4479166667;
+	padding-left: 0;
 }
 
 .c-onsen__block-desc {
@@ -1926,9 +1975,19 @@ dialog::backdrop {
 	font-weight: 400;
 	letter-spacing: 0.06em;
 	line-height: 1.89;
-	padding-bottom: 1rem;
+	padding-bottom: 0.9rem;
 	padding-left: 0;
 	padding-top: 0;
+}
+
+.c-onsen__desc {
+	padding-bottom: 7px;
+}
+
+.c-onsen__desc:nth-child(2) {
+	display: inline;
+	padding-right: 0;
+	padding-top: 7px;
 }
 
 .c-price__content--title {
@@ -1990,6 +2049,7 @@ dialog::backdrop {
 	letter-spacing: 0.04em;
 	line-height: 1.89;
 	padding-left: 0;
+	padding-top: 18px;
 }
 
 .c-scroll__btn {
@@ -2008,13 +2068,14 @@ dialog::backdrop {
 }
 
 .p-concept {
-	padding-top: 56px;
+	padding-bottom: 28px;
+	padding-top: 62px;
 }
 
 .p-concept__wrap {
-	padding-bottom: 32px;
+	padding-bottom: 31px;
 	width: 89.3%;
-	width: 81%;
+	width: 90%;
 }
 
 .p-news {
@@ -2289,7 +2350,7 @@ dialog::backdrop {
 }
 
 .p-onsen__block:not(:first-child) {
-	margin-top: 1.8rem;
+	margin-top: 1.85rem;
 }
 
 .p-onsen__block:nth-child(2) {
@@ -2325,11 +2386,18 @@ dialog::backdrop {
 }
 
 .p-onsen__content {
-	padding-bottom: 60px;
+	padding-bottom: 51px;
 }
 
 .p-onsen__properties {
-	padding-top: 40px;
+	padding-top: 35px;
+	width: 91%;
+}
+
+.p-onsen__desc--wrap {
+	padding-bottom: 60px;
+	padding-top: 15px;
+	text-align: left;
 }
 
 .p-onsen__price {
@@ -2339,18 +2407,22 @@ dialog::backdrop {
 }
 
 .p-price__wrap {
+	margin-top: 18px;
 	min-width: 89.3%;
 	padding-bottom: 40px;
-	padding-top: 5px;
+	padding-left: 11px;
+	padding-top: 0;
 	width: 89.3%;
 }
 
 .p-operating__hours--block {
 	padding-left: 0;
+	padding-top: 5px;
 }
 
 .p-price__list {
 	padding-left: 0;
+	padding-top: 5px;
 }
 
 .p-price__weekday--wrap {
@@ -2358,11 +2430,15 @@ dialog::backdrop {
 }
 
 .p-price__weekday--wrap .p-price__detail--block {
-	margin-left: 71px;
+	margin-left: 70px;
 }
 
 .p-price__holiday__wrap .p-price__detail--block {
 	margin-left: 20px;
+}
+
+.p-price__holiday__wrap {
+	padding-top: 1px;
 }
 
 .p-reservation {
