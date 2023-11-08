@@ -4,11 +4,13 @@
     margin-bottom: 165px;
 }
 .p-check-io__wrapper {
-    background-image: url(../../assets/img/guest-room/check-io-bg.svg);
+    background-image: url(../img/guest-room/check-io-bg.svg);
     display: flex;
     align-items: center;
-    padding: 50px 186px;
-    gap: 100px;
+    padding: 50px 185px;
+    gap: 150px;
+    // justify-content: space-between;
+    width: 100%;
 }
 .p-check-io__contents {
     color: #fff;
@@ -17,5 +19,16 @@
 .p-check-io__icon {
     width: 82px;
     height: 82px;
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
+}
+.p-check-io__title {
+    font-size: calc(24 / 16 * 1rem);
+    font-weight: 800;
+    line-height: calc(34.75 / 24);
+}
+.p-check-io__text {
+    font-family: global.$main-font;
+    font-size: calc(14 / 16 * 1rem);
+    line-height: calc(26.463 / 14);
+    letter-spacing: calc(1.68 / 14 * 1em);
 }

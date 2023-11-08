@@ -1370,10 +1370,11 @@ dialog::backdrop {
 
 .p-check-io__wrapper {
 	align-items: center;
-	background-image: url(../../assets/img/guest-room/check-io-bg.svg);
+	background-image: url(../img/guest-room/check-io-bg.svg);
 	display: flex;
-	gap: 100px;
-	padding: 50px 186px;
+	gap: 150px;
+	padding: 50px 185px;
+	width: 100%;
 }
 
 .p-check-io__contents {
@@ -1383,8 +1384,21 @@ dialog::backdrop {
 
 .p-check-io__icon {
 	height: 82px;
-	margin: 0 auto 30px;
+	margin: 0 auto 15px;
 	width: 82px;
+}
+
+.p-check-io__title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.4479166667;
+}
+
+.p-check-io__text {
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 0.12em;
+	line-height: 1.8902142857;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
