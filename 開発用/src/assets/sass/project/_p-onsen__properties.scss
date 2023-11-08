@@ -1,0 +1,15 @@
+@use "../global/" as global;
+
+.p-onsen__properties {
+  width: 67.64%;
+  max-width: 974px;
+  margin: 0 auto;
+  border-top: 0.5px solid global.$text-color;
+  padding-top: 80px;
+  padding-left: 2px;
+
+  @include global.mq('sp') {
+    padding-top: 35px;
+    width: 91%;
+  }
+}

@@ -124,6 +124,7 @@ $(document).ready(function () {
   }, 3000); // 3秒後に実行
 });
 
+
 // 
 // モーダル------------------------------------------------------------------
 //ダイアログ表示するためにクリックしたい要素
@@ -149,4 +150,23 @@ dialogCloseButtons.forEach((close) => {
   close.addEventListener("click", () => {
     dialog.close();
   });
+});
+// 
+// 
+// 
+
+jQuery(window).on("scroll", function() {
+	if (jQuery(this).scrollTop() > 200) {
+		jQuery('.c-scroll__btn').fadeIn(500); // フェードイン
+	} else {
+		jQuery('.c-scroll__btn').fadeOut(500); // フェードアウト
+	}
+});
+
+jQuery('.c-scroll__btn').click(function () {
+	jQuery('body,html').animate({
+		scrollTop: 0
+	}, 500);
+	return false;
+
 });

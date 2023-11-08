@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.p-price__weekday--wrap .p-price__detail--block {
+  @include global.mq('sp') {
+    margin-left: 70px;
+  }
+}
+
+.p-price__holiday__wrap .p-price__detail--block {
+  @include global.mq('sp') {
+    margin-left: 20px;
+  }
+}

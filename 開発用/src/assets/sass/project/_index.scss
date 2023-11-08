@@ -20,8 +20,29 @@
 @use "p-footer__wrap";
 @use "p-footer__link--nav";
 @use "p-footer__sns--items";
+@use "p-onsen__block";
+@use "p-onsen__img";
+@use "p-onsen__info";
+@use "p-concept__onsen--wrap";
+@use "p-onsen__content";
+@use "p-onsen__properties";
+@use "p-onsen__desc--wrap";
+@use "p-onsen__price";
+@use "p-price__wrap";
+@use "p-operating__hours--block";
+@use "p-price__list";
+@use "p-price__block--wrap";
+@use "p-price__weekday--wrap";
+@use "p-price__detail--block";
+@use "p-onsen__info--last";
+@use "p-price__holiday__wrap";
 @use "p-dialog";
 @use "p-reservation";
+
 @use "p-room";
 @use "p-facility";
 @use "p-check-io";
+
+@use "p-onsen__content--wrap";
+
+

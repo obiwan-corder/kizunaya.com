@@ -1,0 +1,28 @@
+@use "../global/" as global;
+
+
+.c-onsen__desc {
+  @include global.font(14, 400, 26.46, 1.68);
+  font-family: global.$main-font;
+  color: global.$text-color;
+  @include global.mq('sp') {
+    padding-bottom: 7px;
+  }
+
+
+  &:nth-child(2) {
+    @include global.mq('sp') {
+      padding-top: 7px;
+      display: inline;
+      padding-right: 0;
+    }
+    padding-top: 2px;
+    padding-right: 12px;
+  }
+
+  &:last-child {
+    padding-top: 2px;
+    padding-right: 0px;
+    display: inline;
+  }
+}

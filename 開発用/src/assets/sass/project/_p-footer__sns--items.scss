@@ -12,9 +12,11 @@
   bottom: 45px;
   right: 7px;
   z-index: 2;
+
   .fa-3x {
     font-size: 2.4em;
-}
+  }
+
   @include global.mq('sp') {
     padding-right: 0;
     padding-bottom: 0;
@@ -28,8 +30,22 @@
     margin-left: 0;
 
     gap: 37px;
+
     .fa-3x {
       font-size: 1.6em;
+    }
   }
+
+  .fa-instagram,
+  .fa-facebook-f {
+    // 疑似要素に適用される遷移効果を設定
+    &::before {
+      transition: color 0.5s ease;
+    }
+  
+    &:hover::before {
+      color: global.$sns-link-color;
+    }
   }
+  
 }
