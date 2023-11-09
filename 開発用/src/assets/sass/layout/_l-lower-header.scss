@@ -36,6 +36,16 @@
         background-size: cover;
     }
 }
+#cooking .l-lower-header {
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.49) 100%), url(../../assets/img/cooking/header.jpg), lightgray -26.652px -100px / 101.896% 165% no-repeat;
+    background: url(../../assets/img/cooking/header.jpg) no-repeat;
+    background-size: contain;
+
+    @include global.mq(sp) {
+        background-image: url(../../assets/img/cooking/header_sp.jpg);
+        background-size: cover;
+    }
+}
 #spend-page .l-lower-header {
     background: url(../../assets/img/spend/header.jpg) no-repeat;
     background-size: contain;
