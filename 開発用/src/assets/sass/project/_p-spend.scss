@@ -351,8 +351,10 @@
 
 .p-spend-tour {
     padding-top: 190px;
+    padding-bottom: 120px;
     @include global.mq('sp'){
         padding-top: 39px;
+        padding-bottom: 20px;
     }
 }
 
