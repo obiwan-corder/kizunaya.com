@@ -4,6 +4,7 @@
 padding-top: 122px;
 padding-bottom: 66px;
 @include global.mq('sp') {
-  padding-top: 56px;
+  padding-top: 62px;
+  padding-bottom: 28px;
 }
 }
