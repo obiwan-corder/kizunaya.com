@@ -48,7 +48,7 @@
 
 #access .l-lower-header {
     background: url(../../assets/img/access/header.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @include global.mq(sp) {
         background-image: url(../../assets/img/access/header_sp.jpg);
