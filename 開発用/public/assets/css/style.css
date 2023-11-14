@@ -38,8 +38,7 @@ header {
 }
 
 #cooking .l-lower-header {
-	background: url(../../assets/img/cooking/header.jpg) no-repeat;
-	background-size: contain;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.49) 100%), url(../../assets/img/cooking/header.jpg), lightgray -313.461px -3.068px/254.002% 107.11% no-repeat;
 }
 
 #spend-page .l-lower-header {
@@ -1614,6 +1613,10 @@ dialog::backdrop {
 	padding: 1em 4.5em;
 }
 
+.p-course {
+	margin-bottom: 20px;
+}
+
 #sea.p-course__version {
 	padding-left: 60px;
 }
@@ -1715,7 +1718,11 @@ dialog::backdrop {
 }
 
 .p-dish__text {
-	font-family: "Zen Kaku Gothic New", sans-serif;
+	text-align: center;
+}
+
+.p-dish__text span {
+	font-family: "Shippori Mincho", serif;
 	font-size: 1rem;
 	font-weight: 800;
 	line-height: 1.448125;
@@ -1837,7 +1844,7 @@ dialog::backdrop {
 }
 
 #cooking .l-lower-header {
-	background-image: url(../../assets/img/cooking/header_sp.jpg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/cooking/header_sp.jpg), lightgray -313.461px -3.068px/254.002% 107.11% no-repeat;
 	background-size: cover;
 }
 
@@ -2535,6 +2542,151 @@ dialog::backdrop {
 	letter-spacing: 0.13em;
 	line-height: 2.023;
 	padding-bottom: 5px;
+}
+
+#sea.p-course__version {
+	padding: 0;
+}
+
+#luxury.p-course__version {
+	padding: 0;
+}
+
+.p-course__gallery {
+	aspect-ratio: 335/298;
+	gap: 1px;
+	grid-template-columns: 1fr 52px 1fr;
+	grid-template-rows: 84px 84px 129px;
+	margin: 0 auto 14px;
+	width: 89.3%;
+}
+
+.p-course__img--03 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+	width: 58.5vw;
+}
+
+#sea .p-course__img--01 {
+	grid-column: 1/3;
+	order: 4;
+	width: 44.5vw;
+}
+
+#sea .p-course__img--02 {
+	order: 3;
+}
+
+#sea .p-course__img--03 {
+	order: 2;
+}
+
+#sea .p-course__img--04 {
+	order: 5;
+}
+
+#sea .p-course__img--05 {
+	order: 1;
+}
+
+#luxury .p-course__img--01 {
+	order: 5;
+}
+
+#luxury .p-course__img--02 {
+	order: 1;
+}
+
+#luxury .p-course__img--04 {
+	grid-column: 1/3;
+	order: 4;
+	width: 44.5vw;
+}
+
+#luxury .p-course__img--05 {
+	order: 1;
+}
+
+.p-course__menu {
+	height: 282px;
+	margin-bottom: 40px;
+	max-width: 100%;
+	padding: 23px 6vw 0;
+}
+
+#sea .p-course__menu {
+	margin-left: 0;
+}
+
+#luxury .p-course__menu {
+	margin-bottom: 60px;
+	margin-right: 0;
+}
+
+.p-course__title {
+	font-size: 1.25rem;
+	line-height: 1.448;
+	padding-left: 20px;
+}
+
+.p-course__list {
+	padding-top: 35px;
+}
+
+.p-course__item:not(:last-of-type) {
+	padding-left: 10px;
+}
+
+.p-dish {
+	margin-bottom: 60px;
+}
+
+.p-dish__title {
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	line-height: 1.4479166667;
+	padding-bottom: 40px;
+}
+
+.p-dish__list {
+	flex-direction: column;
+	gap: 30px;
+	place-items: center;
+}
+
+.p-dish__item {
+	width: 40vw;
+}
+
+.p-dish__img {
+	margin-bottom: 5px;
+}
+
+.p-dish__text span {
+	display: inline-block;
+	font-size: 0.875rem;
+	line-height: 1.4478571429;
+}
+
+.p-dish__text--small {
+	font-size: 0.75rem;
+	line-height: 1.4483333333;
+}
+
+.p-restaurant {
+	margin-bottom: 20px;
+}
+
+.p-restaurant__title {
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	line-height: 1.4479166667;
+	padding-bottom: 40px;
+}
+
+.p-restaurant__list {
+	gap: 3vw;
+	padding: 0;
 }
 
 }
