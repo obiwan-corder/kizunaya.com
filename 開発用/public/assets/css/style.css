@@ -50,8 +50,9 @@ header {
 
 .l-inner {
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 1080px;
 	width: 75%;
+	width: 100%;
 }
 
 .l-header__mv {
@@ -1881,7 +1882,7 @@ dialog::backdrop {
 }
 
 #splash_logo {
-	top: 35.7%;
+	top: 37.3%;
 }
 
 .l-footer {
