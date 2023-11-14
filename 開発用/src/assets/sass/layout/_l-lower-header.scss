@@ -2,6 +2,7 @@
 
 .l-lower-header {
     width: 100%;
+    animation: fadeInAnime 2s;
     aspect-ratio: 1440 / 500;
     object-fit: cover;
     display: grid;
@@ -36,6 +37,17 @@
         background-size: cover;
     }
 }
+
+
+@keyframes fadeInAnime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+  }
+}
+
 #spend-page .l-lower-header {
     background: url(../../assets/img/spend/header.jpg) no-repeat;
     background-size: contain;
@@ -48,10 +60,11 @@
 
 #access .l-lower-header {
     background: url(../../assets/img/access/header.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @include global.mq(sp) {
         background-image: url(../../assets/img/access/header_sp.jpg);
         background-size: cover;
+
     }
 }

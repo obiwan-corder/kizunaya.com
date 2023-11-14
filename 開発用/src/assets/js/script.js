@@ -125,6 +125,36 @@ $(document).ready(function () {
 });
 
 
+// 
+// モーダル------------------------------------------------------------------
+//ダイアログ表示するためにクリックしたい要素
+const dialogOpenImgs = document.querySelectorAll(".js-dialog-open");
+// ×ボタンを入れた配列
+const dialogCloseButtons = document.querySelectorAll(".js-dialog-close");
+const { body } = document;
+const MODAL_CLASS = "is-modal"; 
+
+//  コールバック関数は任意名
+dialogOpenImgs.forEach((open) => {
+  const dialog = document.querySelector(open.dataset.dialog);
+
+  open.addEventListener("click", () =>{
+    dialog.showModal();
+  });
+});
+
+// 閉じるとき
+dialogCloseButtons.forEach((close) => {
+  const dialog = close.closest("dialog");
+
+  close.addEventListener("click", () => {
+    dialog.close();
+  });
+});
+// 
+// 
+// 
+
 jQuery(window).on("scroll", function() {
 	if (jQuery(this).scrollTop() > 200) {
 		jQuery('.c-scroll__btn').fadeIn(500); // フェードイン
@@ -138,4 +168,5 @@ jQuery('.c-scroll__btn').click(function () {
 		scrollTop: 0
 	}, 500);
 	return false;
+
 });
