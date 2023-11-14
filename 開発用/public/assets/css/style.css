@@ -45,7 +45,7 @@ header {
 
 #access .l-lower-header {
 	background: url(../../assets/img/access/header.jpg) no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 
 .l-inner {
