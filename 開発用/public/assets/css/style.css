@@ -156,7 +156,8 @@ header {
 	height: 280px;
 	position: fixed;
 	right: 0;
-	top: 430px;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 125px;
 	z-index: 10;
 }
@@ -1923,6 +1924,7 @@ dialog::backdrop {
 .c-search-btn {
 	height: 160px;
 	top: 76px;
+	transform: translateY(0);
 	width: 57px;
 }
 

@@ -7,12 +7,14 @@
     background: global.$c-search-btn-color;
     position: fixed;
     right: 0;
-    top: 430px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
     @include global.mq('sp'){
         width: 57px;
         height: 160px;
         top: 76px;
+        transform: translateY(0);
     }
     &:before{
         content: "";
