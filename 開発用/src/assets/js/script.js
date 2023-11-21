@@ -170,6 +170,7 @@ jQuery('.c-scroll__btn').click(function () {
 	return false;
 
 });
+
 jQuery(window).on("scroll", function() {
 	if (jQuery(this).scrollTop() > 200) {
 		jQuery('.c-search-btn').fadeIn(500); // フェードイン
