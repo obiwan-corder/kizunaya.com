@@ -170,3 +170,19 @@ jQuery('.c-scroll__btn').click(function () {
 	return false;
 
 });
+
+jQuery(window).on("scroll", function() {
+	if (jQuery(this).scrollTop() > 200) {
+		jQuery('.c-search-btn').fadeIn(500); // フェードイン
+	} else {
+		jQuery('.c-search-btn').fadeOut(500); // フェードアウト
+	}
+});
+
+jQuery('.c-search-btn').click(function () {
+	jQuery('body,html').animate({
+		scrollTop: 0
+	}, 500);
+	return false;
+
+});
