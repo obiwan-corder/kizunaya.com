@@ -5,12 +5,21 @@ $(".c-drawer-btn").click(function () {
   //ボタンがクリックされたら
   $(this).toggleClass("js-active"); //ボタン自身に activeクラスを付与し
   $("#gnav").toggleClass("js-panelactive"); //ナビゲーションにpanelactiveクラスを付与
+  $(".p-gnav__background").toggleClass("is-active"); //.p-gnav__backgroundにis-activeクラスを付与
 });
 
 $(".p-gnav__nav-link").click(function () {
   //ナビゲーションのリンクがクリックされたら
   $(".c-drawer-btn").removeClass("js-active"); //ボタンの activeクラスを除去し
   $("#gnav").removeClass("js-panelactive"); //ナビゲーションのpanelactiveクラスも除去
+  $(".p-gnav__background").removeClass("is-active");//.p-gnav__backgroundにis-activeクラスを除去
+});
+
+$(".p-gnav__background").click(function () {
+  //ナビゲーションのリンクがクリックされたら
+  $(".c-drawer-btn").removeClass("js-active"); //ボタンの activeクラスを除去し
+  $("#gnav").removeClass("js-panelactive"); //ナビゲーションのpanelactiveクラスも除去
+  $(".p-gnav__background").removeClass("is-active");//.p-gnav__backgroundにis-activeクラスを除去
 });
 //
 //

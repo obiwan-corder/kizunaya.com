@@ -206,7 +206,7 @@ header {
 	top: 0;
 	transition: all 0.3s ease 0s;
 	width: 110px;
-	z-index: 11;
+	z-index: 21;
 }
 
 .c-drawer-btn__bar {
@@ -1250,7 +1250,7 @@ header {
 	pointer-events: visible;
 	position: fixed;
 	right: 0;
-	z-index: 10;
+	z-index: 20;
 }
 
 .js-panelactive .p-gnav__nav-list {
@@ -1278,6 +1278,21 @@ header {
 	animation-fill-mode: forwards;
 	animation-name: navAnm;
 	animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.p-gnav__background {
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 15;
+}
+
+.p-gnav__background.is-active {
+	display: block;
 }
 
 .p-access {
