@@ -15,12 +15,10 @@
     @include global.mq(tab) {
         width: 66px;
         height: 51px;
-        right: 20px;
     }
     @include global.mq(sp) {
         width: 66px;
         height: 51px;
-        right: 20px;
     }
 
     &__bar {
