@@ -204,6 +204,7 @@ header {
 	right: 0;
 	text-align: center;
 	top: 0;
+	transition: all 0.3s ease 0s;
 	width: 110px;
 	z-index: 11;
 }
