@@ -1,0 +1,7 @@
+@use "../global/" as global;
+
+.p-room__sentence--last {
+  padding-right: 5px;
+  width: min(37.4%, 430px);
+  margin-bottom: -2px;
+}
