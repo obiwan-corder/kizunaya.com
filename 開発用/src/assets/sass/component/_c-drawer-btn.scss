@@ -2,12 +2,13 @@
 
 .c-drawer-btn {
     background-color: #272727;
+    transition: all 0.3s ease 0s;
     width: 110px;
     height: 85px;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 11;
+    z-index: 21;
     display: grid;
     align-items: center;
     text-align: center;
@@ -15,12 +16,10 @@
     @include global.mq(tab) {
         width: 66px;
         height: 51px;
-        right: 20px;
     }
     @include global.mq(sp) {
         width: 66px;
         height: 51px;
-        right: 20px;
     }
 
     &__bar {
