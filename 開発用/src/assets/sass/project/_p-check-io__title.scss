@@ -1,0 +1,6 @@
+@use "../global/" as global;
+.p-check-io__title {
+font-family:global.$title-font;
+color: global.$white-color;
+@include global.font(24, 800, 34.75, 0.1);
+}

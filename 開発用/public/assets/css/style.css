@@ -60,7 +60,7 @@ header {
 	margin: 0 auto;
 	max-width: 1080px;
 	width: 75%;
-	width: 100%;
+	width: 75%;
 }
 
 .l-header__mv {
@@ -863,6 +863,15 @@ header {
 
 .c-scroll__btn:hover {
 	background-color: rgba(38, 38, 38, 0.8);
+}
+
+.c-main__text--guest-room {
+	padding-left: 2px;
+	padding-top: 2px;
+}
+
+.c-main-message--guest-room {
+	padding-bottom: 119px;
 }
 
 .p-logo__wrap {
@@ -1669,6 +1678,10 @@ dialog::backdrop {
 	padding: 1em 4.5em;
 }
 
+.p-header__title--guest-room {
+	padding-left: 5px;
+}
+
 .p-room__version {
 	display: flex;
 	justify-content: space-between;
@@ -1788,8 +1801,25 @@ dialog::backdrop {
 	line-height: 1.8902142857;
 }
 
+.p-room__sentence {
+	align-self: center;
+	padding-right: 22px;
+	padding-top: 13px;
+	position: relative;
+	top: -1.85rem;
+	width: min(40%, 430px);
+}
+
 .p-onsen__content--wrap {
 	margin: 0 auto;
+}
+
+.p-room__title-eng {
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: -0.1px;
+	line-height: 1;
+	padding-left: 0.21em;
 }
 
 .p-course {
@@ -1925,6 +1955,124 @@ dialog::backdrop {
 	display: flex;
 	gap: 10%;
 	padding: 0 30px;
+}
+
+.p-room__title {
+	border-bottom: 1px solid;
+	font-size: 2.1333333333rem;
+	font-weight: 800;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+
+.p-room__text-bottom {
+	font-size: 0.9333333333rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-top: 19px;
+}
+
+.p-room__text {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 2;
+}
+
+.p-room__text:last-child {
+	line-height: 1.6;
+}
+
+.p-room__text span {
+	padding-left: 22px;
+}
+
+.p-room__imgs {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 150px;
+	width: min(55%, 580px);
+}
+
+.p-room__version:nth-child(2) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.p-room__version:last-child {
+	margin-bottom: 97px;
+}
+
+.p-room__sentence--last {
+	margin-bottom: -2px;
+	padding-right: 5px;
+	width: min(37.4%, 430px);
+}
+
+.p-facility__title {
+	padding-right: 35px;
+}
+
+.p-facility__text {
+	padding-left: 2px;
+	padding-top: 26px;
+}
+
+.p-facility__text span {
+	display: inline-block;
+	margin-top: 19px;
+}
+
+.p-room__img img {
+	height: 100%;
+	width: 100%;
+}
+
+.p-inner__check {
+	align-items: center;
+	background-image: url("../img/guest-room/check-io-bg.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	gap: 14%;
+	justify-content: center;
+	max-width: 1080px;
+	padding-bottom: 50px;
+	padding-top: 51px;
+}
+
+.p-check-io__title {
+	color: #ffffff;
+	font-family: "Shippori Mincho", serif;
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.0041666667em;
+	line-height: 1.4479166667;
+}
+
+.p-check-io__text {
+	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	text-align: left;
+}
+
+.p-check-io__contents {
+	max-width: 277px;
+	width: 26%;
+}
+
+.p-check-io__contents:not(:first-child) {
+	max-width: 283px;
+	width: 26.5%;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
