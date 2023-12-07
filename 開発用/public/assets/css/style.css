@@ -10,6 +10,10 @@ body li {
 	list-style: none;
 }
 
+body.is-active {
+	overflow-y: hidden;
+}
+
 header {
 	overflow: hidden;
 }

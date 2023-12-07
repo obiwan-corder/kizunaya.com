@@ -12,6 +12,9 @@ body {
   li {
     list-style: none;
   }
+  &.is-active{
+    overflow-y: hidden;
+  }
 }
 
 .is-sp {
