@@ -87,6 +87,8 @@ topStyle.on("slideChangeTransitionStart", () => {
 
 topStyle.init();
 
+// 過ごし方ページ：横スクロールのアニメーション--
+
 const spendWrapper = document.querySelector(".p-spend-slide");
 if (spendWrapper && window.innerWidth > 768) {
   const spendSlides = gsap.utils.toArray(".p-spend-slide__block");
@@ -98,42 +100,50 @@ if (spendWrapper && window.innerWidth > 768) {
       trigger: spendWrapper,
       pin: true,
       scrub: 1,
+      start: "top top",
       end: `+=${wrapperWidth}`,
+      anticipatePin: 1,
+      invalidateOnRefresh: true,
     },
   });
 }
 
-function ScrollTimelineAnime() {
-  $(".p-spend-slide__block").each(function () {
-    var elemPos = $(this).offset().left;
-    var scroll = $(window).scrollLeft();
-    var windowWidth = $(window).width();
-    var startPoint = 100;
-    if (scroll >= elemPos - windowWidth - startPoint) {
-      var H = $(this).outerWidth(true);
-      var percent = ((scroll + startPoint - elemPos) / (H / 2)) * 100;
-      if (percent > 100) {
-        percent = 105;
+// --過ごし方ページ：横スクロールのアニメーション
+
+
+// 過ごし方ページ：進捗表示のアニメーション設定
+//線が伸びるための設定を関数でまとめる
+function ScrollTimelineAnime(){
+  $('.p-spend-slide__block').each(function(){// それぞれのli要素の
+    var elemPos = $(this).offset().left;// 上からの高さ取得
+    var scroll = $(window).scrollTop();// スクロール値取得
+    var windowWidth = $(window).width();// windowの高さ取得
+    var startPoint = 100; //線をスタートさせる位置を指定※レイアウトによって調整してください
+    if (scroll >= elemPos - windowWidth-startPoint){       
+      var H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
+      //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
+      var percent = (scroll+startPoint - elemPos) / (H/2) *100;//liの余白と高さの半分で線を100％に伸ばす
+
+      // 100% を超えたらずっと100%を入れ続ける
+      if(percent  > 100){
+        percent  = 100;
       }
       // ボーダーの長さをセット
-      $(this)
-        .children(".border-line")
-        .css({
-          width: percent + "%",
-        });
-    }
+      $(this).children('.border-line').css({
+        width: percent + "%", //CSSでパーセント指定
+      });
+    } 
   });
 }
 
 // 画面をスクロールをしたら動かしたい場合の記述
-$(window).on("scroll", function () {
-  ScrollTimelineAnime(); // 線が伸びる関数を呼ぶ
+$(window).on('scroll', function(){
+  ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
 
-$(document).ready(function () {
-  setTimeout(function () {
-    $("#splash").fadeOut("slow");
-  }, 3000); // 3秒後に実行
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function(){
+  ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
 
 

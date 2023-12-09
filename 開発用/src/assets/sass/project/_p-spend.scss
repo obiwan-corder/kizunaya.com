@@ -25,22 +25,21 @@
 .p-spend-slide {
     padding-top: 85px;
     padding-bottom: 110px;
+    width: 100%;
+    height: 100vh;
     background: url(../img/spend/spend-slide-bg.png) no-repeat center center / cover;
-    display: flex;
-    flex: 1;
-    width: 900%;
     @include global.mq('sp'){
-        flex-direction: column;
-        align-items: center;
         width: 100%;
         padding: 85px 22px 110px 22px;
     }
 
 }
 
-.p-spend-slide__wrapper{
+.p-spend-slide__container{
     display: flex;
-    margin-left: 117px;
+    width: 100%;
+    height: inherit;
+
     @include global.mq('sp'){
         flex-direction: column;
         align-items: center;
@@ -51,301 +50,65 @@
   
 }
 
-
-.p-spend-slide__block {
-    width: 100%;
+.p-spend-slide__list{
     display: flex;
+
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+  position: absolute;
+  left:0.2em;
+  top:0;
+  width:2px;/*線の太さ*/
+  height:0;/*はじめは高さを0に*/
+  background: #ccc;
+}
+
+
+.p-spend-slide__block{
     position: relative;
-    @include global.mq('sp'){
-        justify-content: center;
-    }
     &::after{
-        content: "";
-        position: absolute;
-        top: -37px;
-        left: 200px;
-        transform: translateX(-50%);
-        width: 20px;
-        height: 20px;
-        background: global.$text-color;
-        border-radius: 50%;
-        @include global.mq('sp'){
-            display: none;
-        }
-    }
-
-}
-
-.p-spend-slide__block1 {
-    margin-right: 32px;
-    @include global.mq('sp'){
-        margin-right: 0;
+        content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:10px;
+    height: 10px;
+    background:#666;
+    border-radius: 50%;
     }
 }
 
-.p-spend-slide__card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.p-spend-slide__block1{
+    width:550px;
+}
+.p-spend-slide__block2{
+    width:550px;
+}
+.p-spend-slide__block3{
+    width:550px;
+}
+.p-spend-slide__block4{
+    width:550px;
+}
+.p-spend-slide__block5{
+    width:550px;
+}
+.p-spend-slide__block6{
+    width:550px;
+}
+.p-spend-slide__block7{
+    width:550px;
+}
+.p-spend-slide__block8{
+    width:550px;
+}
+.p-spend-slide__block9{
+    width:550px;
 }
 
-.p-spend-slide__card1{
-    width: 408px;
-    margin-right: 28px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-.p-spend-slide__time {
-    font-size: 24px;
-    line-height: calc( 29 / 24);
-    letter-spacing: 2.88px;
-    @include global.mq('sp'){
-        font-size: 20px;
-        line-height: calc( 37.805 / 20 );
-        letter-spacing: 2.4px;
-    }
-}
-
-.p-spend-slide__head {
-    font-size: 24px;
-    line-height: calc( 29 / 24);
-    letter-spacing: 2.88px;
-    @include global.mq('sp'){
-        font-size: 20px;
-        line-height: calc( 37.805 / 20 );
-        letter-spacing: 2.4px;
-    }
-}
-
-.p-spend-slide__text {
-    text-align: left;
-    margin-top: 20px;
-    line-height: calc(34.545 / 15 );
-    letter-spacing: 1.95px;
-}
-
-.p-spend-slide__block__img{
-    margin-top: auto;
-    img{
-        width: 100%;
-    }
-    @include global.mq('sp'){
-        margin-top: 20px;
-    }
-}
-
-.p-spend-slide__accent {
-    display: flex;
-    align-items: flex-start;
-    @include global.mq('sp'){
-        display: none;
-    }
-}   
-
-.p-spend-slide__accent1 {
-    img{
-        &:first-of-type{
-            align-self: flex-end;
-        }
-        &:last-of-type{
-            margin-top: 205px;
-        }
-    }
-
-}
-
-.p-spend-slide__block2 {
-    margin-right: 28px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__card2{
-    width: 411px;
-    margin-right: 27px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent2 {
-    img{
-        &:first-of-type{
-            margin-top: 205px;
-        }
-        &:last-of-type{
-            align-self: flex-end;
-            margin-left: -84px;
-        }
-    }
-}
-
-.p-spend-slide__block3 {
-    margin-right: 54px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__card3{
-    width: 520px;
-    margin-right: 33px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent3 {
-    img{
-        &:first-of-type{
-            align-self: flex-end;
-            
-        }
-        &:last-of-type{
-            margin-left: -26px;
-            margin-top: 224px;
-        }
-    }
-}
-
-.p-spend-slide__block4 {
-    margin-right: 24px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}   
-
-.p-spend-slide__card4{
-    width: 407px;
-    margin-right: 51px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent4 {
-    img{
-        align-self: flex-end;
-    }
-}
-
-.p-spend-slide__block5 {
-    margin-right: 51px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__card5{
-    width: 486px;
-    margin-right: 51px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent5 {
-    img{
-        align-self: flex-end;
-    }
-}
-
-.p-spend-slide__block6 {
-    margin-right: 52px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__card6{
-    width: 393px;
-    margin-right: 75px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent6 {
-    img{
-        align-self: flex-end;
-    }
-}
-
-.p-spend-slide__block7 {
-    margin-right: 75px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__card7{
-    width: 361px;
-    margin-right: 40px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent7 {
-    img{
-        &:first-of-type{
-            align-self: flex-end;
-        }
-        &:last-of-type{
-            margin-top: 200px;
-            margin-left: 36px;
-        }
-    }
-}
-
-.p-spend-slide__block8 {
-    margin-right: 36px;
-    @include global.mq('sp'){
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__card8{
-    width: 408px;
-    margin-right: 28px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.p-spend-slide__accent8 {
-    img{
-        align-self: flex-end;
-    }
-}
-
-.p-spend-slide__card8{
-    width: 408px;
-    margin-right: 28px;
-}
-
-.p-spend-slide__block9 {
-
-}
-
-.p-spend-slide__card9{
-    width: 408px;
-    margin-right: 28px;
-    @include global.mq('sp'){
-        width: 100%;
-        margin-right: 0;
-    }
-}
 
 // 周辺観光
 
