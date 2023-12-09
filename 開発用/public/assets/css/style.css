@@ -999,6 +999,7 @@ header {
 .p-spend-slide__container {
 	display: flex;
 	height: inherit;
+	margin-left: 117px;
 	width: 100%;
 }
 
@@ -1010,11 +1011,11 @@ header {
 
 .border-line {
 	background: #ccc;
-	height: 0; /*はじめは高さを0に*/
+	height: 2px; /*線の太さ*/
 	left: 0.2em; /*線の位置*/
 	position: absolute;
 	top: 0;
-	width: 2px; /*線の太さ*/
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block {
