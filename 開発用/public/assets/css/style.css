@@ -1000,11 +1000,12 @@ header {
 	display: flex;
 	height: inherit;
 	margin-left: 117px;
-	width: 100%;
+	width: 6738px;
 }
 
 .p-spend-slide__list {
 	display: flex;
+	width: 100%;
 }
 
 .p-spend-slide__block {
@@ -1032,6 +1033,7 @@ header {
 }
 
 .p-spend-slide__text {
+	font-size: 15px;
 	letter-spacing: 1.95px;
 	line-height: 2.303;
 	text-align: left;
@@ -1051,7 +1053,7 @@ header {
 .p-spend-slide__block1 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block1::after {
@@ -1096,7 +1098,7 @@ header {
 .p-spend-slide__block2 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block2::after {
@@ -1111,6 +1113,7 @@ header {
 }
 
 .p-spend-slide__block2 .p-spend-slide__card {
+	margin-left: -60px;
 	margin-right: 27px;
 	width: 411px;
 }
@@ -1145,7 +1148,7 @@ header {
 .p-spend-slide__block3 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block3::after {
@@ -1160,6 +1163,7 @@ header {
 }
 
 .p-spend-slide__block3 .p-spend-slide__card {
+	margin-left: -180px;
 	margin-right: 33px;
 	width: 520px;
 }
@@ -1191,7 +1195,7 @@ header {
 .p-spend-slide__block4 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block4::after {
@@ -1206,6 +1210,7 @@ header {
 }
 
 .p-spend-slide__block4 .p-spend-slide__card {
+	margin-left: -160px;
 	margin-right: 51px;
 	width: 407px;
 }
@@ -1232,7 +1237,7 @@ header {
 .p-spend-slide__block5 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block5::after {
@@ -1247,6 +1252,7 @@ header {
 }
 
 .p-spend-slide__block5 .p-spend-slide__card {
+	margin-left: -200px;
 	margin-right: 51px;
 	width: 486px;
 }
@@ -1273,7 +1279,7 @@ header {
 .p-spend-slide__block6 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block6::after {
@@ -1314,7 +1320,7 @@ header {
 .p-spend-slide__block7 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block7::after {
@@ -1355,7 +1361,7 @@ header {
 .p-spend-slide__block8 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block8::after {
@@ -1396,7 +1402,7 @@ header {
 .p-spend-slide__block9 {
 	display: flex;
 	position: relative;
-	width: 846px;
+	width: 800px;
 }
 
 .p-spend-slide__block9::after {

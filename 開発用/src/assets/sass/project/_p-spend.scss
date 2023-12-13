@@ -37,7 +37,7 @@
 
 .p-spend-slide__container{
     display: flex;
-    width: 100%;
+    width: 6738px;
     height: inherit;
     margin-left: 117px;
     @include global.mq('sp'){
@@ -52,6 +52,7 @@
 
 .p-spend-slide__list{
     display: flex;
+    width: 100%;
 
 }
 
@@ -84,6 +85,7 @@
     text-align: left;
     line-height: calc( 34.545 / 15 );
     letter-spacing: 1.95px;
+    font-size: 15px;
 }
 
 .p-spend-slide__block__img{
@@ -97,7 +99,7 @@
 }
 
 .p-spend-slide__block1{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -136,7 +138,7 @@
     }
 }
 .p-spend-slide__block2{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -152,6 +154,7 @@
     .p-spend-slide__card{
         width: 411px;
         margin-right: 27px;
+        margin-left: -60px;
     }
     .p-spend-slide__accent{
         display: flex;
@@ -178,7 +181,7 @@
     }
 }
 .p-spend-slide__block3{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -193,6 +196,7 @@
     }
     .p-spend-slide__card{
         width: 520px;
+        margin-left: -180px;
         margin-right: 33px;
     }
     .p-spend-slide__accent{
@@ -218,7 +222,7 @@
     }
 }
 .p-spend-slide__block4{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -234,6 +238,7 @@
     .p-spend-slide__card{
         width: 407px;
         margin-right: 51px;
+        margin-left: -160px;
     }
     .p-spend-slide__accent{
         display: flex;
@@ -254,7 +259,7 @@
     }
 }
 .p-spend-slide__block5{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -270,6 +275,7 @@
     .p-spend-slide__card{
         width: 486px;
         margin-right: 51px;
+        margin-left: -200px;
     }
     .p-spend-slide__accent{
         display: flex;
@@ -291,7 +297,7 @@
     
 }
 .p-spend-slide__block6{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -327,7 +333,7 @@
     }
 }
 .p-spend-slide__block7{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -363,7 +369,7 @@
     };
 }
 .p-spend-slide__block8{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
@@ -399,7 +405,7 @@
     }
 }
 .p-spend-slide__block9{
-    width:846px;
+    width:800px;
     position: relative;
     display: flex;
     &::after{
