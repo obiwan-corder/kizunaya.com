@@ -113,38 +113,131 @@ if (spendWrapper && window.innerWidth > 768) {
 
 // 過ごし方ページ：進捗表示のアニメーション設定
 //線が伸びるための設定を関数でまとめる
-function ScrollTimelineAnime(){
-  $('.p-spend-slide__block').each(function(){// それぞれのli要素の
-    var elemPos = $(this).offset().left;// 上からの高さ取得
-    var scroll = $(window).scrollLeft();// スクロール値取得
-    var windowWidth = $(window).width();// windowの高さ取得
-    var startPoint = 100; //線をスタートさせる位置を指定※レイアウトによって調整してください
-    if (scroll >= elemPos - windowWidth-startPoint){       
-      var H = $(this).outerWidth(true)//liの余白と高さを含めた数値を取得
-      //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
-      var percent = (scroll+startPoint - elemPos) / (H/2) *100;//liの余白と高さの半分で線を100％に伸ばす
+// function ScrollTimelineAnime(){
+//   $('.p-spend-slide__block').each(function(){// それぞれのli要素の
+//     var elemPos = $(this).offset().left;// 上からの高さ取得
+//     var scroll = $(window).scrollLeft();// スクロール値取得
+//     var windowWidth = $(window).width();// windowの高さ取得
+//     var startPoint = 100; //線をスタートさせる位置を指定※レイアウトによって調整してください
+//     if (scroll >= elemPos - windowWidth-startPoint){       
+//       var H = $(this).outerWidth(true)//liの余白と高さを含めた数値を取得
+//       //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
+//       var percent = (scroll+startPoint - elemPos) / (H/2) *100;//liの余白と高さの半分で線を100％に伸ばす
 
-      // 100% を超えたらずっと100%を入れ続ける
-      if(percent  > 100){
-        percent  = 100;
+//       // 100% を超えたらずっと100%を入れ続ける
+//       if(percent  > 100){
+//         percent  = 100;
+//       }
+//       // ボーダーの長さをセット
+//       $(this).children('.border-line').css({
+//         width: percent + "%", //CSSでパーセント指定
+//       });
+//     } 
+//   });
+// }
+
+// // 画面をスクロールをしたら動かしたい場合の記述
+// $(window).on('scroll', function(){
+//   ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+// });
+
+// // ページが読み込まれたらすぐに動かしたい場合の記述
+// $(window).on('load', function(){
+//   ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+// });
+
+// function ScrollTimelineAnime1(){
+//   $('.p-spend-slide__block1').each(function(){// それぞれのli要素の
+//     var elemPos1 = $(this).offset().left;// 上からの高さ取得
+//     var scroll1 = $(window).scrollLeft();// スクロール値取得
+//     var windowWidth1 = $(window).width();// windowの高さ取得
+//     var startPoint1 = 100; //線をスタートさせる位置を指定※レイアウトによって調整してください
+//     if (scroll1 >= elemPos1 - windowWidth1-startPoint1){       
+//       var H1 = $(this).outerWidth(true)//liの余白と高さを含めた数値を取得
+//       //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
+//       var percent1 = (scroll1+startPoint1 - elemPos1) / (H1/2) *100;//liの余白と高さの半分で線を100％に伸ばす
+
+//       // 100% を超えたらずっと100%を入れ続ける
+//       if(percent1  > 100){
+//         percent1  = 120;
+//       }
+//       // ボーダーの長さをセット
+//       $(this).children('.border-line').css({
+//         width: percent1 + "%", //CSSでパーセント指定
+//       });
+//     } 
+//   });
+// }
+
+// // 画面をスクロールをしたら動かしたい場合の記述
+// $(window).on('scroll', function(){
+//   ScrollTimelineAnime1();// 線が伸びる関数を呼ぶ
+// });
+
+// // ページが読み込まれたらすぐに動かしたい場合の記述
+// $(window).on('load', function(){
+//   ScrollTimelineAnime1();// 線が伸びる関数を呼ぶ
+// });
+
+// function ScrollTimelineAnime2(){
+//   $('.p-spend-slide__block2').each(function(){// それぞれのli要素の
+//     var elemPos2 = $(this).offset().left;// 上からの高さ取得
+//     var scroll2 = $(window).scrollLeft();// スクロール値取得
+//     var windowWidth2 = $(window).width();// windowの高さ取得
+//     var startPoint2 = 100; //線をスタートさせる位置を指定※レイアウトによって調整してください
+//     if (scroll2 >= elemPos2 - windowWidth2-startPoint2){       
+//       var H2 = $(this).outerWidth(true)//liの余白と高さを含めた数値を取得
+//       //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
+//       var percent2 = (scroll2+startPoint2 - elemPos2) / (H2/2) *100;//liの余白と高さの半分で線を100％に伸ばす
+
+//       // 100% を超えたらずっと100%を入れ続ける
+//       if(percent2  > 100){
+//         percent2  = 120;
+//       }
+//       // ボーダーの長さをセット
+//       $(this).children('.border-line').css({
+//         width: percent2 + "%", //CSSでパーセント指定
+//       });
+//     } 
+//   });
+// }
+
+// // 画面をスクロールをしたら動かしたい場合の記述
+// $(window).on('scroll', function(){
+//   ScrollTimelineAnime2();// 線が伸びる関数を呼ぶ
+// });
+
+// // ページが読み込まれたらすぐに動かしたい場合の記述
+// $(window).on('load', function(){
+//   ScrollTimelineAnime2();// 線が伸びる関数を呼ぶ
+// });
+
+function ScrollTimelineAnime(selector, maxPercent = 100) {
+  $(selector).each(function() {
+      var elemPos = $(this).offset().left;
+      var scroll = $(window).scrollLeft();
+      var windowWidth = $(window).width();
+      var startPoint = 100;
+      if (scroll >= elemPos - windowWidth - startPoint) {
+          var H = $(this).outerWidth(true);
+          var percent = (scroll + startPoint - elemPos) / (H / 2) * 100;
+          if (percent > maxPercent) {
+              percent = maxPercent;
+          }
+          $(this).children('.border-line').css({
+              width: percent + "%",
+          });
       }
-      // ボーダーの長さをセット
-      $(this).children('.border-line').css({
-        width: percent + "%", //CSSでパーセント指定
-      });
-    } 
   });
 }
 
-// 画面をスクロールをしたら動かしたい場合の記述
-$(window).on('scroll', function(){
-  ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+// 画面をスクロールしたり、ページが読み込まれたりしたときに動作させる
+$(window).on('scroll load', function() {
+  ScrollTimelineAnime('.p-spend-slide__block'); // 元のScrollTimelineAnime
+  ScrollTimelineAnime('.p-spend-slide__block1', 100); // 元のScrollTimelineAnime1
+  ScrollTimelineAnime('.p-spend-slide__block2', 100); // 元のScrollTimelineAnime2
 });
 
-// ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function(){
-  ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
-});
 
 
 // 
