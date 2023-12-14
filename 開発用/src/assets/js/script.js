@@ -214,13 +214,13 @@ if (spendWrapper && window.innerWidth > 768) {
 
 function ScrollTimelineAnime(selector, maxPercent = 100) {
   $(selector).each(function() {
-      var elemPos = $(this).offset().left;
-      var scroll = $(window).scrollLeft();
-      var windowWidth = $(window).width();
-      var startPoint = 100;
+      const elemPos = $(this).offset().left;
+      const scroll = $(window).scrollLeft();
+      const windowWidth = $(window).width();
+      const startPoint = 100;
       if (scroll >= elemPos - windowWidth - startPoint) {
-          var H = $(this).outerWidth(true);
-          var percent = (scroll + startPoint - elemPos) / (H / 2) * 100;
+          let H = $(this).outerWidth(true);
+          let  percent = (scroll + startPoint - elemPos) / (H / 2) * 100;
           if (percent > maxPercent) {
               percent = maxPercent;
           }
@@ -234,8 +234,48 @@ function ScrollTimelineAnime(selector, maxPercent = 100) {
 // 画面をスクロールしたり、ページが読み込まれたりしたときに動作させる
 $(window).on('scroll load', function() {
   ScrollTimelineAnime('.p-spend-slide__block'); // 元のScrollTimelineAnime
-  ScrollTimelineAnime('.p-spend-slide__block1', 100); // 元のScrollTimelineAnime1
-  ScrollTimelineAnime('.p-spend-slide__block2', 100); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block1', 105); // 元のScrollTimelineAnime1
+  ScrollTimelineAnime('.p-spend-slide__block2', 106); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block3', 105); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block4', 99); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block5', 97); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block6', 100); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block7', 110); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block8', 100); // 元のScrollTimelineAnime2
+  ScrollTimelineAnime('.p-spend-slide__block9', 100); // 元のScrollTimelineAnime2
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+// 各要素に対してアニメーションを設定
+document.querySelectorAll(".p-spend-slide__block").forEach(element => {
+  gsap.to(element, {
+    scrollTrigger: {
+      trigger: element, // トリガーとなる要素
+      start: "left center", // 要素がビューポートの中央に来たときに開始
+      toggleActions: "play none none none", // スクロール時の動作
+      // オプションで markers: true を設定して、開始と終了ポイントを可視化できる
+    },
+    opacity: 1, // 透明度を1に
+    y: 0, // Y軸の位置を0に（上への移動効果を解除）
+    duration: 2, // アニメーションの長さ（秒）
+    ease: "power2.out" // イージングの種類
+  });
+});
+// 各要素に対してアニメーションを設定
+document.querySelectorAll(".p-spend-tour").forEach(element => {
+  gsap.to(element, {
+    scrollTrigger: {
+      trigger: element, // トリガーとなる要素
+      start: "left center", // 要素がビューポートの中央に来たときに開始
+      toggleActions: "play none none none", // スクロール時の動作
+      // オプションで markers: true を設定して、開始と終了ポイントを可視化できる
+    },
+    opacity: 1, // 透明度を1に
+    y: 0, // Y軸の位置を0に（上への移動効果を解除）
+    duration: 2, // アニメーションの長さ（秒）
+    ease: "power2.out" // イージングの種類
+  });
 });
 
 
