@@ -2823,7 +2823,8 @@ dialog::backdrop {
 }
 
 .p-spend-slide__block .p-spend-slide__card {
-	margin: 0;
+	margin: 0 auto;
+	max-width: 520px;
 	width: 100%;
 }
 
@@ -2851,6 +2852,7 @@ dialog::backdrop {
 }
 
 .p-spend-slide__block__img img {
+	max-height: none;
 	width: 100%;
 }
 

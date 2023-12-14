@@ -81,7 +81,8 @@
         }
         .p-spend-slide__card{
             width: 100%;
-            margin: 0;
+            max-width: 520px;
+            margin: 0 auto;
         }
 
     }
@@ -144,6 +145,7 @@
         max-height: 272px;
         @include global.mq('sp'){
             width: 100%;
+            max-height: none;
         }
     }
 }
