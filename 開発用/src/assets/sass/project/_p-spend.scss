@@ -26,7 +26,7 @@
     padding-top: 85px;
     padding-bottom: 110px;
     width: 100%;
-    height: 100vh;
+    height: 686px;
     background: url(../img/spend/spend-slide-bg.png) no-repeat center center / cover;
     @include global.mq('sp'){
         width: 100%;
@@ -539,7 +539,6 @@
 .p-spend-tour {
     padding-top: 190px;
     padding-bottom: 120px;
-    opacity: 0;
     @include global.mq('sp'){
         padding-top: 39px;
         padding-bottom: 20px;
@@ -551,6 +550,7 @@
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+    opacity: 0;
     @include global.mq('sp'){
         font-size: 24px;
         line-height: calc( 35/ 24 );
@@ -575,6 +575,7 @@
 .p-spend-tour__card {
     max-width: 520px;
     margin-inline: auto;
+    opacity: 0;
 }
 
 .spend-tour__head {

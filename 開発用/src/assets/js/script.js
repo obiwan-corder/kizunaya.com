@@ -263,7 +263,21 @@ document.querySelectorAll(".p-spend-slide__block").forEach(element => {
   });
 });
 // 各要素に対してアニメーションを設定
-document.querySelectorAll(".p-spend-tour").forEach(element => {
+document.querySelectorAll(".p-spend-tour__title").forEach(element => {
+  gsap.to(element, {
+    scrollTrigger: {
+      trigger: element, // トリガーとなる要素
+      start: "left center", // 要素がビューポートの中央に来たときに開始
+      toggleActions: "play none none none", // スクロール時の動作
+      // オプションで markers: true を設定して、開始と終了ポイントを可視化できる
+    },
+    opacity: 1, // 透明度を1に
+    y: 0, // Y軸の位置を0に（上への移動効果を解除）
+    duration: 2, // アニメーションの長さ（秒）
+    ease: "power2.out" // イージングの種類
+  });
+});
+document.querySelectorAll(".p-spend-tour__card").forEach(element => {
   gsap.to(element, {
     scrollTrigger: {
       trigger: element, // トリガーとなる要素

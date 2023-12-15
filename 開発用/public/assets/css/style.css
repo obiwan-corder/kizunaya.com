@@ -990,7 +990,7 @@ header {
 
 .p-spend-slide {
 	background: url(../img/spend/spend-slide-bg.png) no-repeat center center/cover;
-	height: 100vh;
+	height: 686px;
 	padding-bottom: 110px;
 	padding-top: 85px;
 	width: 100%;
@@ -1442,7 +1442,6 @@ header {
 }
 
 .p-spend-tour {
-	opacity: 0;
 	padding-bottom: 120px;
 	padding-top: 190px;
 }
@@ -1451,6 +1450,7 @@ header {
 	font-family: "Shippori Mincho", serif;
 	font-size: 32px;
 	font-weight: 600;
+	opacity: 0;
 	text-align: center;
 }
 
@@ -1467,6 +1467,7 @@ header {
 .p-spend-tour__card {
 	margin-inline: auto;
 	max-width: 520px;
+	opacity: 0;
 }
 
 .spend-tour__head {
