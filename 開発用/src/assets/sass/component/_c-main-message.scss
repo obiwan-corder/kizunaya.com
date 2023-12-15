@@ -9,6 +9,11 @@
     padding-top: 120px;
     padding-bottom: 110px;
     font-family: global.$main-font;
+    @include global.mq('sp'){
+        padding-top: 60px;
+        padding-bottom: 54px;
+        letter-spacing: 0.9px;
+    }
 }
 
 .c-main-message__text {
