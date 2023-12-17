@@ -563,10 +563,14 @@
     padding-top: 190px;
     padding-bottom: 120px;
     @include global.mq('sp'){
-        padding-top: 39px;
+        padding-top: 44px;
         padding-bottom: 20px;
+        padding-left: calc( 45px - 19px);
+        padding-right: calc( 45px - 19px);
     }
 }
+
+
 
 .p-spend-tour__title {
     font-family: global.$title-font;
@@ -608,7 +612,7 @@
     font-weight: 600;
     font-family: global.$title-font;
     @include global.mq('sp'){
-        margin-top: 15px;
+        margin-top: 0px;
         font-size: 20px;
         line-height: calc(29 / 20);
     }
@@ -619,13 +623,33 @@
     font-size: 15px;
     line-height: calc( 28.353 / 15 );
     letter-spacing: 1.8px;
+
+    @include global.mq('sp'){
+        margin-top: 0;
+        line-height: calc( 22.5 / 15 );
+        letter-spacing: 0.8px;
+        padding-right: 4px;
+        
+    }
 }
 
 .p-spend-tour__detail {
     margin-top: 30px;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     @include global.mq('sp'){
         margin-top: 15px;
+        letter-spacing: 1.68px;
+        .small_text{
+            font-size: 11px;
+            letter-spacing: 1.32px;
+            line-height: calc( 11.332 / 11 );
+        }
     }
 }
 
+.p-spend-tour__img img{
+    @include global.mq('sp'){
+        aspect-ratio:  285 / 204 ;
+    }
+}

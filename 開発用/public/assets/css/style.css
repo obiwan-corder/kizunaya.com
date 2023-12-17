@@ -1483,6 +1483,7 @@ header {
 }
 
 .p-spend-tour__detail {
+	font-family: "Inter", sans-serif;
 	font-size: 14px;
 	margin-top: 30px;
 }
@@ -2927,7 +2928,9 @@ dialog::backdrop {
 
 .p-spend-tour {
 	padding-bottom: 20px;
-	padding-top: 39px;
+	padding-left: 26px;
+	padding-right: 26px;
+	padding-top: 44px;
 }
 
 .p-spend-tour__title {
@@ -2944,11 +2947,29 @@ dialog::backdrop {
 .spend-tour__head {
 	font-size: 20px;
 	line-height: 1.45;
-	margin-top: 15px;
+	margin-top: 0px;
+}
+
+.p-spend-tour__text {
+	letter-spacing: 0.8px;
+	line-height: 1.5;
+	margin-top: 0;
+	padding-right: 4px;
 }
 
 .p-spend-tour__detail {
+	letter-spacing: 1.68px;
 	margin-top: 15px;
+}
+
+.p-spend-tour__detail .small_text {
+	font-size: 11px;
+	letter-spacing: 1.32px;
+	line-height: 1.0301818182;
+}
+
+.p-spend-tour__img img {
+	aspect-ratio: 285/204;
 }
 
 .p-gnav {
