@@ -1559,7 +1559,17 @@ header {
 }
 
 .p-access {
-	padding: 120px 0;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	padding: 120px 0 115px;
+}
+
+.l-lower-header.p-access__header {
+	height: 60.3vh;
+}
+
+.p-access__title {
+	padding-left: 4px;
+	padding-top: 8px;
 }
 
 .p-access__map {
@@ -1568,30 +1578,29 @@ header {
 }
 
 .p-access__map__block {
+	height: -moz-fit-content;
+	height: fit-content;
 	max-width: 804px;
-	padding-top: min(61.94%, 498px);
-	position: relative;
 	width: 100%;
 }
 
 .p-access__map__block > iframe {
-	content: "";
+	aspect-ratio: 804/498;
 	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
 	width: 100%;
 }
 
 .p-access__map__address {
-	letter-spacing: 1.8px;
+	letter-spacing: 1.1px;
+	line-height: 1.7333333333;
 	margin-left: 42px;
 	white-space: nowrap;
 }
 
 .p-access__route {
 	line-height: 1.563;
-	margin-top: 80px;
+	margin-top: 76px;
+	padding-left: 8px;
 }
 
 .p-access__route dt {
@@ -1601,11 +1610,12 @@ header {
 }
 
 .p-access__route dt:not(:first-of-type) {
-	margin-top: 34px;
+	margin-top: 30px;
 }
 
 .p-access__route dd {
-	letter-spacing: 5.475px;
+	letter-spacing: 4.5px;
+	line-height: 2.084;
 }
 
 .p-content__block {
@@ -2367,6 +2377,11 @@ dialog::backdrop {
 	width: 100%;
 }
 
+.p-access__map {
+	align-items: flex-start;
+	flex-direction: column;
+}
+
 .p-content__text {
 	width: 45%;
 }
@@ -2982,6 +2997,19 @@ dialog::backdrop {
 	font-size: 1.1rem;
 }
 
+.p-access {
+	padding: 60px 0;
+}
+
+.l-lower-header.p-access__header {
+	height: 81.5vh;
+}
+
+.p-access__title {
+	padding-left: 2px;
+	padding-top: 5px;
+}
+
 .p-access__map {
 	align-items: flex-start;
 	flex-direction: column;
@@ -2990,14 +3018,13 @@ dialog::backdrop {
 .p-access__map__address {
 	font-size: 14px;
 	letter-spacing: 1.68px;
-	line-height: 1.8902142857;
 	margin-left: 0;
 	text-align: left;
 }
 
 .p-access__route {
 	line-height: 1.563;
-	margin-top: 40px;
+	margin-top: 42px;
 }
 
 .p-access__route dt {
@@ -3012,7 +3039,12 @@ dialog::backdrop {
 .p-access__route dd {
 	font-size: 13px;
 	letter-spacing: 1.755px;
+	line-height: 1.5384615385;
 	margin-left: 14px;
+}
+
+.p-access__route dd:last-of-type {
+	margin-top: 20px;
 }
 
 .p-content__block:not(:first-child) {
