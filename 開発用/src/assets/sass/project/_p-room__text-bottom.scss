@@ -6,4 +6,7 @@
   letter-spacing: 0.12em;
   line-height: 1.89;
   padding-top: 19px;
+  @include global.mq('sp') {
+    padding-top: 20px;
+  }
 }

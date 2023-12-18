@@ -12,4 +12,9 @@
   padding-bottom: 50px;
   justify-content: center;
   max-width: 1080px;
+  @include global.mq('sp') {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 17px;
+  }
 }

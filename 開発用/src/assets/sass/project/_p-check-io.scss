@@ -2,6 +2,9 @@
 
 .p-check-io {
     margin-bottom: 165px;
+    @include global.mq('sp') {
+        margin-bottom: 20px;
+    }
 }
 .p-check-io__wrapper {
     background-image: url(../img/guest-room/check-io-bg.svg);

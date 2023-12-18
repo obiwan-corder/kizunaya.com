@@ -874,6 +874,15 @@ header {
 	padding-bottom: 119px;
 }
 
+.c-reservation-btn {
+	transition: all 0.3s ease;
+}
+
+.c-reservation-btn:hover {
+	background-color: #ffffff;
+	color: #2D2D2E;
+}
+
 .p-logo__wrap {
 	position: relative;
 	text-align: center;
@@ -2407,7 +2416,7 @@ dialog::backdrop {
 
 .l-lower-header {
 	aspect-ratio: unset;
-	height: 75vh;
+	height: 71vh;
 }
 
 .l-lower-header__title {
@@ -2523,6 +2532,13 @@ dialog::backdrop {
 
 .js-active .c-drawer-btn__bar::after {
 	transform: translateY(-17.6px) rotate(64deg);
+}
+
+.c-main-message {
+	margin: 0 auto;
+	padding-bottom: 68px;
+	padding-top: 2px;
+	width: 90%;
 }
 
 .c-concept__lead {
@@ -2747,6 +2763,15 @@ dialog::backdrop {
 .c-scroll__btn::after {
 	height: 13.54px;
 	width: 21.67px;
+}
+
+.c-main__text--guest-room {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 2.3026666667;
+	padding-bottom: 15px;
+	padding-top: 59px;
 }
 
 .p-logo__wrap {
@@ -3161,6 +3186,33 @@ dialog::backdrop {
 	padding-bottom: 5px;
 }
 
+.p-room__version {
+	flex-direction: column-reverse;
+}
+
+.p-facility {
+	margin-bottom: 40px;
+}
+
+.p-check-io {
+	margin-bottom: 20px;
+}
+
+.p-room__sentence {
+	padding-right: 0;
+	width: max(100%, 300px);
+}
+
+.p-room__title-eng {
+	font-size: 0.9375rem;
+	font-weight: 500;
+	left: 5px;
+	letter-spacing: 0.0066666667em;
+	line-height: 1.448;
+	position: relative;
+	top: 3px;
+}
+
 #sea.p-course__version {
 	padding: 0;
 }
@@ -3304,6 +3356,76 @@ dialog::backdrop {
 .p-restaurant__list {
 	gap: 3vw;
 	padding: 0;
+}
+
+.p-room__title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.0041666667em;
+	line-height: 1;
+	margin-bottom: 8px;
+	padding-bottom: 2px;
+}
+
+.p-room__text-bottom {
+	padding-top: 20px;
+}
+
+.p-room__text {
+	font-size: 0.8125rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 1.89;
+}
+
+.p-room__imgs {
+	display: block;
+	width: max(100%, 285px);
+}
+
+.p-room__version:nth-child(2) {
+	flex-direction: column-reverse;
+}
+
+.p-room__version:last-child {
+	margin-bottom: 40px;
+}
+
+.p-room__version {
+	margin-bottom: 40px;
+}
+
+.p-room__img:not(:first-child) {
+	margin-top: 20px;
+}
+
+.p-inner__check {
+	display: block;
+	padding-bottom: 17px;
+	padding-top: 21px;
+}
+
+.p-check-io__text {
+	font-size: 0.9375rem;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	line-height: 1.89;
+	padding-left: 4px;
+	text-align: center;
+}
+
+.p-check-io__contents:not(:first-child) {
+	margin: 0 auto;
+	max-width: 300px;
+	padding-right: 3px;
+	padding-top: 20px;
+	width: 100%;
+}
+
+.p-check-io__contents {
+	margin: 0 auto;
+	max-width: 300px;
+	width: 100%;
 }
 
 }
