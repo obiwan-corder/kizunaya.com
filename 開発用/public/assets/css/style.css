@@ -874,6 +874,15 @@ header {
 	padding-bottom: 119px;
 }
 
+.c-reservation-btn {
+	transition: all 0.3s ease;
+}
+
+.c-reservation-btn:hover {
+	background-color: #ffffff;
+	color: #2D2D2E;
+}
+
 .p-logo__wrap {
 	position: relative;
 	text-align: center;
