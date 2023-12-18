@@ -10,11 +10,16 @@ body li {
 	list-style: none;
 }
 
+body.is-active {
+	overflow-y: hidden;
+}
+
 header {
 	overflow: hidden;
 }
 
 .l-lower-header {
+	animation: fadeInAnime 2s;
 	aspect-ratio: 1440/500;
 	width: 100%;
 	-o-object-fit: cover;
@@ -34,12 +39,27 @@ header {
 
 #guest-room .l-lower-header {
 	background: url(../../assets/img/guest-room/header.jpg) no-repeat;
-	background-size: contain;
+	background-size: cover;
+}
+
+#cooking .l-lower-header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.49) 100%), url(../../assets/img/cooking/header.jpg), lightgray -313.461px -3.068px/254.002% 107.11% no-repeat;
+}
+
+#spend-page .l-lower-header {
+	background: url(../../assets/img/spend/header.jpg) no-repeat;
+	background-size: cover;
+}
+
+#access .l-lower-header {
+	background: url(../../assets/img/access/header.jpg) no-repeat;
+	background-size: cover;
 }
 
 .l-inner {
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 1080px;
+	width: 75%;
 	width: 75%;
 }
 
@@ -66,7 +86,7 @@ header {
 	animation: fadeInAnime 3s forwards 1s;
 	left: 50%;
 	opacity: 0;
-	position: absolute;
+	position: relative;
 	top: 35.3%;
 	transform: translateX(-50%);
 }
@@ -79,8 +99,13 @@ header {
 .l-footer {
 	background: url(../img/top/footer_bg.png) center center/cover no-repeat;
 	height: 500px;
-	margin-top: 767px;
-	padding-top: 104px;
+	padding-top: 120px;
+	position: relative;
+}
+
+.l-header {
+	background: url(../img/onsen/header_mv.png) center center/cover no-repeat;
+	height: 500px;
 	position: relative;
 }
 
@@ -136,11 +161,12 @@ header {
 
 .c-search-btn {
 	background: linear-gradient(180deg, #007ADF 0%, rgba(2, 200, 160, 0.79) 139.64%, rgba(0, 236, 188, 0.48) 194.29%);
-	display: inline-block;
+	display: none;
 	height: 280px;
 	position: fixed;
 	right: 0;
-	top: 430px;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 125px;
 	z-index: 10;
 }
@@ -178,12 +204,13 @@ header {
 	background-color: #272727;
 	display: grid;
 	height: 85px;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	text-align: center;
 	top: 0;
+	transition: all 0.3s ease 0s;
 	width: 110px;
-	z-index: 11;
+	z-index: 21;
 }
 
 .c-drawer-btn__bar {
@@ -232,6 +259,7 @@ header {
 }
 
 .c-main-message {
+	font-family: "Zen Kaku Gothic New", sans-serif;
 	font-size: 15px;
 	letter-spacing: 1.95px;
 	line-height: 2.303;
@@ -563,8 +591,13 @@ header {
 	letter-spacing: 0.13em;
 	line-height: 1.448;
 	margin-bottom: 35px;
+	transition: opacity 0.5s ease;
 	width: -moz-max-content;
 	width: max-content;
+}
+
+.c-footer__nav--item:hover {
+	opacity: 0.7;
 }
 
 .c-footer__nav--item:last-child {
@@ -609,6 +642,236 @@ header {
 .c-content__title--guestroom {
 	left: 41.5%;
 	top: 54%;
+}
+
+.c-header__heading {
+	color: #ffffff;
+	font-family: "Shippori Mincho", serif;
+	font-size: 3rem;
+	font-size: calc(24px + 24 * (100vw - 375px) / 1065);
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.13em;
+	line-height: 1.4479166667;
+	position: absolute;
+	top: 50%;
+	transform: translate(-48%, -50%);
+	z-index: 1;
+}
+
+.c-onsen__block-title {
+	color: #2D2D2E;
+	font-family: "Shippori Mincho", serif;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 0.009375em;
+	line-height: 1.448125;
+	padding-left: 0.1rem;
+}
+
+.c-onsen__block-desc {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-bottom: 3.1rem;
+	padding-left: 0.1rem;
+	padding-top: 1rem;
+}
+
+.c-onsen__block-time {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-left: 0.1rem;
+}
+
+.c-onsen__block-maintenance {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	line-height: 0.89;
+	padding-left: 0.1rem;
+}
+
+.c-onsen__properties-title {
+	color: #2D2D2E;
+	font-family: "Shippori Mincho", serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.0041666667em;
+	line-height: 1.9166666667;
+	padding-left: 14px;
+	text-align: center;
+}
+
+.c-onsen__desc {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.c-onsen__desc:nth-child(2) {
+	padding-right: 12px;
+	padding-top: 2px;
+}
+
+.c-onsen__desc:last-child {
+	display: inline;
+	padding-right: 0px;
+	padding-top: 2px;
+}
+
+.c-price__content--title {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 2rem;
+	font-size: calc(24px + 8 * (100vw - 375px) / 1065);
+	font-weight: 800;
+	letter-spacing: 0.003125em;
+	line-height: 1.448125;
+	position: relative;
+	text-align: center;
+}
+
+.c-price__content--title::before {
+	background: url(../img/onsen/onsen_icon.png) center center/cover no-repeat;
+	content: "";
+	height: 37.56px;
+	left: 50%;
+	position: absolute;
+	top: -65%;
+	transform: translate(-50%, -50%);
+	width: 39.14px;
+}
+
+.c-operating__hours {
+	color: #2D2D2E;
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.c-operating__time {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 41px;
+}
+
+.c-price__label {
+	color: #2D2D2E;
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.c-price__weekday-label {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 116px;
+}
+
+.c-price__weekday-details {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 116px;
+}
+
+.c-price__holiday-label {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 118px;
+}
+
+.c-price__holiday-details {
+	display: inline-block;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 60px;
+}
+
+.c-price__note {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-left: 16px;
+	padding-top: 20px;
+}
+
+.c-scroll__btn {
+	background-color: #262626;
+	border: none;
+	bottom: 20px;
+	cursor: pointer;
+	display: none;
+	height: 80px;
+	position: fixed;
+	right: 100px;
+	width: 80px;
+	z-index: 10;
+}
+
+.c-scroll__btn::after {
+	background: url(../img/top/scroll_icon.png) center center/contain no-repeat;
+	content: "";
+	height: 21.67px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 34.67px;
+}
+
+.c-scroll__btn:hover {
+	background-color: rgba(38, 38, 38, 0.8);
+}
+
+.c-main__text--guest-room {
+	padding-left: 2px;
+	padding-top: 2px;
+}
+
+.c-main-message--guest-room {
+	padding-bottom: 119px;
 }
 
 .p-logo__wrap {
@@ -727,208 +990,459 @@ header {
 
 .p-spend-slide {
 	background: url(../img/spend/spend-slide-bg.png) no-repeat center center/cover;
-	display: flex;
-	flex: 1;
+	height: 686px;
 	padding-bottom: 110px;
 	padding-top: 85px;
-	width: 900%;
-}
-
-.p-spend-slide__wrapper {
-	display: flex;
-	margin-left: 117px;
-}
-
-.p-spend-slide__block {
-	display: flex;
-	position: relative;
 	width: 100%;
 }
 
-.p-spend-slide__block::after {
-	background: #2D2D2E;
-	border-radius: 50%;
-	content: "";
-	height: 20px;
-	left: 200px;
-	position: absolute;
-	top: -37px;
-	transform: translateX(-50%);
-	width: 20px;
+.p-spend-slide__container {
+	display: flex;
+	height: inherit;
+	margin-left: 117px;
+	width: 7087px;
 }
 
-.p-spend-slide__block1 {
-	margin-right: 32px;
+.p-spend-slide__list {
+	display: flex;
+	width: 100%;
+}
+
+.p-spend-slide__block {
+	flex: 1;
+	height: 601px;
+	opacity: 0;
+	position: relative;
 }
 
 .p-spend-slide__card {
-	display: flex;
-	flex-direction: column;
+	height: inherit;
+	position: relative;
 	text-align: center;
-}
-
-.p-spend-slide__card1 {
-	margin-right: 28px;
-	width: 408px;
 }
 
 .p-spend-slide__time {
 	font-size: 24px;
 	letter-spacing: 2.88px;
-	line-height: 1.2083333333;
+	line-height: 1.875;
+	margin-top: 37px;
 }
 
 .p-spend-slide__head {
 	font-size: 24px;
 	letter-spacing: 2.88px;
-	line-height: 1.2083333333;
+	line-height: 1.875;
 }
 
 .p-spend-slide__text {
+	font-size: 15px;
 	letter-spacing: 1.95px;
 	line-height: 2.303;
-	margin-top: 20px;
 	text-align: left;
 }
 
 .p-spend-slide__block__img {
-	margin-top: auto;
-}
-
-.p-spend-slide__block__img img {
+	bottom: 0;
+	position: absolute;
 	width: 100%;
 }
 
-.p-spend-slide__accent {
-	align-items: flex-start;
+.p-spend-slide__block__img img {
+	max-height: 272px;
+	width: auto;
+}
+
+.p-spend-slide__block1 {
 	display: flex;
+	position: relative;
+	width: 776px;
 }
 
-.p-spend-slide__accent1 img:first-of-type {
-	align-self: flex-end;
+.p-spend-slide__block1 .p-spend-slide__card {
+	margin-right: 28px;
+	width: 408px;
 }
 
-.p-spend-slide__accent1 img:last-of-type {
-	margin-top: 205px;
+.p-spend-slide__block1 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
+}
+
+.p-spend-slide__block1 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block1 .p-spend-slide__accent img:nth-child(2) {
+	margin-bottom: 159px;
+}
+
+.p-spend-slide__block1::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 194px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block1 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 194px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block2 {
-	margin-right: 28px;
+	display: flex;
+	position: relative;
+	width: 736px;
 }
 
-.p-spend-slide__card2 {
+.p-spend-slide__block2 .p-spend-slide__card {
+	margin-left: 32px;
 	margin-right: 27px;
 	width: 411px;
 }
 
-.p-spend-slide__accent2 img:first-of-type {
-	margin-top: 205px;
+.p-spend-slide__block2 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
 }
 
-.p-spend-slide__accent2 img:last-of-type {
-	align-self: flex-end;
-	margin-left: -84px;
+.p-spend-slide__block2 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block2 .p-spend-slide__accent img:nth-child(1) {
+	margin-bottom: 163px;
+}
+
+.p-spend-slide__block2 .p-spend-slide__accent img:nth-child(2) {
+	margin-left: -85px;
+}
+
+.p-spend-slide__block2::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 227px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block2 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 227px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block3 {
-	margin-right: 54px;
+	display: flex;
+	position: relative;
+	width: 846px;
 }
 
-.p-spend-slide__card3 {
+.p-spend-slide__block3 .p-spend-slide__card {
+	margin-left: 28px;
 	margin-right: 33px;
 	width: 520px;
 }
 
-.p-spend-slide__accent3 img:first-of-type {
-	align-self: flex-end;
+.p-spend-slide__block3 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
+	width: calc(100% - 553px);
 }
 
-.p-spend-slide__accent3 img:last-of-type {
+.p-spend-slide__block3 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block3 .p-spend-slide__accent img:nth-child(2) {
+	margin-bottom: 145px;
 	margin-left: -26px;
-	margin-top: 224px;
+}
+
+.p-spend-slide__block3::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 268px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block3 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 268px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block4 {
-	margin-right: 24px;
+	display: flex;
+	position: relative;
+	width: 751px;
 }
 
-.p-spend-slide__card4 {
+.p-spend-slide__block4 .p-spend-slide__card {
+	margin-left: 104px;
 	margin-right: 51px;
 	width: 407px;
 }
 
-.p-spend-slide__accent4 img {
-	align-self: flex-end;
+.p-spend-slide__block4 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
+}
+
+.p-spend-slide__block4 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block4::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 292px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block4 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 292px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block5 {
-	margin-right: 51px;
+	display: flex;
+	position: relative;
+	width: 837px;
 }
 
-.p-spend-slide__card5 {
+.p-spend-slide__block5 .p-spend-slide__card {
+	margin-left: 51px;
 	margin-right: 51px;
 	width: 486px;
 }
 
-.p-spend-slide__accent5 img {
-	align-self: flex-end;
+.p-spend-slide__block5 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
+}
+
+.p-spend-slide__block5 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block5::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 270px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block5 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 270px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block6 {
-	margin-right: 52px;
+	display: flex;
+	position: relative;
+	width: 805px;
 }
 
-.p-spend-slide__card6 {
+.p-spend-slide__block6 .p-spend-slide__card {
+	margin-left: 52px;
 	margin-right: 75px;
 	width: 393px;
 }
 
-.p-spend-slide__accent6 img {
-	align-self: flex-end;
+.p-spend-slide__block6 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
+}
+
+.p-spend-slide__block6 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block6::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 238px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block6 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 238px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block7 {
-	margin-right: 75px;
+	display: flex;
+	position: relative;
+	width: 784px;
 }
 
-.p-spend-slide__card7 {
+.p-spend-slide__block7 .p-spend-slide__card {
+	margin-left: 75px;
 	margin-right: 40px;
 	width: 361px;
 }
 
-.p-spend-slide__accent7 img:first-of-type {
-	align-self: flex-end;
+.p-spend-slide__block7 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
 }
 
-.p-spend-slide__accent7 img:last-of-type {
+.p-spend-slide__block7 .p-spend-slide__accent img {
+	height: auto;
+}
+
+.p-spend-slide__block7 .p-spend-slide__accent img:nth-child(2) {
+	margin-bottom: 107px;
 	margin-left: 36px;
-	margin-top: 200px;
+}
+
+.p-spend-slide__block7::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 236px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block7 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 236px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-slide__block8 {
-	margin-right: 36px;
+	display: flex;
+	position: relative;
+	width: 750px;
 }
 
-.p-spend-slide__card8 {
-	margin-right: 28px;
-	width: 408px;
+.p-spend-slide__block8 .p-spend-slide__card {
+	margin-left: 136px;
+	margin-right: 70px;
+	width: 374px;
 }
 
-.p-spend-slide__accent8 img {
-	align-self: flex-end;
+.p-spend-slide__block8 .p-spend-slide__accent {
+	align-items: flex-end;
+	display: flex;
+	height: inherit;
 }
 
-.p-spend-slide__card8 {
-	margin-right: 28px;
-	width: 408px;
+.p-spend-slide__block8 .p-spend-slide__accent img {
+	height: auto;
 }
 
-.p-spend-slide__card9 {
-	margin-right: 28px;
-	width: 408px;
+.p-spend-slide__block8::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 304px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block8 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 304px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
+}
+
+.p-spend-slide__block9 {
+	display: flex;
+	position: relative;
+	width: 453px;
+}
+
+.p-spend-slide__block9::after {
+	background: #2D2D2E;
+	border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 286px;
+	position: absolute;
+	top: -37px;
+	width: 20px;
+}
+
+.p-spend-slide__block9 .p-spend-slide__card {
+	margin-left: 70px;
+	width: 453px;
+}
+
+.p-spend-slide__block9 .border-line {
+	background: #2D2D2E;
+	height: 2px; /*線の太さ*/
+	left: 286px; /*線の位置*/
+	position: absolute;
+	top: -28px;
+	width: 0; /*はじめは高さを0に*/
 }
 
 .p-spend-tour {
+	padding-bottom: 120px;
 	padding-top: 190px;
 }
 
@@ -936,6 +1450,7 @@ header {
 	font-family: "Shippori Mincho", serif;
 	font-size: 32px;
 	font-weight: 600;
+	opacity: 0;
 	text-align: center;
 }
 
@@ -952,6 +1467,7 @@ header {
 .p-spend-tour__card {
 	margin-inline: auto;
 	max-width: 520px;
+	opacity: 0;
 }
 
 .spend-tour__head {
@@ -999,7 +1515,7 @@ header {
 	pointer-events: visible;
 	position: fixed;
 	right: 0;
-	z-index: 10;
+	z-index: 20;
 }
 
 .js-panelactive .p-gnav__nav-list {
@@ -1027,6 +1543,21 @@ header {
 	animation-fill-mode: forwards;
 	animation-name: navAnm;
 	animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.p-gnav__background {
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 15;
+}
+
+.p-gnav__background.is-active {
+	display: block;
 }
 
 .p-access {
@@ -1163,7 +1694,126 @@ header {
 	font-size: 2.4em;
 }
 
-.p-dialog {
+.p-footer__sns--items .fa-instagram::before,
+.p-footer__sns--items .fa-facebook-f::before {
+	transition: color 0.5s ease;
+}
+
+.p-footer__sns--items .fa-instagram:hover::before,
+.p-footer__sns--items .fa-facebook-f:hover::before {
+	color: #CACACA;
+}
+
+.p-onsen__block {
+	display: flex;
+	justify-content: right;
+}
+
+.p-onsen__block:not(:first-child) {
+	margin-top: 7.8rem;
+}
+
+.p-onsen__block:nth-child(2) {
+	justify-content: left;
+}
+
+.p-onsen__block:last-child {
+	margin-top: 7.7rem;
+}
+
+.p-onsen__img {
+	max-width: 830px;
+	width: 77.64%;
+}
+
+.p-onsen__info {
+	padding-bottom: 3rem;
+	padding-left: 6%;
+	padding-right: 2rem;
+	padding-top: 13.58%;
+	width: 36%;
+}
+
+.p-onsen__info:nth-child(2) {
+	padding-left: 2.5rem;
+	padding-right: 12%;
+	padding-top: 14.2%;
+	width: 42%;
+}
+
+.p-concept__onsen--wrap {
+	margin: 0 auto;
+	padding-bottom: 52px;
+	padding-left: 1px;
+	width: 43.49%;
+}
+
+.p-onsen__content {
+	padding-bottom: 118px;
+}
+
+.p-onsen__properties {
+	border-top: 0.5px solid #2D2D2E;
+	margin: 0 auto;
+	max-width: 974px;
+	padding-left: 2px;
+	padding-top: 80px;
+	width: 67.64%;
+}
+
+.p-onsen__desc--wrap {
+	padding-bottom: 81px;
+	padding-top: 49px;
+	text-align: center;
+}
+
+.p-onsen__price {
+	background: url(../img/onsen/background.png) center center/cover no-repeat;
+	margin: 0 auto;
+	margin-bottom: 120px;
+	padding-top: 100px;
+	width: 1080px;
+}
+
+.p-price__wrap {
+	border-top: 0.5px solid #2D2D2E;
+	margin: 0 auto;
+	margin-top: 28px;
+	min-width: 560px;
+	padding-bottom: 100px;
+	padding-left: 12px;
+	padding-top: 30px;
+	width: 54.26%;
+}
+
+.p-operating__hours--block {
+	padding-left: 16px;
+}
+
+.p-price__list {
+	padding-left: 16px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.p-price__block--wrap {
+	display: flex;
+}
+
+.p-price__weekday--wrap {
+	position: absolute;
+	top: 18.7%;
+}
+
+.p-onsen__info--last {
+	padding-top: 13.68%;
+}
+
+.p-price__holiday__wrap {
+	padding-top: 18px;
+}
+
+.dialog {
 	align-items: center;
 	background-color: rgba(96, 93, 93, 0);
 	border: none;
@@ -1179,11 +1829,11 @@ header {
 	scrollbar-width: none;
 }
 
-.p-dialog::-webkit-scrollbar {
+.dialog::-webkit-scrollbar {
 	display: none;
 }
 
-.p-dialog:focus-visible {
+.dialog:focus-visible {
 	outline: none;
 }
 
@@ -1280,11 +1930,407 @@ dialog::backdrop {
 	padding: 1em 4.5em;
 }
 
+.p-header__title--guest-room {
+	padding-left: 5px;
+}
+
+.p-room__version {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 120px;
+}
+
+.p-room__version--reverse {
+	flex-direction: row-reverse;
+}
+
+.p-room__imgs {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 150px;
+	width: min(55%, 580px);
+}
+
+.p-room__img {
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.p-room__img:first-of-type {
+	align-self: flex-end;
+	grid-column: 1/3;
+}
+
+.p-room__sentence {
+	align-self: center;
+	width: min(38%, 430px);
+}
+
+.p-room__title {
+	border-bottom: 1px solid;
+	font-size: 2.1333333333rem;
+	font-weight: 800;
+	line-height: 1.448125;
+	margin-bottom: 10px;
+}
+
+.p-room__title-eng {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1;
+	padding-left: 1em;
+}
+
+.p-room__text {
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+}
+
+.p-room__text-bottom {
+	font-size: 0.9333333333rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-top: 40px;
+}
+
+.p-facility {
+	margin-bottom: 100px;
+}
+
+.p-facility__title {
+	font-size: 1.5rem;
+	line-height: 1.9166666667;
+	text-align: center;
+}
+
+.p-facility__text {
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 0.12em;
+	line-height: 1.8902142857;
+}
+
+.p-check-io {
+	margin-bottom: 165px;
+}
+
+.p-check-io__wrapper {
+	align-items: center;
+	background-image: url(../img/guest-room/check-io-bg.svg);
+	display: flex;
+	gap: 150px;
+	padding: 50px 185px;
+	width: 100%;
+}
+
+.p-check-io__contents {
+	color: #fff;
+	text-align: center;
+}
+
+.p-check-io__icon {
+	height: 82px;
+	margin: 0 auto 15px;
+	width: 82px;
+}
+
+.p-check-io__title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.4479166667;
+}
+
+.p-check-io__text {
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 0.12em;
+	line-height: 1.8902142857;
+}
+
+.p-room__sentence {
+	align-self: center;
+	padding-right: 22px;
+	padding-top: 13px;
+	position: relative;
+	top: -1.85rem;
+	width: min(40%, 430px);
+}
+
+.p-onsen__content--wrap {
+	margin: 0 auto;
+}
+
+.p-room__title-eng {
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: -0.1px;
+	line-height: 1;
+	padding-left: 0.21em;
+}
+
+.p-course {
+	margin-bottom: 20px;
+}
+
+#sea.p-course__version {
+	padding-left: 60px;
+}
+
+#luxury.p-course__version {
+	padding-left: 0;
+	padding-right: 60px;
+}
+
+.p-course__gallery {
+	aspect-ratio: 1380/480;
+	display: grid;
+	gap: 2px;
+	grid-template-columns: 33% auto 43%;
+	grid-template-rows: 1fr 1fr;
+	margin-bottom: 40px;
+}
+
+.p-course__img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.p-course__img img {
+	height: 100%;
+	width: 100%;
+}
+
+.p-course__img--03 {
+	grid-column: 3/4;
+	grid-row: 1/3;
+	width: 602px;
+}
+
+.p-course__menu {
+	background-image: url(../../assets/img/cooking/menu-bg.jpg);
+	color: #2D2D2E;
+	height: 335px;
+	margin-bottom: 120px;
+	padding: 44px 80px 0 82px;
+	writing-mode: vertical-rl;
+}
+
+#sea .p-course__menu {
+	margin-left: auto;
+}
+
+#luxury .p-course__menu {
+	margin-right: auto;
+}
+
+.p-course__title {
+	font-feature-settings: "vert" on;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.4479166667;
+	padding-left: 70px;
+}
+
+.p-course__list {
+	padding-top: 40px;
+}
+
+.p-course__item {
+	font-family: "Shippori Mincho", serif;
+	font-size: 0.9375rem;
+	font-weight: 800;
+	line-height: 1.448;
+}
+
+.p-course__item:not(:last-of-type) {
+	padding-left: 52px;
+}
+
+.p-dish {
+	color: #2D2D2E;
+	margin-bottom: 120px;
+}
+
+.p-dish__title {
+	font-size: 2rem;
+	letter-spacing: 0.13em;
+	line-height: 1.448125;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.p-dish__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-dish__item {
+	width: 27%;
+}
+
+.p-dish__img {
+	margin-bottom: 20px;
+}
+
+.p-dish__text {
+	text-align: center;
+}
+
+.p-dish__text span {
+	font-family: "Shippori Mincho", serif;
+	font-size: 1rem;
+	font-weight: 800;
+	line-height: 1.448125;
+	text-align: center;
+}
+
+.p-restaurant {
+	margin-bottom: 120px;
+}
+
+.p-restaurant__title {
+	color: #2D2D2E;
+	font-size: 2rem;
+	letter-spacing: 0.13em;
+	line-height: 1.448125;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.p-restaurant__list {
+	display: flex;
+	gap: 10%;
+	padding: 0 30px;
+}
+
+.p-room__title {
+	border-bottom: 1px solid;
+	font-size: 2.1333333333rem;
+	font-weight: 800;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+
+.p-room__text-bottom {
+	font-size: 0.9333333333rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	padding-top: 19px;
+}
+
+.p-room__text {
+	color: #2D2D2E;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 2;
+}
+
+.p-room__text:last-child {
+	line-height: 1.6;
+}
+
+.p-room__text span {
+	padding-left: 22px;
+}
+
+.p-room__imgs {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 150px;
+	width: min(55%, 580px);
+}
+
+.p-room__version:nth-child(2) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.p-room__version:last-child {
+	margin-bottom: 97px;
+}
+
+.p-room__sentence--last {
+	margin-bottom: -2px;
+	padding-right: 5px;
+	width: min(37.4%, 430px);
+}
+
+.p-facility__title {
+	padding-right: 35px;
+}
+
+.p-facility__text {
+	padding-left: 2px;
+	padding-top: 26px;
+}
+
+.p-facility__text span {
+	display: inline-block;
+	margin-top: 19px;
+}
+
+.p-room__img img {
+	height: 100%;
+	width: 100%;
+}
+
+.p-inner__check {
+	align-items: center;
+	background-image: url("../img/guest-room/check-io-bg.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	gap: 14%;
+	justify-content: center;
+	max-width: 1080px;
+	padding-bottom: 50px;
+	padding-top: 51px;
+}
+
+.p-check-io__title {
+	color: #ffffff;
+	font-family: "Shippori Mincho", serif;
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.0041666667em;
+	line-height: 1.4479166667;
+}
+
+.p-check-io__text {
+	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	text-align: left;
+}
+
+.p-check-io__contents {
+	max-width: 277px;
+	width: 26%;
+}
+
+.p-check-io__contents:not(:first-child) {
+	max-width: 283px;
+	width: 26.5%;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
 
 .c-drawer-btn {
 	height: 51px;
-	right: 20px;
 	width: 66px;
 }
 
@@ -1339,6 +2385,10 @@ dialog::backdrop {
 	gap: 20%;
 }
 
+.p-onsen__price {
+	width: 75%;
+}
+
 }
 
 @media (min-width: 1280px) {
@@ -1371,6 +2421,21 @@ dialog::backdrop {
 	background-size: cover;
 }
 
+#cooking .l-lower-header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/cooking/header_sp.jpg), lightgray -313.461px -3.068px/254.002% 107.11% no-repeat;
+	background-size: cover;
+}
+
+#spend-page .l-lower-header {
+	background-image: url(../../assets/img/spend/header_sp.jpg);
+	background-size: cover;
+}
+
+#access .l-lower-header {
+	background-image: url(../../assets/img/access/header_sp.jpg);
+	background-size: cover;
+}
+
 .l-inner {
 	width: 89.3%;
 }
@@ -1380,13 +2445,17 @@ dialog::backdrop {
 }
 
 #splash_logo {
-	top: 35.7%;
+	top: 37.3%;
 }
 
 .l-footer {
 	height: auto;
-	margin-top: 209px;
+	margin-top: 20px;
 	padding-top: 40px;
+}
+
+.l-header {
+	background: url(../img/onsen/top_mv-sp.png) center center/cover no-repeat;
 }
 
 .c-top__bg--sp {
@@ -1418,6 +2487,7 @@ dialog::backdrop {
 .c-search-btn {
 	height: 160px;
 	top: 76px;
+	transform: translateY(0);
 	width: 57px;
 }
 
@@ -1427,7 +2497,6 @@ dialog::backdrop {
 
 .c-drawer-btn {
 	height: 51px;
-	right: 20px;
 	width: 66px;
 }
 
@@ -1457,7 +2526,14 @@ dialog::backdrop {
 }
 
 .c-concept__lead {
-	line-height: 2.33;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.065em;
+	line-height: 2.3026666667;
+}
+
+.c-concept__lead .pc-break {
+	display: none;
 }
 
 .c-section__title {
@@ -1568,18 +2644,124 @@ dialog::backdrop {
 	font-size: 24px;
 }
 
+.c-header__heading {
+	font-size: 24px;
+}
+
+.c-onsen__block-title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.0041666667em;
+	line-height: 1.4479166667;
+	padding-left: 0;
+}
+
+.c-onsen__block-desc {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 1.89;
+	padding-bottom: 0.9rem;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.c-onsen__desc {
+	padding-bottom: 7px;
+}
+
+.c-onsen__desc:nth-child(2) {
+	display: inline;
+	padding-right: 0;
+	padding-top: 7px;
+}
+
+.c-price__content--title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.0041666667em;
+	line-height: 1.4479166667;
+}
+
+.c-price__content--title::before {
+	height: 30px;
+	width: 30px;
+}
+
+.c-operating__time {
+	display: block;
+	margin-left: 0;
+}
+
+.c-price__label {
+	display: inherit;
+}
+
+.c-price__weekday-label {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0;
+}
+
+.c-price__weekday-details {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0px;
+}
+
+.c-price__holiday-label {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0;
+}
+
+.c-price__holiday-details {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	line-height: 1.89;
+	margin-left: 0;
+}
+
+.c-price__note {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	line-height: 1.89;
+	padding-left: 0;
+	padding-top: 18px;
+}
+
+.c-scroll__btn {
+	height: 50px;
+	right: 20px;
+	width: 50px;
+}
+
+.c-scroll__btn::after {
+	height: 13.54px;
+	width: 21.67px;
+}
+
 .p-logo__wrap {
 	top: -1px;
 }
 
 .p-concept {
-	padding-top: 56px;
+	padding-bottom: 28px;
+	padding-top: 62px;
 }
 
 .p-concept__wrap {
-	padding-bottom: 32px;
+	padding-bottom: 31px;
 	width: 89.3%;
-	width: 81%;
+	width: 90%;
 }
 
 .p-news {
@@ -1606,126 +2788,126 @@ dialog::backdrop {
 }
 
 .p-spend-slide {
-	align-items: center;
-	flex-direction: column;
+	height: auto;
 	padding: 85px 22px 110px 22px;
 	width: 100%;
 }
 
-.p-spend-slide__wrapper {
+.p-spend-slide__container {
 	align-items: center;
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
 	row-gap: 60px;
+	width: 100%;
+}
+
+.p-spend-slide__list {
+	flex-direction: column;
 }
 
 .p-spend-slide__block {
-	justify-content: center;
+	flex: 1;
+	height: auto;
 }
 
 .p-spend-slide__block::after {
 	display: none;
 }
 
-.p-spend-slide__block1 {
-	margin-right: 0;
+.p-spend-slide__block .p-spend-slide__accent {
+	display: none;
 }
 
-.p-spend-slide__card1 {
-	margin-right: 0;
+.p-spend-slide__block .border-line {
+	display: none;
+}
+
+.p-spend-slide__block .p-spend-slide__card {
+	margin: 0 auto;
+	max-width: 520px;
 	width: 100%;
 }
 
 .p-spend-slide__time {
-	font-size: 20px;
-	letter-spacing: 2.4px;
-	line-height: 1.89025;
+	font-size: 18px;
+	letter-spacing: 2.16px;
+	line-height: 1.8902222222;
+	margin-top: 25px;
 }
 
 .p-spend-slide__head {
-	font-size: 20px;
-	letter-spacing: 2.4px;
-	line-height: 1.89025;
+	font-size: 18px;
+	letter-spacing: 2.16px;
+	line-height: 1.8902222222;
+}
+
+.p-spend-slide__text {
+	letter-spacing: 1.5px;
+	line-height: 1.5;
 }
 
 .p-spend-slide__block__img {
-	margin-top: 20px;
+	margin-top: 5px;
+	position: static;
 }
 
-.p-spend-slide__accent {
-	display: none;
+.p-spend-slide__block__img img {
+	max-height: none;
+	width: 100%;
+}
+
+.p-spend-slide__block1 {
+	display: block;
+	width: 100%;
+}
+
+.p-spend-slide__block1 .p-spend-slide__card {
+	width: 100%;
 }
 
 .p-spend-slide__block2 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card2 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
 .p-spend-slide__block3 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card3 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
 .p-spend-slide__block4 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card4 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
 .p-spend-slide__block5 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card5 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
 .p-spend-slide__block6 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card6 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
 .p-spend-slide__block7 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card7 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
 .p-spend-slide__block8 {
-	margin-right: 0;
-}
-
-.p-spend-slide__card8 {
-	margin-right: 0;
+	display: block;
 	width: 100%;
 }
 
-.p-spend-slide__card9 {
-	margin-right: 0;
+.p-spend-slide__block9 {
+	display: block;
 	width: 100%;
 }
 
 .p-spend-tour {
+	padding-bottom: 20px;
 	padding-top: 39px;
 }
 
@@ -1853,6 +3035,98 @@ dialog::backdrop {
 	font-size: 1.6em;
 }
 
+.p-onsen__block:not(:first-child) {
+	margin-top: 1.85rem;
+}
+
+.p-onsen__block:nth-child(2) {
+	display: block;
+}
+
+.p-onsen__block:last-child {
+	flex-direction: column-reverse;
+}
+
+.p-onsen__block:first-child {
+	flex-direction: column-reverse;
+}
+
+.p-onsen__img {
+	width: 100%;
+}
+
+.p-onsen__info {
+	padding-bottom: 1rem;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	width: 100%;
+}
+
+.p-onsen__info:nth-child(2) {
+	padding-bottom: 1rem;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	width: 100%;
+}
+
+.p-onsen__content {
+	padding-bottom: 51px;
+}
+
+.p-onsen__properties {
+	padding-top: 35px;
+	width: 91%;
+}
+
+.p-onsen__desc--wrap {
+	padding-bottom: 60px;
+	padding-top: 15px;
+	text-align: left;
+}
+
+.p-onsen__price {
+	margin-bottom: 20px;
+	padding-top: 56px;
+	width: 100%;
+}
+
+.p-price__wrap {
+	margin-top: 18px;
+	min-width: 89.3%;
+	padding-bottom: 40px;
+	padding-left: 11px;
+	padding-top: 0;
+	width: 89.3%;
+}
+
+.p-operating__hours--block {
+	padding-left: 0;
+	padding-top: 5px;
+}
+
+.p-price__list {
+	padding-left: 0;
+	padding-top: 5px;
+}
+
+.p-price__weekday--wrap {
+	position: inherit;
+}
+
+.p-price__weekday--wrap .p-price__detail--block {
+	margin-left: 70px;
+}
+
+.p-price__holiday__wrap .p-price__detail--block {
+	margin-left: 20px;
+}
+
+.p-price__holiday__wrap {
+	padding-top: 1px;
+}
+
 .p-reservation {
 	margin-bottom: 20px;
 	padding-bottom: 51px;
@@ -1887,12 +3161,169 @@ dialog::backdrop {
 	padding-bottom: 5px;
 }
 
+#sea.p-course__version {
+	padding: 0;
+}
+
+#luxury.p-course__version {
+	padding: 0;
+}
+
+.p-course__gallery {
+	aspect-ratio: 335/298;
+	gap: 1px;
+	grid-template-columns: 1fr 52px 1fr;
+	grid-template-rows: 84px 84px 129px;
+	margin: 0 auto 14px;
+	width: 89.3%;
+}
+
+.p-course__img--03 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+	width: 58.5vw;
+}
+
+#sea .p-course__img--01 {
+	grid-column: 1/3;
+	order: 4;
+	width: 44.5vw;
+}
+
+#sea .p-course__img--02 {
+	order: 3;
+}
+
+#sea .p-course__img--03 {
+	order: 2;
+}
+
+#sea .p-course__img--04 {
+	order: 5;
+}
+
+#sea .p-course__img--05 {
+	order: 1;
+}
+
+#luxury .p-course__img--01 {
+	order: 5;
+}
+
+#luxury .p-course__img--02 {
+	order: 1;
+}
+
+#luxury .p-course__img--04 {
+	grid-column: 1/3;
+	order: 4;
+	width: 44.5vw;
+}
+
+#luxury .p-course__img--05 {
+	order: 1;
+}
+
+.p-course__menu {
+	height: 282px;
+	margin-bottom: 40px;
+	max-width: 100%;
+	padding: 23px 6vw 0;
+}
+
+#sea .p-course__menu {
+	margin-left: 0;
+}
+
+#luxury .p-course__menu {
+	margin-bottom: 60px;
+	margin-right: 0;
+}
+
+.p-course__title {
+	font-size: 1.25rem;
+	line-height: 1.448;
+	padding-left: 20px;
+}
+
+.p-course__list {
+	padding-top: 35px;
+}
+
+.p-course__item:not(:last-of-type) {
+	padding-left: 10px;
+}
+
+.p-dish {
+	margin-bottom: 60px;
+}
+
+.p-dish__title {
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	line-height: 1.4479166667;
+	padding-bottom: 40px;
+}
+
+.p-dish__list {
+	flex-direction: column;
+	gap: 30px;
+	place-items: center;
+}
+
+.p-dish__item {
+	width: 40vw;
+}
+
+.p-dish__img {
+	margin-bottom: 5px;
+}
+
+.p-dish__text span {
+	display: inline-block;
+	font-size: 0.875rem;
+	line-height: 1.4478571429;
+}
+
+.p-dish__text--small {
+	font-size: 0.75rem;
+	line-height: 1.4483333333;
+}
+
+.p-restaurant {
+	margin-bottom: 20px;
+}
+
+.p-restaurant__title {
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	line-height: 1.4479166667;
+	padding-bottom: 40px;
+}
+
+.p-restaurant__list {
+	gap: 3vw;
+	padding: 0;
+}
+
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
 
 .c-mv__title--footer {
 	text-align: center;
+}
+
+}
+
+@keyframes fadeInAnime {
+
+0% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
 }
 
 }

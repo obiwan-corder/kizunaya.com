@@ -1,0 +1,10 @@
+@use "../global/" as global;
+
+.p-operating__hours--block {
+  padding-left: 16px;
+
+  @include global.mq('sp') {
+    padding-left: 0;
+    padding-top: 5px;
+  }
+}

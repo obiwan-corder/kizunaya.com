@@ -4,114 +4,146 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>客室</title>
-	<meta name="description" content="客室のページです">
-	<link rel="stylesheet" href="../public/assets/css/reset.css">
-	<link rel="stylesheet" href="../public/assets/css/style.min.css">
+	<title>料理</title>
+	<meta name="description" content="料理のページです">
+	<!-- googlefonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
-<body>
-	<header class="l-lower-header">
-		<h1 class="l-lower-header__title">客 室</h1>
+<body id="cooking">
+	<header class="l-lower-header" id="header">
+		<h1 class="l-lower-header__title">料 理</h1>
 		<!-- ハンバーガーメニュー -->
 		<div class="c-drawer-btn l-lower-headerr__btn">
 			<span class="c-drawer-btn__bar"></span>
-			<span class="c-drawer-btn__bar"></span>
-			<span class="c-drawer-btn__bar"></span>
 		</div>
-		<nav class="p-drawer">
-			<a class="c-logo p-drawer__logo" href="index.html">
-				<p class="c-logo__img">
-					<img src="../public/assets/img/common/logo-white.png" alt="きずなや">
+		<nav class="p-gnav" id="gnav">
+			<a class="p-gnav__logo" href="index.html">
+				<p class="p-gnav__logo-img">
+					<img src="./assets/img/common/logo-white.png" alt="きずなや">
 				</p>
-				<p class="c-logo__text">KIZUNAYA</p>
+				<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
 			</a>
-			<ul class="p-drawer__nav js-link" id="drawer-nav">
-				<li class="p-drawer__nav-list">
-					<a href="index.html" class="p-drawer__nav-link p-dnav-anm">
+			<ul class="p-gnav__nav js-link" id="gnav">
+				<li class="p-gnav__nav-list">
+					<a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
 						温泉
 					</a>
 				</li>
-				<li class="p-drawer__nav-list">
-					<a href="index.html" class="p-drawer__nav-link p-dnav-anm">
+				<li class="p-gnav__nav-list">
+					<a href="/guest-room.html" class="p-gnav__nav-link g-nav-anm">
 						客室
 					</a>
 				</li>
-				<li class="p-drawer__nav-list">
-					<a href="index.html" class="p-drawer__nav-link p-dnav-anm">
+				<li class="p-gnav__nav-list">
+					<a href="./cooking.html" class="p-gnav__nav-link g-nav-anm">
 						料理
 					</a>
 				</li>
-				<li class="p-drawer__nav-list">
-					<a href="index.html" class="p-drawer__nav-link p-dnav-anm">
+				<li class="p-gnav__nav-list">
+					<a href="./spend.html" class="p-gnav__nav-link g-nav-anm">
 						過ごし方
 					</a>
 				</li>
-				<li class="p-drawer__nav-list">
-					<a href="index.html" class="p-drawer__nav-link p-dnav-anm">
+				<li class="p-gnav__nav-list">
+					<a href="./access.html" class="p-gnav__nav-link g-nav-anm">
 						アクセス
 					</a>
 				</li>
 			</ul>
-			<div class="c-drawer-btn p-drawer__btn">
-				<span class="c-drawer-btn__bar"></span>
-				<span class="c-drawer-btn__bar"></span>
-				<span class="c-drawer-btn__bar"></span>
-			</div>
 		</nav>
+		<div class="p-gnav__background"></div>
 	</header>
 	<!-- /.l-header -->
 	<main class="l-main">
-		<div class="p-opening-sentence">
-			<div class="l-inner">
-				<p class="p-opening-sentence__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-			</div>
+		<div class="c-main-message">
+			<p class="c-main-message__text">
+				海の幸に恵まれた土地だからこそ<br>
+				味わえる贅沢。<br>
+				四季折々の旬の素材を活かしたお料理で<br>
+				みなさまをお待ちしております。
+			</p>
 		</div>
 		<section class="p-course">
-			<div class="p-course__version">
+			<div class="p-course__version" id="sea">
 				<div class="p-course__gallery">
-					<img src="../public/assets/img/cooking/sea1.jpg" alt="フグのお刺身">
-					<img src="../public/assets/img/cooking/sea2.jpg" alt="蒸しガニ">
-					<img src="../public/assets/img/cooking/sea3.jpg" alt="カニのしゃぶしゃぶ">
-					<img src="../public/assets/img/cooking/sea4.jpg" alt="刺身盛合せ">
-					<img src="../public/assets/img/cooking/sea5.jpg" alt="蟹味噌甲羅焼き">
+					<div class="p-course__img p-course__img--01">
+						<picture>
+							<source srcset="./assets/img/cooking/sea1_sp.jpg" media="(max-width: 767px)" type="image/jpg">
+							<img src="./assets/img/cooking/sea1.jpg" alt="フグのお刺身">
+						</picture>
+					</div>
+					<div class="p-course__img p-course__img--02">
+						<img src="./assets/img/cooking/sea2.jpg" alt="蒸しガニ">
+					</div>
+					<div class="p-course__img p-course__img--03">
+						<img src="./assets/img/cooking/sea3.jpg" alt="カニのしゃぶしゃぶ">
+					</div>
+					<div class="p-course__img p-course__img--04">
+						<img src="./assets/img/cooking/sea4.jpg" alt="刺身盛合せ">
+					</div>
+					<div class="p-course__img p-course__img--05">
+						<img src="./assets/img/cooking/sea5.jpg" alt="蟹味噌甲羅焼き">
+					</div>
 				</div>
-				<div class="p-course__menu">
-					<h2 class="p-course__title">海の幸コース</h2>
-					<ul class="p-course__list">
-						<li class="p-course__item">カニのしゃぶしゃぶ</li>
-						<li class="p-course__item">蒸しガニ</li>
-						<li class="p-course__item">蟹味噌甲羅焼き</li>
-						<li class="p-course__item">フグのお刺身</li>
-						<li class="p-course__item">刺身盛合せ</li>
-						<li class="p-course__item">茶碗蒸し</li>
-						<li class="p-course__item">カニのリゾット</li>
-						<li class="p-course__item">バニラアイス</li>
-					</ul>
+				<div class="l-inner">
+					<div class="p-course__menu">
+						<h2 class="p-course__title">海の幸コース</h2>
+						<ul class="p-course__list">
+							<li class="p-course__item">カニのしゃぶしゃぶ</li>
+							<li class="p-course__item">蒸しガニ</li>
+							<li class="p-course__item">蟹味噌甲羅焼き</li>
+							<li class="p-course__item">フグのお刺身</li>
+							<li class="p-course__item">刺身盛合せ</li>
+							<li class="p-course__item">茶碗蒸し</li>
+							<li class="p-course__item">カニのリゾット</li>
+							<li class="p-course__item">バニラアイス</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="p-course__version">
+			<div class="p-course__version" id="luxury">
 				<div class="p-course__gallery">
-					<img src="../public/assets/img/cooking/luxury1.jpg" alt="フグのお刺身">
-					<img src="../public/assets/img/cooking/luxury2.jpg" alt="フグのお刺身">
-					<img src="../public/assets/img/cooking/luxury3.jpg" alt="フグのお刺身">
-					<img src="../public/assets/img/cooking/luxury4.jpg" alt="フグのお刺身">
-					<img src="../public/assets/img/cooking/luxury5.jpg" alt="フグのお刺身">
+					<div class="p-course__img p-course__img--01">
+						<img src="./assets/img/cooking/luxury1.jpg" alt="フグのお刺身">
+					</div>
+					<div class="p-course__img p-course__img--02">
+						<img src="./assets/img/cooking/luxury2.jpg" alt="フグのお刺身">
+					</div>
+					<div class="p-course__img p-course__img--03">
+						<img src="./assets/img/cooking/luxury3.jpg" alt="フグのお刺身">
+					</div>
+					<div class="p-course__img p-course__img--04">
+						<img src="./assets/img/cooking/luxury4.jpg" alt="フグのお刺身">
+					</div>
+					<div class="p-course__img p-course__img--05">
+						<img src="./assets/img/cooking/luxury5.jpg" alt="フグのお刺身">
+					</div>
 				</div>
-				<div class="p-course__menu">
-					<h2 class="p-course__title">贅沢コース</h2>
-					<ul class="p-course__list">
-						<li class="p-course__item">すき焼き</li>
-						<li class="p-course__item">生桜エビ</li>
-						<li class="p-course__item">ホタテのバター焼き</li>
-						<li class="p-course__item">和牛ステーキ</li>
-						<li class="p-course__item">刺身盛合せ</li>
-						<li class="p-course__item">茶碗蒸し</li>
-						<li class="p-course__item">ホタテご飯</li>
-						<li class="p-course__item">バニラアイス</li>
-					</ul>
+				<!-- /.p-course__gallery -->
+				<div class="l-inner">
+					<div class="p-course__menu">
+						<h2 class="p-course__title">贅沢コース</h2>
+						<ul class="p-course__list">
+							<li class="p-course__item">すき焼き</li>
+							<li class="p-course__item">生桜エビ</li>
+							<li class="p-course__item">ホタテのバター焼き</li>
+							<li class="p-course__item">和牛ステーキ</li>
+							<li class="p-course__item">刺身盛合せ</li>
+							<li class="p-course__item">茶碗蒸し</li>
+							<li class="p-course__item">ホタテご飯</li>
+							<li class="p-course__item">バニラアイス</li>
+						</ul>
+					</div>
+					<!-- /.p-course__menu -->
 				</div>
+				<!-- /.l-inner -->
 			</div>
+			<!-- /.p-course__version -->
 		</section>
 		<section class="p-dish">
 			<div class="l-inner">
@@ -119,38 +151,34 @@
 				<ul class="p-dish__list">
 					<li class="p-dish__item">
 						<div class="p-dish__img">
-							<img src="../public/assets/img/cooking/dish1.jpg" alt="KIZUNAYA特製だし巻き卵">
+							<img src="./assets/img/cooking/dish1.jpg" alt="KIZUNAYA特製だし巻き卵">
 						</div>
 						<p class="p-dish__text">KIZUNAYA特製だし巻き卵</p>
 					</li>
 					<li class="p-dish__item">
 						<div class="p-dish__img">
-							<img src="../public/assets/img/cooking/dish2.jpg" alt="KIZUNAYA特製天ぷら">
+							<img src="./assets/img/cooking/dish2.jpg" alt="KIZUNAYA特製天ぷら">
 						</div>
 						<p class="p-dish__text">KIZUNAYA特製天ぷら</p>
 					</li>
 					<li class="p-dish__item">
 						<div class="p-dish__img">
-							<img src="../public/assets/img/cooking/dish3.jpg" alt="KIZUNAYA特製お漬物">
+							<img src="./assets/img/cooking/dish3.jpg" alt="KIZUNAYA特製お漬物">
 						</div>
 						<p class="p-dish__text">KIZUNAYA特製お漬物</p>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="p-dish">
+		<section class="p-restaurant">
 			<div class="l-inner">
-				<h2 class="p-dish__title">お食事処</h2>
-				<ul class="p-dish__list">
-					<li class="p-dish__item">
-						<div class="p-dish__img">
-							<img src="../public/assets/img/cooking/restaurant1.jpg" alt="開放的なお食事処">
-						</div>
+				<h2 class="p-restaurant__title">お食事処</h2>
+				<ul class="p-restaurant__list">
+					<li class="p-restaurant__item">
+						<img src="./assets/img/cooking/restaurant1.jpg" alt="開放的なお食事処">
 					</li>
-					<li class="p-dish__item">
-						<div class="p-dish__img">
-							<img src="../public/assets/img/cooking/restaurant2.jpg" alt="個室のお食事処">
-						</div>
+					<li class="p-restaurant__item">
+						<img src="./assets/img/cooking/restaurant2.jpg" alt="個室のお食事処">
 					</li>
 				</ul>
 			</div>
@@ -163,11 +191,58 @@
 				</p>
 				<a class="c-reservation-btn" href="#">ご予約はこちら</a>
 				<p class="p-reservation__text">
-					ご予約は専用フォームにて承ります
+					24時間受付中
 				</p>
 			</div>
 		</section>
 	</main>
+	<footer class="l-footer">
+		<div class="p-footer__wrap">
+			<div class="p-footer__info">
+				<div class="c-footer__logo">
+					<img src="assets/img/top/logo.png" alt="KIZUNAYAロゴ">
+				</div>
+				<h3 class="c-mv__title c-mv__title--footer">KIZUNAYA</h3>
+				<p class="c-address__number">
+					〒123-4567
+				</p>
+				<p class="c-address">静岡県下田市白浜1-1</p>
+				<p class="c-tel__number">TEL 0123-45-6789</p>
+			</div>
+			<div class="p-footer__nav--wrap">
+				<div class="p-footer__link--nav">
+					<a class="c-footer__nav--item" href="./onsen.html">
+						<span>ー</span>　温泉
+					</a>
+					<a class="c-footer__nav--item" href="./cooking.html">
+						<span>ー</span>　料理
+					</a>
+					<a class="c-footer__nav--item" href="./guest-room.html">
+						<span>ー</span>　客室
+					</a>
+				</div>
+				<div class="p-footer__link--nav">
+					<a class="c-footer__nav--item" href="./spend.html">
+						<span>ー</span>　過ごし方
+					</a>
+					<a class="c-footer__nav--item" href="./access.html">
+						<span>ー</span>　アクセス
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-footer__sns--items">
+			<a href="#">
+				<i class="fa-brands fa-facebook-f fa-3x" style="color:#ffffff;"></i>
+			</a>
+			<a href="#">
+				<i class="fa-brands fa-instagram fa-3x" style="color:#ffffff;"></i>
+			</a>
+		</div>
+		<p class="c-copyright">©︎2023 KIZUNAYA</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./assets/js/script.min.js"></script>
 </body>
 
 </html>

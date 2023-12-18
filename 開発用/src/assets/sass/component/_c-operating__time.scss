@@ -1,0 +1,14 @@
+@use "../global/" as global;
+
+.c-operating__time {
+  display: inline-block;
+  margin-left: 41px;
+  font-family: global.$main-font;
+  @include global.font(16, 400, 30.24, 1.92);
+
+  @include global.mq('sp') {
+    display: block;
+    margin-left: 0;
+  }
+}
+

@@ -13,6 +13,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Hind:wght@700&family=Kiwi+Maru&family=Noto+Sans+JP&family=Satisfy&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Hind:wght@700&family=Kiwi+Maru&family=Noto+Sans+JP&family=Satisfy&family=Shippori+Mincho:wght@400;700;800&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css">
+	<link rel="stylesheet" href="./assets/css/animate.css">
+	<script src="./assets/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 
 <body>
@@ -24,7 +29,44 @@
 	</div>
 	<!-- メインビジュアル -->
 	<header class="l-header__mv" id="header">
-		<!-- ドロワーメニュー -->
+		<div class="c-drawer-btn l-lower-headerr__btn">
+			<span class="c-drawer-btn__bar"></span>
+		</div>
+		<nav class="p-gnav">
+			<a class="p-gnav__logo" href="./index.html">
+				<p class="p-gnav__logo-img">
+					<img src="./assets/img/common/logo-white.png" alt="きずなや" width="66" height="76" decoding="async">
+				</p>
+				<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
+			</a>
+			<ul class="p-gnav__nav js-link" id="gnav">
+				<li class="p-gnav__nav-list">
+					<a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
+						温泉
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./guest-room.html" class="p-gnav__nav-link g-nav-anm">
+						客室
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./cooking.html" class="p-gnav__nav-link g-nav-anm">
+						料理
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./spend.html" class="p-gnav__nav-link g-nav-anm">
+						過ごし方
+					</a>
+				</li>
+				<li class="p-gnav__nav-list">
+					<a href="./access.html" class="p-gnav__nav-link g-nav-anm">
+						アクセス
+					</a>
+				</li>
+			</ul>
+		</nav>
 		<img src="./assets/img/top/FV.png" alt="トップ背景画像" class="c-top__bg">
 		<img src="./assets/img/top/FV_sp.png" alt="トップ背景画像" class="c-top__bg--sp">
 		<div class="p-logo__wrap">
@@ -33,13 +75,59 @@
 		</div>
 		<div class="c-scrolldown"><span>SCROLL</span></div>
 	</header>
+	<!-- ハンバーガーメニュー -->
+	<div class="c-drawer-btn l-lower-headerr__btn">
+		<span class="c-drawer-btn__bar"></span>
+	</div>
+	<nav class="p-gnav" id="gnav">
+		<a class="p-gnav__logo" href="index.html">
+			<p class="p-gnav__logo-img">
+				<img src="./assets/img/common/logo-white.png" alt="きずなや">
+			</p>
+			<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
+		</a>
+		<ul class="p-gnav__nav js-link" id="gnav">
+			<li class="p-gnav__nav-list">
+				<a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
+					温泉
+				</a>
+			</li>
+			<li class="p-gnav__nav-list">
+				<a href="./guest-room.html" class="p-gnav__nav-link g-nav-anm">
+					客室
+				</a>
+			</li>
+			<li class="p-gnav__nav-list">
+				<a href="./cooking.html" class="p-gnav__nav-link g-nav-anm">
+					料理
+				</a>
+			</li>
+			<li class="p-gnav__nav-list">
+				<a href="./spend.html" class="p-gnav__nav-link g-nav-anm">
+					過ごし方
+				</a>
+			</li>
+			<li class="p-gnav__nav-list">
+				<a href="./access.html" class="p-gnav__nav-link g-nav-anm">
+					アクセス
+				</a>
+			</li>
+		</ul>
+		<!-- <div class="c-drawer-btn p-gnav__btn">
+              <span class="c-drawer-btn__bar"></span>
+              <span class="c-drawer-btn__bar"></span>
+              <span class="c-drawer-btn__bar"></span>
+          </div> -->
+	</nav>
 	<button class="c-search-btn">
 		<a href="#" class="c-search-btn__link">空 室 検 索</a>
 	</button>
 	<div class="p-concept">
-		<div class="p-concept__wrap">
-			<p class="c-concept__lead">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-				テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+		<div class="p-concept__wrap wow animated fadeInUp" data-wow-delay="0.5s">
+			<p class="c-concept__lead">日々の忙しさから一歩離れ、非日常を感じる当館へようこそ。<br>
+				心地よい波の音、頭上に広がる満点の星空、<br>
+				豊かな海の幸を目一杯楽しんで<br>
+				心身ともにリフレッシュできる特別な時間をお過ごしください。
 			</p>
 		</div>
 		<div class="p-slider">
@@ -76,22 +164,19 @@
 				<p class="c-news__date"><time datetime="2023-08-29">2023.08.29</time> <span class="c-news__label">NEW</span></p>
 				<p class="c-news__content">季節のランチメニューが新しくなりました！</p>
 			</a>
-
 			<a href="#" class="c-news__item">
 				<p class="c-news__date"><time datetime="2023-08-20"></time>2023.8.20</p>
 				<p class="c-news__content">日帰り入浴　営業時間時間変更のお知らせ</p>
 			</a>
-
 			<a href="#" class="c-news__item">
 				<p class="c-news__date"><time datetime="2023-08-07">2023.08.07</time></p>
 				<p class="c-news__content">お盆期間の営業について</p>
 			</a>
-
 		</div>
 	</section>
 	<div class="p-content">
 		<div class="p-content__wrap">
-			<div class="p-content__block">
+			<div class="p-content__block wow animated fadeInUp" data-wow-delay="1s">
 				<a href="#" class="c-content__img">
 					<h3 class="c-content__title">温泉</h3>
 				</a>
@@ -101,7 +186,7 @@
 					<a href="" class="c-content__link">詳しく見る</a>
 				</div>
 			</div>
-			<div class="p-content__block p-content__cooking">
+			<div class="p-content__block p-content__cooking wow animated fadeInUp" data-wow-delay="1s">
 				<div class="p-content__text p-content__text--cooking">
 					<h4 class="c-content__lead">料理</h4>
 					<p class="c-content__desc c-content__desc--cooking">目の前の海で採れた海の幸を<br>
@@ -114,7 +199,7 @@
 					<h3 class="c-content__title c-content__title--vertical">料理</h3>
 				</a>
 			</div>
-			<div class="p-content__block  p-content__guestroom">
+			<div class="p-content__block  p-content__guestroom wow animated fadeInUp" data-wow-delay="1s">
 				<a href="#" class="c-content__img c-content__img--guestroom">
 					<h3 class="c-content__title c-content__title--vertical c-content__title--guestroom">客室</h3>
 				</a>
@@ -143,7 +228,7 @@
 		<div class="p-footer__wrap">
 			<div class="p-footer__info">
 				<div class="c-footer__logo">
-					<img src="assets/img/top/logo.png" alt="フッターロゴ">
+					<img src="assets/img/top/logo.png" alt="KIZUNAYAロゴ">
 				</div>
 				<h3 class="c-mv__title c-mv__title--footer">KIZUNAYA</h3>
 				<p class="c-address__number">
@@ -153,13 +238,13 @@
 			</div>
 			<div class="p-footer__nav--wrap">
 				<div class="p-footer__link--nav">
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　温泉</a>
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　料理</a>
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　客室</a>
+					<a class="c-footer__nav--item" href="./onsen.html"><span>ー</span>　温泉</a>
+					<a class="c-footer__nav--item" href="./cooking.html"><span>ー</span>　料理</a>
+					<a class="c-footer__nav--item" href="./guest-room.html"><span>ー</span>　客室</a>
 				</div>
 				<div class="p-footer__link--nav">
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　過ごし方</a>
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　アクセス</a>
+					<a class="c-footer__nav--item" href="./spend.html"><span>ー</span>　過ごし方</a>
+					<a class="c-footer__nav--item" href="./access.html"><span>ー</span>　アクセス</a>
 				</div>
 			</div>
 		</div>
@@ -169,6 +254,7 @@
 		</div>
 		<p class="c-copyright">©︎2023 KIZUNAYA</p>
 	</footer>
+	<button class="c-scroll__btn wow animated fadeIn"></button>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://kit.fontawesome.com/c67cd22077.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

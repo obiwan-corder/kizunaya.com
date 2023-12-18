@@ -6,11 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>過ごし方</title>
 	<!-- リセットCSS -->
-	<link rel="stylesheet" href="../public/assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/reset.css">
 	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- wow用のanimate.css -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
 	<!-- style.css -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
@@ -18,19 +20,19 @@
 <body id="spend-page">
     <div class="spend-wrapper">
         <header class="l-lower-header fadeInAnime" id="header">
-            <h1 class="l-lower-header__title">客 室</h1>
+            <h1 class="l-lower-header__title">過ごし方</h1>
             <!-- ハンバーガーメニュー -->
             <div class="c-drawer-btn l-lower-headerr__btn">
                 <span class="c-drawer-btn__bar"></span>
             </div>
-            <nav class="p-gnav">
+            <nav class="p-gnav" id="gnav">
                 <a class="p-gnav__logo" href="./index.html">
                     <p class="p-gnav__logo-img">
-                        <img src="./assets/img/common/logo-white.png" alt="きずなや">
+                        <img src="./assets/img/common/logo-white.png" alt="きずなや" width="66" height="76" decoding="async">
                     </p>
                     <p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
                 </a>
-                <ul class="p-gnav__nav js-link" id="gnav">
+                <ul class="p-gnav__nav js-link">
                     <li class="p-gnav__nav-list">
                         <a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
                             温泉
@@ -58,155 +60,160 @@
                     </li>
                 </ul>
             </nav>
+            <div class="p-gnav__background"></div>
         </header>
         <!-- /.l-header -->
-        <button class="c-search-btn">
+        <div class="c-search-btn">
             <a href="#" class="c-search-btn__link">空 室 検 索</a>
-        </button>
-        <section class="c-main-message">
-			<p class="c-main-message__text">
-				テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </div>
+        <div class="c-main-message">
+			<p class="c-main-message__text wow animated fadeInUp" data-wow-delay="1s" data-wow-duration="2s">
+				お部屋でゆっくり過ごすのもよし、<br>静岡ならではの体験をするのもよし、<br>当館と静岡の魅力を存分にお愉しみください。
 			</p>
-		</section>
-		<section class="p-spend-slide">
-            <ul class="p-spend-slide__wrapper">
-                <li class="p-spend-slide__block p-spend-slide__block1">
-                    <div class="p-spend-slide__card p-spend-slide__card1">
-                        <p class="p-spend-slide__time">15:00</p>
-                        <p class="p-spend-slide__head">ご到着・チェックイン</p>
-                        <p class="p-spend-slide__text">KIZUNAYAへようこそ！<br>
-                            心地の良い波の音を聞きながら特別なひと時をお過ごしください。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide1.jpg" alt="ご到着・チェックイン" width="408px" height="271px">
+		</div>
+		<div class="p-spend-slide">
+            <div class="p-spend-slide__container">
+                <ul class="p-spend-slide__list">
+                    <li class="p-spend-slide__block p-spend-slide__block1">
+                        <div class="p-spend-slide__card p-spend-slide__card1">
+                            <p class="p-spend-slide__time">15:00</p>
+                            <p class="p-spend-slide__head">ご到着・チェックイン</p>
+                            <p class="p-spend-slide__text">KIZUNAYAへようこそ！<br>
+                                心地の良い波の音を聞きながら特別なひと時をお過ごしください。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide1.jpg" alt="ご到着・チェックイン" width="408" height="271" decoding="async">
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent1">
-                        <img src="./assets/img/spend/spend-slide2.jpg" alt="玄関・廊下" width="185px" height="123px">
-                        <img src="./assets/img/spend/spend-slide3.jpg" alt="お出迎えのお茶" width="123px" height="127px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block2">
-                    <div class="p-spend-slide__card p-spend-slide__card2">
-                        <p class="p-spend-slide__time">16:00</p>
-                        <p class="p-spend-slide__head">温泉を愉しむ</p>
-                        <p class="p-spend-slide__text">静岡産のお茶でひと休みしたら、移動の疲れを癒しに温泉を楽しみましょう。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide4.jpg" alt="温泉1" width="411px" height="272px">
+                        <div class="p-spend-slide__accent p-spend-slide__accent1">
+                            <img src="./assets/img/spend/spend-slide2.jpg" alt="廊下" width="185" height="123" decoding="async">
+                            <img src="./assets/img/spend/spend-slide3.jpg" alt="お茶でごゆっくり" width="123" height="127" decoding="async">
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent2">
-                        <img src="./assets/img/spend/spend-slide5.jpg" alt="温泉2" width="186px" height="123px">
-                        <img src="./assets/img/spend/spend-slide6.jpg" alt="温泉3" width="169px" height="123px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block3">
-                    <div class="p-spend-slide__card p-spend-slide__card3">
-                        <p class="p-spend-slide__time">18:00</p>
-                        <p class="p-spend-slide__head">ご夕食</p>
-                        <p class="p-spend-slide__text">KIZUNAYAこだわりの、旬の食材をふんだんに使ったコース料理をご堪能ください。一品料理のだし巻き卵もオススメです！</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide7.jpg" alt="料理写真・メイン" width="520px" height="272px">
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block2">
+                        <div class="p-spend-slide__card p-spend-slide__card2">
+                            <p class="p-spend-slide__time">16:00</p>
+                            <p class="p-spend-slide__head">温泉を愉しむ</p>
+                            <p class="p-spend-slide__text">静岡産のお茶でひと休みしたら、移動の疲れを癒しに温泉を楽しみましょう。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide4.jpg" alt="温泉1" width="411" height="272"  decoding="async">
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent3">
-                        <img src="./assets/img/spend/spend-slide8.jpg" alt="玄関・廊下" width="142px" height="123px">
-                        <img src="./assets/img/spend/spend-slide9.jpg" alt="お出迎えのお茶" width="153px" height="102px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block4">
-                    <div class="p-spend-slide__card p-spend-slide__card4">
-                        <p class="p-spend-slide__time">19:30</p>
-                        <p class="p-spend-slide__head">海辺を散歩</p>
-                        <p class="p-spend-slide__text">KIZUNAYAから徒歩5分で海岸沿いを散歩できます。
-                            心地よい海風を感じながら、天気が良ければ満天の星空を見上げることもできます。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide10.jpg" alt="海辺の景色" width="407px" height="272px">
+                        <div class="p-spend-slide__accent p-spend-slide__accent2">
+                            <img src="./assets/img/spend/spend-slide5.jpg" alt="温泉2" width="186" height="123" decoding="async">
+                            <img src="./assets/img/spend/spend-slide6.jpg" alt="温泉3" width="169" height="123" decoding="async">
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent4">
-                        <img src="./assets/img/spend/spend-slide11.jpg" alt="客室" width="242px" height="162px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block5">
-                    <div class="p-spend-slide__card p-spend-slide__card5">
-                        <p class="p-spend-slide__time">20:30</p>
-                        <p class="p-spend-slide__head">二度目の温泉</p>
-                        <p class="p-spend-slide__text">就寝前に露天風呂で特別な休日を味わってはいかがでしょうか。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide12.jpg" alt="露天風呂" width="486px" height="272px">
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block3">
+                        <div class="p-spend-slide__card p-spend-slide__card3">
+                            <p class="p-spend-slide__time">18:00</p>
+                            <p class="p-spend-slide__head">ご夕食</p>
+                            <p class="p-spend-slide__text">KIZUNAYAこだわりの、旬の食材をふんだんに使ったコース料理をご堪能ください。一品料理のだし巻き卵もオススメです！</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide7.jpg" alt="料理写真・メイン" width="520" height="272"  decoding="async">
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent5">
-                        <img src="./assets/img/spend/spend-slide13.jpg" alt="花" width="248px" height="165px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block6">
-                    <div class="p-spend-slide__card p-spend-slide__card6">
-                        <p class="p-spend-slide__time">23:00</p>
-                        <p class="p-spend-slide__head">就寝</p>
-                        <p class="p-spend-slide__text">就寝前に露天風呂で特別な休日を味わってはいかがでしょうか。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide14.jpg" alt="就寝灯" width="393px" height="262px">
+                        <div class="p-spend-slide__accent p-spend-slide__accent3">
+                            <img src="./assets/img/spend/spend-slide8.jpg" alt="卵焼き" width="142" height="123" decoding="async">
+                            <img src="./assets/img/spend/spend-slide9.jpg" alt="お茶漬け" width="153" height="102" decoding="async">
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent6">
-                        <img src="./assets/img/spend/spend-slide15.jpg" alt="露天風呂2" width="262px" height="175px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block7">
-                    <div class="p-spend-slide__card p-spend-slide__card7">
-                        <p class="p-spend-slide__time">7:00</p>
-                        <p class="p-spend-slide__head">朝風呂</p>
-                        <p class="p-spend-slide__text">朝風呂で気持ちよく1日をスタートさせましょう！</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide16.jpg" alt="朝の露天風呂" width="361px" height="271px">
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block4">
+                        <div class="p-spend-slide__card p-spend-slide__card4">
+                            <p class="p-spend-slide__time">19:30</p>
+                            <p class="p-spend-slide__head">海辺を散歩</p>
+                            <p class="p-spend-slide__text">KIZUNAYAから徒歩5分で海岸沿いを散歩できます。
+                                心地よい海風を感じながら、天気が良ければ満天の星空を見上げることもできます。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide10.jpg" alt="海辺の景色" width="407" height="272"  decoding="async">
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent7">
-                        <img src="./assets/img/spend/spend-slide17.jpg" alt="廊下" width="141px" height="198px">
-                        <img src="./assets/img/spend/spend-slide18.jpg" alt="休憩所" width="170px" height="182px">
-                    </div>
-                    <span class="border-line"></span>
-                </li> 
-                <li class="p-spend-slide__block p-spend-slide__block8">
-                    <div class="p-spend-slide__card p-spend-slide__card8">
-                        <p class="p-spend-slide__time">8:00</p>
-                        <p class="p-spend-slide__head">ご朝食</p>
-                        <p class="p-spend-slide__text">地元の焼き魚で元気をチャージ！ほっこりするようなご朝食を用意しております。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide19.jpg" alt="ご朝食・和食" width="374px" height="250px">
+                        <div class="p-spend-slide__accent p-spend-slide__accent4">
+                            <img src="./assets/img/spend/spend-slide11.jpg" alt="客室" width="242" height="162" decoding="async">
                         </div>
-                    </div>
-                    <div class="p-spend-slide__accent p-spend-slide__accent8">
-                        <img src="./assets/img/spend/spend-slide20.jpg" alt="客室" width="235px" height="147px">
-                    </div>
-                    <span class="border-line"></span>
-                </li>
-                <li class="p-spend-slide__block p-spend-slide__block9">
-                    <div class="p-spend-slide__card p-spend-slide__card9">
-                        <p class="p-spend-slide__time">10:00</p>
-                        <p class="p-spend-slide__head">チェックアウト</p>
-                        <p class="p-spend-slide__text">KIZUNAYAで過ごす1日はいかがでしたでしょうか。心も体も満たされる良い旅となりますように。またのお越しを心よりお待ちしております。</p>
-                        <div class="p-spend-slide__block__img">
-                            <img src="./assets/img/spend/spend-slide21.jpg" alt="ご朝食・和食" width="453px" height="247px">
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block5">
+                        <div class="p-spend-slide__card p-spend-slide__card5">
+                            <p class="p-spend-slide__time">20:30</p>
+                            <p class="p-spend-slide__head">二度目の温泉</p>
+                            <p class="p-spend-slide__text">就寝前に露天風呂で特別な休日を味わってはいかがでしょうか。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide12.jpg" alt="露天風呂" width="486" height="272" decoding="async">
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-		</section>
+                        <div class="p-spend-slide__accent p-spend-slide__accent5">
+                            <img src="./assets/img/spend/spend-slide13.jpg" alt="お花" width="248" height="165" decoding="async">
+                        </div>
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block6">
+                        <div class="p-spend-slide__card p-spend-slide__card6">
+                            <p class="p-spend-slide__time">23:00</p>
+                            <p class="p-spend-slide__head">就寝</p>
+                            <p class="p-spend-slide__text">就寝前に露天風呂で特別な休日を味わってはいかがでしょうか。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide14.jpg" alt="就寝灯" width="393" height="262"  decoding="async">
+                            </div>
+                        </div>
+                        <div class="p-spend-slide__accent p-spend-slide__accent6">
+                            <img src="./assets/img/spend/spend-slide15.jpg" alt="露天風呂" width="262" height="175" decoding="async">
+                        </div>
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block7">
+                        <div class="p-spend-slide__card p-spend-slide__card7">
+                            <p class="p-spend-slide__time">7:00</p>
+                            <p class="p-spend-slide__head">朝風呂</p>
+                            <p class="p-spend-slide__text">朝風呂で気持ちよく1日をスタートさせましょう！</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide16.jpg" alt="朝の露天風呂" width="361" height="271"  decoding="async">
+                            </div>
+                        </div>
+                        <div class="p-spend-slide__accent p-spend-slide__accent7">
+                            <img src="./assets/img/spend/spend-slide17.jpg" alt="廊下" width="141" height="198" decoding="async">
+                            <img src="./assets/img/spend/spend-slide18.jpg" alt="エントランス" width="170" height="182" decoding="async">
+                        </div>
+                        <span class="border-line"></span>
+                    </li> 
+                    <li class="p-spend-slide__block p-spend-slide__block8">
+                        <div class="p-spend-slide__card p-spend-slide__card8">
+                            <p class="p-spend-slide__time">8:00</p>
+                            <p class="p-spend-slide__head">ご朝食</p>
+                            <p class="p-spend-slide__text">地元の焼き魚で元気をチャージ！ほっこりするようなご朝食を用意しております。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide19.jpg" alt="ご朝食・和食" width="374" height="250"  decoding="async">
+                            </div>
+                        </div>
+                        <div class="p-spend-slide__accent p-spend-slide__accent8">
+                            <img src="./assets/img/spend/spend-slide20.jpg" alt="食後のお茶" width="235" height="147" decoding="async">
+                        </div>
+                        <span class="border-line"></span>
+                    </li>
+                    <li class="p-spend-slide__block p-spend-slide__block9">
+                        <div class="p-spend-slide__card p-spend-slide__card9">
+                            <p class="p-spend-slide__time">10:00</p>
+                            <p class="p-spend-slide__head">チェックアウト</p>
+                            <p class="p-spend-slide__text">KIZUNAYAで過ごす1日はいかがでしたでしょうか。心も体も満たされる良い旅となりますように。またのお越しを心よりお待ちしております。</p>
+                            <div class="p-spend-slide__block__img">
+                                <img src="./assets/img/spend/spend-slide21.jpg" alt="ご朝食・和食" width="453" height="247" decoding="async">
+                            </div>
+                        </div>
+                        <span class="border-line"></span>
+                    </li>
+                </ul>
+            </div>
+            
+		</div>
 		<section class="p-spend-tour">
             <div class="l-inner">
                 <h2 class="p-spend-tour__title">周辺観光</h2>
                 <div class="p-spend-tour__cards">
                     <div class="p-spend-tour__card">
                         <div class="p-spend-tour__img">
-                            <img src="./assets/img/spend/spend-tour1.jpg" alt="お茶摘み体験" width="520px" height="380px">
+                            <img src="./assets/img/spend/spend-tour1.jpg" alt="お茶摘み体験" width="520" height="380"  decoding="async">
                         </div>
                         <h3 class="spend-tour__head">お茶摘み体験</h3>
                         <div class="p-spend-tour__text">
@@ -220,7 +227,7 @@
                     </div>
                     <div class="p-spend-tour__card">
                         <div class="p-spend-tour__img">
-                            <img src="./assets/img/spend/spend-tour2.jpg" alt="MACCHA Cafe" width="520px" height="380px">
+                            <img src="./assets/img/spend/spend-tour2.jpg" alt="MACCHA Cafe" width="520" height="380"  decoding="async">
                         </div>
                         <h3 class="spend-tour__head">MACCHA Cafe</h3>
                         <div class="p-spend-tour__text">
@@ -234,7 +241,7 @@
                     </div>
                     <div class="p-spend-tour__card">
                         <div class="p-spend-tour__img">
-                            <img src="./assets/img/spend/spend-tour3.jpg" alt="抹茶蕎麦屋" width="520px" height="380px">
+                            <img src="./assets/img/spend/spend-tour3.jpg" alt="抹茶蕎麦屋" width="520" height="380" decoding="async">
                         </div>
                         <h3 class="spend-tour__head">抹茶蕎麦屋</h3>
                         <div class="p-spend-tour__text">
@@ -249,7 +256,7 @@
                     </div>
                     <div class="p-spend-tour__card">
                         <div class="p-spend-tour__img">
-                            <img src="./assets/img/spend/spend-tour4.jpg" alt="抹茶処" width="520px" height="380px">
+                            <img src="./assets/img/spend/spend-tour4.jpg" alt="抹茶処" width="520" height="380"  decoding="async">
                         </div>
                         <h3 class="spend-tour__head">抹茶処</h3>
                         <div class="p-spend-tour__text">
@@ -282,7 +289,7 @@
         <div class="p-footer__wrap">
           <div class="p-footer__info">
             <div class="c-footer__logo">
-              <img src="assets/img/top/logo.png" alt="KIZUNAYAロゴ">
+              <img src="assets/img/top/logo.png" alt="KIZUNAYAロゴ" width="66" height="76" decoding="async">
             </div>
             <h3 class="c-mv__title c-mv__title--footer">KIZUNAYA</h3>
             <p class="c-address__number">
@@ -292,13 +299,13 @@
           </div>
           <div class="p-footer__nav--wrap">
             <div class="p-footer__link--nav">
-              <a class="c-footer__nav--item" href="#"><span>ー</span>　温泉</a>
-              <a class="c-footer__nav--item" href="#"><span>ー</span>　料理</a>
-              <a class="c-footer__nav--item" href="#"><span>ー</span>　客室</a>
+              <a class="c-footer__nav--item" href="./onsen.html"><span>ー</span>　温泉</a>
+              <a class="c-footer__nav--item" href="./cooking.html"><span>ー</span>　料理</a>
+              <a class="c-footer__nav--item" href="./guest-room.html"><span>ー</span>　客室</a>
             </div>
             <div class="p-footer__link--nav">
-              <a class="c-footer__nav--item" href="#"><span>ー</span>　過ごし方</a>
-              <a class="c-footer__nav--item" href="#"><span>ー</span>　アクセス</a>
+              <a class="c-footer__nav--item" href="./spend.html"><span>ー</span>　過ごし方</a>
+              <a class="c-footer__nav--item" href="./access.html"><span>ー</span>　アクセス</a>
             </div>
           </div>
         </div>
@@ -308,11 +315,16 @@
         </div>
         <p class="c-copyright">©︎2023 KIZUNAYA</p>
       </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/script.min.js"></script>
+      <button class="c-scroll__btn wow animated fadeIn"></button>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script defer src="./assets/js/script.min.js"></script>
 </body>
 
 </html>

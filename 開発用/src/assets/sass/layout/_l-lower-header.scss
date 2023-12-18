@@ -2,6 +2,7 @@
 
 .l-lower-header {
     width: 100%;
+    animation: fadeInAnime 2s;
     aspect-ratio: 1440 / 500;
     object-fit: cover;
     display: grid;
@@ -13,6 +14,16 @@
         aspect-ratio: unset;
     }
 }
+
+@keyframes fadeInAnime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+  }
+}
+
 .l-lower-header__title {
     color: global.$white-color;
     font-size: calc(24px + (48 - 24) * ((100vw - 768px)) / (1440 - 768));
@@ -29,10 +40,44 @@
 
 #guest-room .l-lower-header {
     background: url(../../assets/img/guest-room/header.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @include global.mq(sp) {
         background-image: url(../../assets/img/guest-room/header_sp.jpg);
         background-size: cover;
+    }
+}
+
+#cooking .l-lower-header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.49) 100%), url(../../assets/img/cooking/header.jpg), lightgray -313.461px -3.068px / 254.002% 107.11% no-repeat;
+    // background: url(../../assets/img/cooking/header.jpg) no-repeat;
+    // background-size: contain;
+
+    @include global.mq(sp) {
+        // background-image: url(../../assets/img/cooking/header_sp.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/cooking/header_sp.jpg), lightgray -313.461px -3.068px / 254.002% 107.11% no-repeat;
+        background-size: cover;
+    }
+}
+
+
+#spend-page .l-lower-header {
+    background: url(../../assets/img/spend/header.jpg) no-repeat;
+    background-size: cover;
+
+    @include global.mq(sp) {
+        background-image: url(../../assets/img/spend/header_sp.jpg);
+        background-size: cover;
+    }
+}
+
+#access .l-lower-header {
+    background: url(../../assets/img/access/header.jpg) no-repeat;
+    background-size: cover;
+
+    @include global.mq(sp) {
+        background-image: url(../../assets/img/access/header_sp.jpg);
+        background-size: cover;
+
     }
 }

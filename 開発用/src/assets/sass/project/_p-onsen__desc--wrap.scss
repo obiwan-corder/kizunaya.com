@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.p-onsen__desc--wrap {
+  padding-top: 49px;
+  padding-bottom: 81px;
+  text-align: center;
+
+  @include global.mq('sp') {
+    padding-top: 15px;
+    text-align: left;
+    padding-bottom: 60px;
+  }
+}

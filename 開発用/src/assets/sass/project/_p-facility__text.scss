@@ -1,0 +1,10 @@
+@use "../global/" as global;
+
+.p-facility__text {
+  padding-top: 26px;
+  padding-left: 2px;
+  span{
+    margin-top: 19px;
+    display: inline-block;
+   }
+}

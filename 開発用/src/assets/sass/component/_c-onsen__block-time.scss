@@ -1,0 +1,8 @@
+@use "../global/" as global;
+
+.c-onsen__block-time {
+  font-family: global.$main-font;
+  color: global.$text-color;
+  @include global.font(13, 400, 24.57, 1.56);
+  padding-left: 0.1rem;
+}
