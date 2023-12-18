@@ -1,0 +1,10 @@
+@use "../global/" as global;
+
+.c-reservation-btn {
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: global.$white-color;
+    color: global.$text-color;
+  }
+}
