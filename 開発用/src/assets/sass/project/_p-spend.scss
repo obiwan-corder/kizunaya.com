@@ -3,23 +3,20 @@
 
 .spend-wrapper{
     overflow-x: hidden;
+    font-family: global.$main-font;
 }
 
-// 過ごし方のプログレスバー
-
-
-.border-line{
-    position: absolute;
-    top: -27px;
-    left: 200px;
-    height: 1px;
-    width: 0;
-    background: #2D2D2E;
+.p-spend__title{
     @include global.mq('sp'){
-        display: none;
+        margin-top: 4px;
+        margin-left: 3px;
     }
 }
 
+.p-spend__message{
+  
+    
+}
 
 // 過ごし方のスライドページ
 .p-spend-slide {
@@ -30,7 +27,7 @@
     background: url(../img/spend/spend-slide-bg.png) no-repeat center center / cover;
     @include global.mq('sp'){
         width: 100%;
-        padding: 85px 22px 110px 22px;
+        padding: 9px 20px 40px 20px;
         height: auto;
     }
 
@@ -63,7 +60,7 @@
 
 
 .p-spend-slide__block{
-    height: 601px;
+    height: calc( 686px - 85px - 110px);
     position: relative;
     flex: 1;
     opacity: 0;
@@ -97,19 +94,21 @@
 
 
 .p-spend-slide__time {
-    margin-top: 37px;
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     line-height: calc( 45 / 24 );
     letter-spacing: 2.88px;
     @include global.mq('sp'){
         font-size: 18px;
-        margin-top: 25px;
+        margin-top: 24px;
         line-height: calc( 34.024 / 18 );
         letter-spacing: 2.16px;
+        padding-left: 2px;
     }
 }
 
 .p-spend-slide__head {
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     line-height: calc( 45 / 24 );
     letter-spacing: 2.88px;
@@ -117,6 +116,7 @@
         font-size: 18px;
         line-height: calc( 34.024 / 18 );
         letter-spacing: 2.16px;
+        padding-left: 3px;
     }
 }
 
@@ -128,6 +128,7 @@
     @include global.mq('sp'){
         line-height: calc( 22.5 / 15 );
         letter-spacing: 1.5px;
+        margin-top: 10px;
     }
 
 }
@@ -161,9 +162,7 @@
     .p-spend-slide__card{
         width: 408px;
         margin-right: 28px;
-        @include global.mq('sp'){
-            width: 100%;
-        }
+       
     }
     .p-spend-slide__accent{
         display: flex;
@@ -203,6 +202,7 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 2px;
     }
     .p-spend-slide__card{
         width: 411px;
@@ -250,6 +250,7 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 2px;
     }
     .p-spend-slide__card{
         width: 520px;
@@ -296,11 +297,18 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 2px;
     }
     .p-spend-slide__card{
         width: 407px;
         margin-right: 51px;
         margin-left: 104px;
+        .p-spend-slide__text{
+            @include global.mq('sp'){
+                padding-left: 0.5px;
+            }
+            
+        }
     }
     .p-spend-slide__accent{
         display: flex;
@@ -338,11 +346,13 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 3px;
     }
     .p-spend-slide__card{
         width: 486px;
         margin-right: 51px;
         margin-left: 51px;
+       
     }
     .p-spend-slide__accent{
         display: flex;
@@ -380,11 +390,21 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 3px;
     }
     .p-spend-slide__card{
         width: 393px;
         margin-right: 75px;
         margin-left: 52px;
+        .p-spend-slide__text{
+            @include global.mq('sp'){
+                margin-top: 17px;
+            }
+            
+        }
+        .p-spend-slide__block__img{
+            margin-top: 13px;
+        }
     }
     .p-spend-slide__accent{
         display: flex;
@@ -421,6 +441,7 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 2px;
     }
     .p-spend-slide__card{
         width: 361px;
@@ -466,6 +487,7 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 2px;
     }
     .p-spend-slide__card{
         width: 374px;
@@ -507,6 +529,7 @@
     @include global.mq('sp'){
         display: block;
         width: 100%;
+        margin-top: 2px;
     }
     &::after{
         content:'';
@@ -540,10 +563,14 @@
     padding-top: 190px;
     padding-bottom: 120px;
     @include global.mq('sp'){
-        padding-top: 39px;
+        padding-top: 44px;
         padding-bottom: 20px;
+        padding-left: calc( 45px - 19px);
+        padding-right: calc( 45px - 19px);
     }
 }
+
+
 
 .p-spend-tour__title {
     font-family: global.$title-font;
@@ -585,7 +612,7 @@
     font-weight: 600;
     font-family: global.$title-font;
     @include global.mq('sp'){
-        margin-top: 15px;
+        margin-top: 0px;
         font-size: 20px;
         line-height: calc(29 / 20);
     }
@@ -596,13 +623,33 @@
     font-size: 15px;
     line-height: calc( 28.353 / 15 );
     letter-spacing: 1.8px;
+
+    @include global.mq('sp'){
+        margin-top: 0;
+        line-height: calc( 22.5 / 15 );
+        letter-spacing: 0.8px;
+        padding-right: 4px;
+        
+    }
 }
 
 .p-spend-tour__detail {
     margin-top: 30px;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     @include global.mq('sp'){
         margin-top: 15px;
+        letter-spacing: 1.68px;
+        .small_text{
+            font-size: 11px;
+            letter-spacing: 1.32px;
+            line-height: calc( 11.332 / 11 );
+        }
     }
 }
 
+.p-spend-tour__img img{
+    @include global.mq('sp'){
+        aspect-ratio:  285 / 204 ;
+    }
+}

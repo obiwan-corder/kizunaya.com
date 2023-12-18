@@ -10,11 +10,11 @@
     padding-bottom: 110px;
     font-family: global.$main-font;
 
-    @include global.mq('sp') {
-        padding-top: 2px;
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 68px;
+    @include global.mq('sp'){
+        padding-top: 60px;
+        padding-bottom: 54px;
+        letter-spacing: 0.9px;
+
     }
 }
 
