@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.c-onsen__block-title {
+  font-family: global.$title-font;
+  color: global.$text-color;
+  @include global.font(32, 800, 46.34, 0.3);
+  padding-left: 0.1rem;
+
+  @include global.mq('sp') {
+    @include global.font(24, 800, 34.75, 0.1);
+    padding-left: 0;
+  }
+}

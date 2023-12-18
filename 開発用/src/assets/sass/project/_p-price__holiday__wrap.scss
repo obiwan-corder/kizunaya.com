@@ -1,0 +1,8 @@
+@use "../global/" as global;
+
+.p-price__holiday__wrap {
+  padding-top: 18px;
+  @include global.mq('sp') {
+    padding-top: 1px;
+  }
+}

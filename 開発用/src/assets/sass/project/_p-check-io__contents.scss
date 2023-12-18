@@ -1,0 +1,10 @@
+@use "../global/" as global;
+
+.p-check-io__contents {
+  width: 26%;
+  max-width: 277px;
+  &:not(:first-child){
+    max-width: 283px;
+    width: 26.5%;
+  }
+}

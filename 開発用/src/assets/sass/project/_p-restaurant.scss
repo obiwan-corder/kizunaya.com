@@ -1,0 +1,31 @@
+@use "../global/" as global;
+
+.p-restaurant {
+    margin-bottom: 120px;
+    @include global.mq(sp) {
+        margin-bottom: 20px;
+    }
+}
+.p-restaurant__title {
+    font-size: calc(32 / 16 * 1rem);
+    line-height: calc(46.34 / 32);
+    letter-spacing: 0.13em;
+    text-align: center;
+    padding-bottom: 80px;
+    color: global.$text-color;
+    @include global.mq(sp) {
+        padding-bottom: 40px;
+        font-size: calc(24 / 16 * 1rem);
+        line-height: calc(34.75 / 24);
+        letter-spacing: 0;
+    }
+}
+.p-restaurant__list {
+    display: flex;
+    gap: 10%;
+    padding: 0 30px;
+    @include global.mq(sp) {
+        padding: 0;
+        gap: 3vw;
+    }
+}

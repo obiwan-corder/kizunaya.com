@@ -5,26 +5,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>アクセス</title>
-	<meta name="description" content="KIZUNAYAへの経路案内のページです">
+	<!-- リセットCSS -->
 	<link rel="stylesheet" href="../public/assets/css/reset.css">
-	<link rel="stylesheet" href="../public/assets/css/style.min.css">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- wow用のanimate.css -->
+	<link rel="stylesheet" href="./assets/css/animate.css">
+	<!-- style.css -->
+	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
-<body>
+<body id="access">
 	<header class="l-lower-header fadeInAnime" id="header">
-		<h1 class="l-lower-header__title">客 室</h1>
+		<h1 class="l-lower-header__title">アクセス</h1>
 		<!-- ハンバーガーメニュー -->
 		<div class="c-drawer-btn l-lower-headerr__btn">
 			<span class="c-drawer-btn__bar"></span>
 		</div>
-		<nav class="p-gnav">
+		<nav class="p-gnav" id="gnav">
 			<a class="p-gnav__logo" href="./index.html">
 				<p class="p-gnav__logo-img">
 					<img src="./assets/img/common/logo-white.png" alt="きずなや">
 				</p>
 				<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
 			</a>
-			<ul class="p-gnav__nav js-link" id="gnav">
+			<ul class="p-gnav__nav js-link">
 				<li class="p-gnav__nav-list">
 					<a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
 						温泉
@@ -52,12 +59,13 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="p-gnav__background"></div>
 	</header>
 	<!-- /.l-header -->
-	<button class="c-search-btn">
+	<div class="c-search-btn">
 		<a href="#" class="c-search-btn__link">空 室 検 索</a>
-	</button>
-	<main class="p-access">
+	</div>
+	<main class="p-access wow animated fadeInUp" data-wow-delay="1s" data-wow-duration="2s">
 		<div class="l-inner">
 			<div class="p-access__map">
 				<div class="p-access__map__block">
@@ -103,13 +111,13 @@
 			</div>
 			<div class="p-footer__nav--wrap">
 				<div class="p-footer__link--nav">
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　温泉</a>
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　料理</a>
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　客室</a>
+					<a class="c-footer__nav--item" href="./onsen.html"><span>ー</span>　温泉</a>
+					<a class="c-footer__nav--item" href="./cooking.html"><span>ー</span>　料理</a>
+					<a class="c-footer__nav--item" href="./guest-room.html"><span>ー</span>　客室</a>
 				</div>
 				<div class="p-footer__link--nav">
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　過ごし方</a>
-					<a class="c-footer__nav--item" href="#"><span>ー</span>　アクセス</a>
+					<a class="c-footer__nav--item" href="./spend.html"><span>ー</span>　過ごし方</a>
+					<a class="c-footer__nav--item" href="./access.html"><span>ー</span>　アクセス</a>
 				</div>
 			</div>
 		</div>
@@ -119,6 +127,13 @@
 		</div>
 		<p class="c-copyright">©︎2023 KIZUNAYA</p>
 	</footer>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="./assets/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script defer src="./assets/js/script.min.js"></script>
 </body>
 
 </html>

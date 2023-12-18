@@ -1,0 +1,11 @@
+
+
+.p-room__version {
+  &:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &:last-child{
+    margin-bottom: 97px;
+  }
+}

@@ -1,7 +1,6 @@
-
 @use "../global" as global;
 
-.p-dialog {
+.dialog {
     // width: 844px;
     width: 50vw;
     max-width: 100%;
@@ -20,10 +19,10 @@
     /*スクロールバー非表示（Firefox）*/
     scrollbar-width: none;
 }
-.p-dialog::-webkit-scrollbar{
+.dialog::-webkit-scrollbar {
     display: none;
 }
-.p-dialog:focus-visible {
+.dialog:focus-visible {
     outline: none;
 }
 dialog::backdrop {

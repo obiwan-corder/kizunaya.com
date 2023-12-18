@@ -1,0 +1,16 @@
+@use "../global/" as global;
+
+.p-facility{
+    margin-bottom: 100px;
+}
+.p-facility__title {
+    font-size: calc(24 / 16 * 1rem);
+    line-height: calc(46 / 24);
+    text-align: center;
+}
+.p-facility__text {
+    font-family: global.$main-font;
+    font-size: calc(14 / 16 * 1rem);
+    line-height: calc(26.463 / 14);
+    letter-spacing: calc(1.68 / 14 * 1em);
+}

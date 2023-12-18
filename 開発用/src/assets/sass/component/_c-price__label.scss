@@ -1,0 +1,12 @@
+@use "../global/" as global;
+
+.c-price__label {
+  display: inline-block;
+  font-family: global.$main-font;
+  @include global.font(16, 700, 30.24, 1.92);
+  color: global.$text-color;
+
+  @include global.mq('sp') {
+    display: inherit;
+  }
+}
