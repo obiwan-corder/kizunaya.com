@@ -147,6 +147,12 @@ $(window).on('scroll load', function() {
   ScrollTimelineAnime('.p-spend-slide__block9', 100); 
 });
 
+$(document).ready(function () {
+  setTimeout(function () {
+    $("#splash").fadeOut("slow");
+  }, 2500);
+}),
+  
 gsap.registerPlugin(ScrollTrigger);
 // document.querySelectorAll(".p-spend-slide__block").forEach(element => {
 //   gsap.to(element, {
