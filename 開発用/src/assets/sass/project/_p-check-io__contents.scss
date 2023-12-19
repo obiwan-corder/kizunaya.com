@@ -1,0 +1,22 @@
+@use "../global/" as global;
+
+.p-check-io__contents {
+  width: 26%;
+  max-width: 277px;
+  &:not(:first-child){
+    max-width: 283px;
+    width: 26.5%;
+    @include global.mq('sp') {
+      margin: 0 auto;
+      max-width: 300px;
+      padding-right: 3px;
+      padding-top: 20px;
+      width: 100%;
+    }
+  }
+  @include global.mq('sp') {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.p-room__imgs {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 150px;
+  width: min(55%, 580px);
+  @include global.mq('sp') {
+    display: block;
+    width: max(100%, 285px);
+  }
+}

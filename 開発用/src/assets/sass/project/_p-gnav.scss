@@ -31,7 +31,7 @@
 // ハンガーガーメニュー表示
 .js-panelactive {
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     opacity: 1;
     display: flex;
     right: 0;
@@ -96,5 +96,20 @@
         -webkit-filter: blur(0);
         filter: blur(0);
         opacity: 1;
+    }
+}
+
+
+.p-gnav__background {
+    background: rgba(0,0,0,.3);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    &.is-active{
+        display: block;
     }
 }

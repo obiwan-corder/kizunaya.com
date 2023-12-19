@@ -1,0 +1,12 @@
+
+@use "../global/" as global;
+.p-room__text-bottom {
+  font-size: 0.9333333333rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.89;
+  padding-top: 19px;
+  @include global.mq('sp') {
+    padding-top: 20px;
+  }
+}

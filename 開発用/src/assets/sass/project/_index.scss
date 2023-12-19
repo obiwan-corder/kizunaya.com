@@ -38,13 +38,26 @@
 @use "p-price__holiday__wrap";
 @use "p-dialog";
 @use "p-reservation";
-
+@use "p-header__title--guest-room";
 @use "p-room";
 @use "p-facility";
 @use "p-check-io";
-
+@use "p-room__sentence";
 @use "p-onsen__content--wrap";
-
+@use "p-room__title-eng";
 @use "p-course";
 @use "p-dish";
 @use "p-restaurant";
+@use "p-room__title";
+@use "p-room__text-bottom";
+@use "p-room__text";
+@use "p-room__imgs";
+@use "p-room__version";
+@use "p-room__sentence--last";
+@use "p-facility__title";
+@use "p-facility__text";
+@use "p-room__img";
+@use "p-inner__check";
+@use "p-check-io__title";
+@use "p-check-io__text";
+@use "p-check-io__contents";

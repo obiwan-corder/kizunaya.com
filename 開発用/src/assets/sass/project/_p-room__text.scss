@@ -1,0 +1,20 @@
+@use "../global/" as global;
+
+.p-room__text {
+  @include global.font(15, 400, 30, 0.9);
+  font-family: global.$main-font;
+  color: global.$text-color;
+
+  &:last-child {
+    line-height: 1.6;
+  }
+
+  span {
+    padding-left: 22px;
+  }
+
+  @include global.mq('sp') {
+    @include global.font(13, 400, 24.57, 0.78);
+  }
+
+}

@@ -1,0 +1,14 @@
+@use "../global/" as global;
+
+.p-room__sentence {
+  align-self: center;
+  padding-right: 22px;
+  padding-top: 13px;
+  position: relative;
+  top: -1.85rem;
+  width: min(40%, 430px);
+  @include global.mq('sp') {
+    width: max(100%, 300px);
+    padding-right: 0;
+  }
+}

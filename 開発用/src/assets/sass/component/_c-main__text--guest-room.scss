@@ -1,0 +1,11 @@
+@use "../global" as global;
+
+.c-main__text--guest-room {
+  padding-left: 2px;
+  padding-top: 2px;
+  @include global.mq('sp') {
+    @include global.font(15, 400, 34.54, 0.9);
+    padding-top: 59px;
+    padding-bottom: 15px;
+  }
+}

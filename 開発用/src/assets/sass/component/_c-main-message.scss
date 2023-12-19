@@ -3,12 +3,19 @@
 .c-main-message {
     font-size: 15px;
     text-align: center;
-    line-height: calc( 34.545 / 15 );
+    line-height: calc(34.545 / 15);
     // letter-spacing: 1.95px;
     letter-spacing: 1.95px;
     padding-top: 120px;
     padding-bottom: 110px;
     font-family: global.$main-font;
+
+    @include global.mq('sp'){
+        padding-top: 60px;
+        padding-bottom: 54px;
+        letter-spacing: 0.9px;
+
+    }
 }
 
 .c-main-message__text {

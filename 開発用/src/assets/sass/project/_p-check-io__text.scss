@@ -1,0 +1,13 @@
+@use "../global/" as global;
+
+.p-check-io__text {
+font-family: global.$main-font;
+color: global.$white-color;
+@include global.font(14, 400, 26.46, 1.68);
+text-align: left;
+@include global.mq('sp') {
+  @include global.font(15, 500, 28.35, 0.3);
+  text-align: center;
+  padding-left: 4px;
+}
+}
