@@ -29,13 +29,14 @@
 	</div>
 	<!-- メインビジュアル -->
 	<header class="l-header__mv" id="header">
+		<!-- ハンバーガーメニュー -->
 		<div class="c-drawer-btn l-lower-headerr__btn">
 			<span class="c-drawer-btn__bar"></span>
 		</div>
-		<nav class="p-gnav">
-			<a class="p-gnav__logo" href="./index.html">
+		<nav class="p-gnav" id="gnav">
+			<a class="p-gnav__logo" href="index.html">
 				<p class="p-gnav__logo-img">
-					<img src="./assets/img/common/logo-white.png" alt="きずなや" width="66" height="76" decoding="async">
+					<img src="./assets/img/common/logo-white.png" alt="きずなや">
 				</p>
 				<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
 			</a>
@@ -66,7 +67,13 @@
 					</a>
 				</li>
 			</ul>
+			<!-- <div class="c-drawer-btn p-gnav__btn">
+                <span class="c-drawer-btn__bar"></span>
+                <span class="c-drawer-btn__bar"></span>
+                <span class="c-drawer-btn__bar"></span>
+            </div> -->
 		</nav>
+		<div class="p-gnav__background"></div>
 		<img src="./assets/img/top/FV.png" alt="トップ背景画像" class="c-top__bg">
 		<img src="./assets/img/top/FV_sp.png" alt="トップ背景画像" class="c-top__bg--sp">
 		<div class="p-logo__wrap">
@@ -75,50 +82,6 @@
 		</div>
 		<div class="c-scrolldown"><span>SCROLL</span></div>
 	</header>
-	<!-- ハンバーガーメニュー -->
-	<div class="c-drawer-btn l-lower-headerr__btn">
-		<span class="c-drawer-btn__bar"></span>
-	</div>
-	<nav class="p-gnav" id="gnav">
-		<a class="p-gnav__logo" href="index.html">
-			<p class="p-gnav__logo-img">
-				<img src="./assets/img/common/logo-white.png" alt="きずなや">
-			</p>
-			<p class="c-mv__title p-gnav__logo-text">KIZUNAYA</p>
-		</a>
-		<ul class="p-gnav__nav js-link" id="gnav">
-			<li class="p-gnav__nav-list">
-				<a href="./onsen.html" class="p-gnav__nav-link g-nav-anm">
-					温泉
-				</a>
-			</li>
-			<li class="p-gnav__nav-list">
-				<a href="./guest-room.html" class="p-gnav__nav-link g-nav-anm">
-					客室
-				</a>
-			</li>
-			<li class="p-gnav__nav-list">
-				<a href="./cooking.html" class="p-gnav__nav-link g-nav-anm">
-					料理
-				</a>
-			</li>
-			<li class="p-gnav__nav-list">
-				<a href="./spend.html" class="p-gnav__nav-link g-nav-anm">
-					過ごし方
-				</a>
-			</li>
-			<li class="p-gnav__nav-list">
-				<a href="./access.html" class="p-gnav__nav-link g-nav-anm">
-					アクセス
-				</a>
-			</li>
-		</ul>
-		<!-- <div class="c-drawer-btn p-gnav__btn">
-              <span class="c-drawer-btn__bar"></span>
-              <span class="c-drawer-btn__bar"></span>
-              <span class="c-drawer-btn__bar"></span>
-          </div> -->
-	</nav>
 	<button class="c-search-btn">
 		<a href="#" class="c-search-btn__link">空 室 検 索</a>
 	</button>
@@ -177,13 +140,13 @@
 	<div class="p-content">
 		<div class="p-content__wrap">
 			<div class="p-content__block wow animated fadeInUp" data-wow-delay="1s">
-				<a href="#" class="c-content__img">
-					<h3 class="c-content__title">温泉</h3>
+				<a href="./onsen.html" class="c-content__img">
+					<h3 class="c-content__title c-content__title--vertical">温泉</h3>
 				</a>
 				<div class="p-content__text">
 					<h4 class="c-content__lead">温泉</h4>
 					<p class="c-content__desc">海を眺めながらゆったりとした時間<br>をお過ごしください</p>
-					<a href="" class="c-content__link">詳しく見る</a>
+					<a href="./onsen.html" class="c-content__link">詳しく見る</a>
 				</div>
 			</div>
 			<div class="p-content__block p-content__cooking wow animated fadeInUp" data-wow-delay="1s">
@@ -193,21 +156,21 @@
 						ご堪能ください<br>
 						季節ごとに変わる一品料理も<br>
 						オススメです</p>
-					<a href="" class="c-content__link c-content__link--cooking">詳しく見る</a>
+					<a href="./cooking.html" class="c-content__link c-content__link--cooking">詳しく見る</a>
 				</div>
-				<a href="#" class="c-content__img c-content__img--cooking">
+				<a href="./cooking.html" class="c-content__img c-content__img--cooking">
 					<h3 class="c-content__title c-content__title--vertical">料理</h3>
 				</a>
 			</div>
 			<div class="p-content__block  p-content__guestroom wow animated fadeInUp" data-wow-delay="1s">
-				<a href="#" class="c-content__img c-content__img--guestroom">
+				<a href="./guest-room.html" class="c-content__img c-content__img--guestroom">
 					<h3 class="c-content__title c-content__title--vertical c-content__title--guestroom">客室</h3>
 				</a>
 				<div class="p-content__text p-content__text--guestroom">
 					<h4 class="c-content__lead">客室</h4>
 					<p class="c-content__desc c-content__desc--guestroom">窓を開けると波の音が聞こえてきます<br>
 						自然に包まれながらお休みください</p>
-					<a href="" class="c-content__link c-content__link--guestroom">詳しく見る</a>
+					<a href="./guest-room.html" class="c-content__link c-content__link--guestroom">詳しく見る</a>
 				</div>
 			</div>
 		</div>
