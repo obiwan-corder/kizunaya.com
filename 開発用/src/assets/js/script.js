@@ -250,7 +250,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $("#splash").fadeOut("slow");
   }, 2500); 
-
+}),
 gsap.registerPlugin(ScrollTrigger);
 
 // 各要素に対してアニメーションを設定
