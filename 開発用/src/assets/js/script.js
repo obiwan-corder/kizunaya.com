@@ -121,7 +121,7 @@ $(window).on("scroll", function () {
 $(document).ready(function () {
   setTimeout(function () {
     $("#splash").fadeOut("slow");
-  }, 3000); // 3秒後に実行
+  }, 2500); 
 });
 
 
