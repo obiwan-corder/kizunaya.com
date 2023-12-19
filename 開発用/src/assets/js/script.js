@@ -148,21 +148,32 @@ $(window).on('scroll load', function() {
 });
 
 gsap.registerPlugin(ScrollTrigger);
-document.querySelectorAll(".p-spend-slide__block").forEach(element => {
-  gsap.to(element, {
-    scrollTrigger: {
-      trigger: element, // トリガーとなる要素
-      start: "left center", // 要素がビューポートの中央に来たときに開始
-      toggleActions: "play none none none", // スクロール時の動作
-      // オプションで markers: true を設定して、開始と終了ポイントを可視化できる
-    },
-    opacity: 1, // 透明度を1に
-    y: 0, // Y軸の位置を0に（上への移動効果を解除）
-    duration: 2, // アニメーションの長さ（秒）
-    ease: "power2.out" // イージングの種類
-  });
-});
+// document.querySelectorAll(".p-spend-slide__block").forEach(element => {
+//   gsap.to(element, {
+//     scrollTrigger: {
+//       trigger: '.p-spend-slide__block', // トリガーとなる要素
+//       start: "left center", // 要素がビューポートの中央に来たときに開始
+//       toggleActions: "play none none none", // スクロール時の動作
+//       // オプションで markers: true を設定して、開始と終了ポイントを可視化できる
+//     },
+//     opacity: 1, // 透明度を1に
+//     y: 0, // Y軸の位置を0に（上への移動効果を解除）
+//     duration: 2, // アニメーションの長さ（秒）
+//     ease: "power2.out" // イージングの種類
+//   });
+// });
 
+
+gsap.to('.p-spend-slide__block',{opacity:1,
+  scrollTrigger: {
+    trigger: '.p-spend-slide__block', // トリガーとなる要素
+    start: "left center", // 要素がビューポートの中央に来たときに開始
+    toggleActions: "play none none none", // スクロール時の動作
+    // オプションで markers: true を設定して、開始と終了ポイントを可視化できる
+  },
+  duration: 2, // アニメーションの長さ（秒）
+  ease: "elastic", // イージングの種類
+});
 
 
 // 観光セクションのアニメーション
@@ -177,7 +188,7 @@ document.querySelectorAll(".p-spend-tour__title").forEach(element => {
     opacity: 1, // 透明度を1に
     y: 0, // Y軸の位置を0に（上への移動効果を解除）
     duration: 2, // アニメーションの長さ（秒）
-    ease: "power2.out" // イージングの種類
+    ease: "none" // イージングの種類
   });
 });
 document.querySelectorAll(".p-spend-tour__card").forEach(element => {
@@ -191,7 +202,7 @@ document.querySelectorAll(".p-spend-tour__card").forEach(element => {
     opacity: 1, // 透明度を1に
     y: 0, // Y軸の位置を0に（上への移動効果を解除）
     duration: 2, // アニメーションの長さ（秒）
-    ease: "power2.out" // イージングの種類
+    ease: "none" // イージングの種類
   });
 });
 
