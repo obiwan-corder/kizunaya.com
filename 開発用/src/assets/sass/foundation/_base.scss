@@ -21,13 +21,16 @@ body {
   @include global.mq("pc") {
     display: none;
   }
-
-  .is-pc {
-    @include global.mq("sp") {
-      display: none;
-    }
+  @include global.mq('tab'){
+    display: none;
   }
 }
+.is-pc {
+    @include global.mq("sp") {
+      display: none;
+  }
+}
+
 
 header{
   overflow: hidden;

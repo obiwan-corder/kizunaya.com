@@ -492,7 +492,7 @@
     .p-spend-slide__card{
         width: 374px;
         margin-right: 70px;
-        margin-left: 136px;
+        margin-left: 96px;
     }
     .p-spend-slide__accent{
         display: flex;
@@ -578,9 +578,11 @@
     font-weight: 600;
     text-align: center;
     opacity: 0;
+    letter-spacing: 4.16px;
     @include global.mq('sp'){
         font-size: 24px;
         line-height: calc( 35/ 24 );
+        letter-spacing: 0;
     }
 }
 
@@ -644,6 +646,16 @@
             font-size: 11px;
             letter-spacing: 1.32px;
             line-height: calc( 11.332 / 11 );
+        }
+    }
+}
+
+.p-spend-tour__detail__head{
+    margin-left: -8px;
+    white-space: nowrap;
+    @include global.mq('sp'){
+        span{
+            margin-left: 8px;
         }
     }
 }
