@@ -43,7 +43,8 @@ header {
 }
 
 #cooking .l-lower-header {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.49) 100%), url(../../assets/img/cooking/header.jpg), lightgray -313.461px -3.068px/254.002% 107.11% no-repeat;
+	background: url(../../assets/img/cooking/header.jpg) no-repeat;
+	background-size: cover;
 }
 
 #spend-page .l-lower-header {
@@ -2202,14 +2203,11 @@ dialog::backdrop {
 }
 
 .p-dish__text {
-	text-align: center;
-}
-
-.p-dish__text span {
 	font-family: "Shippori Mincho", serif;
 	font-size: 1rem;
 	font-weight: 800;
 	line-height: 1.448125;
+	text-align: center;
 	text-align: center;
 }
 
@@ -3411,7 +3409,7 @@ dialog::backdrop {
 	margin-bottom: 5px;
 }
 
-.p-dish__text span {
+.p-dish__text {
 	display: inline-block;
 	font-size: 0.875rem;
 	line-height: 1.4478571429;
