@@ -43,7 +43,8 @@ header {
 }
 
 #cooking .l-lower-header {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.49) 100%), url(../../assets/img/cooking/header.jpg), lightgray -313.461px -3.068px/254.002% 107.11% no-repeat;
+	background: url(../../assets/img/cooking/header.jpg) no-repeat;
+	background-size: cover;
 }
 
 #spend-page .l-lower-header {
@@ -1381,7 +1382,7 @@ header {
 }
 
 .p-spend-slide__block8 .p-spend-slide__card {
-	margin-left: 136px;
+	margin-left: 96px;
 	margin-right: 70px;
 	width: 374px;
 }
@@ -1456,6 +1457,7 @@ header {
 	font-family: "Shippori Mincho", serif;
 	font-size: 32px;
 	font-weight: 600;
+	letter-spacing: 4.16px;
 	opacity: 0;
 	text-align: center;
 }
@@ -1495,6 +1497,11 @@ header {
 	font-family: "Inter", sans-serif;
 	font-size: 14px;
 	margin-top: 30px;
+}
+
+.p-spend-tour__detail__head {
+	margin-left: -8px;
+	white-space: nowrap;
 }
 
 .p-gnav {
@@ -2196,14 +2203,11 @@ dialog::backdrop {
 }
 
 .p-dish__text {
-	text-align: center;
-}
-
-.p-dish__text span {
 	font-family: "Shippori Mincho", serif;
 	font-size: 1rem;
 	font-weight: 800;
 	line-height: 1.448125;
+	text-align: center;
 	text-align: center;
 }
 
@@ -2346,6 +2350,10 @@ dialog::backdrop {
 
 @media (min-width: 768px) and (max-width: 1280px) {
 
+.is-sp {
+	display: none;
+}
+
 .c-drawer-btn {
 	height: 51px;
 	width: 66px;
@@ -2423,7 +2431,7 @@ dialog::backdrop {
 
 @media (max-width: 767px) {
 
-.is-sp .is-pc {
+.is-pc {
 	display: none;
 }
 
@@ -2968,6 +2976,7 @@ dialog::backdrop {
 
 .p-spend-tour__title {
 	font-size: 24px;
+	letter-spacing: 0;
 	line-height: 1.4583333333;
 }
 
@@ -2999,6 +3008,10 @@ dialog::backdrop {
 	font-size: 11px;
 	letter-spacing: 1.32px;
 	line-height: 1.0301818182;
+}
+
+.p-spend-tour__detail__head span {
+	margin-left: 8px;
 }
 
 .p-spend-tour__img img {
@@ -3396,7 +3409,7 @@ dialog::backdrop {
 	margin-bottom: 5px;
 }
 
-.p-dish__text span {
+.p-dish__text {
 	display: inline-block;
 	font-size: 0.875rem;
 	line-height: 1.4478571429;

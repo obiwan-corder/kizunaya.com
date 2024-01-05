@@ -193,7 +193,7 @@ document.querySelectorAll(".p-spend-tour__title").forEach(element => {
     },
     opacity: 1, // 透明度を1に
     y: 0, // Y軸の位置を0に（上への移動効果を解除）
-    duration: 2, // アニメーションの長さ（秒）
+    duration: 1, // アニメーションの長さ（秒）
     ease: "none" // イージングの種類
   });
 });
@@ -207,7 +207,7 @@ document.querySelectorAll(".p-spend-tour__card").forEach(element => {
     },
     opacity: 1, // 透明度を1に
     y: 0, // Y軸の位置を0に（上への移動効果を解除）
-    duration: 2, // アニメーションの長さ（秒）
+    duration: 1, // アニメーションの長さ（秒）
     ease: "none" // イージングの種類
   });
 });
