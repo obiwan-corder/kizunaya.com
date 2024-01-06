@@ -249,7 +249,7 @@ $(window).on('scroll load', function() {
 $(document).ready(function () {
   setTimeout(function () {
     $("#splash").fadeOut("slow");
-  }, 2500); 
+  }, 3000); 
 }),
 gsap.registerPlugin(ScrollTrigger);
 
