@@ -5,6 +5,7 @@
   display: inline-block;
   margin-left: 116px;
   font-family: global.$main-font;
+  color: global.$text-color;
   @include global.font(16, 400, 30.24, 1.92);
   @include global.mq('sp') {
     margin-left: 0px;

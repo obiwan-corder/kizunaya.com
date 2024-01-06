@@ -1,6 +1,7 @@
 @use "../global/" as global;
 
 .p-price__weekday--wrap .p-price__detail--block {
+  color: global.$text-color;
   @include global.mq('sp') {
     margin-left: 70px;
   }
