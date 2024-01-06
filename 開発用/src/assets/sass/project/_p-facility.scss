@@ -2,6 +2,9 @@
 
 .p-facility{
     margin-bottom: 100px;
+    @include global.mq('sp') {
+        margin-bottom: 40px;
+    }
 }
 .p-facility__title {
     font-size: calc(24 / 16 * 1rem);
