@@ -3,7 +3,7 @@
 .c-news__date {
   font-family: global.$main-font;
   @include global.font(16, 400, 25, 0);
-  color: global.$sub-text-color;
+  color: global.$text-color;
   padding-left: 2px;
 
   @include global.mq('sp') {

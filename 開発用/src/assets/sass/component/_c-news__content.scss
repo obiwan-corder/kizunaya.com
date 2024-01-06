@@ -2,7 +2,7 @@
 
 .c-news__content {
   font-family: global.$main-font;
-  color: global.$sub-text-color;
+  color: global.$text-color;
   @include global.font(15, 400, 22.5, 0);
   padding-left: 2px;
 
