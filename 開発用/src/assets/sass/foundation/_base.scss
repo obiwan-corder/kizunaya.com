@@ -15,6 +15,9 @@ body {
   &.is-active{
     overflow-y: hidden;
   }
+  @include global.mq('tab') {
+    min-width: 1000px;
+      }
 }
 
 .is-sp {
