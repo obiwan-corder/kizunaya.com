@@ -2140,7 +2140,6 @@ dialog::backdrop {
 .p-course__img--03 {
 	grid-column: 3/4;
 	grid-row: 1/3;
-	width: 602px;
 }
 
 .p-course__menu {
