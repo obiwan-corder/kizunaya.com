@@ -47,9 +47,7 @@
     font-size: 1rem;
     font-weight: 800;
     line-height: calc(23.17 / 16);
-    text-align: center;
     @include global.mq(sp) {
-        display: inline-block;
         font-size: calc(14 / 16 * 1rem);
         line-height: calc(20.27 / 14);
     }

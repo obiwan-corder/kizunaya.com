@@ -17,6 +17,9 @@ body {
   }
   @include global.mq('tab') {
     min-width: 1000px;
+    &#cooking{
+      min-width: auto;
+    }
       }
 }
 
