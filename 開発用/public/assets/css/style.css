@@ -2109,12 +2109,17 @@ dialog::backdrop {
 	margin-bottom: 20px;
 }
 
-#sea.p-course__version {
+.p-course__inner {
+	margin: 0 auto;
+	max-width: 1080px;
+	width: 100%;
+}
+
+#sea.p-course__version .p-course__gallery {
 	padding-left: 60px;
 }
 
-#luxury.p-course__version {
-	padding-left: 0;
+#luxury.p-course__version .p-course__gallery {
 	padding-right: 60px;
 }
 
@@ -2164,6 +2169,7 @@ dialog::backdrop {
 	font-feature-settings: "vert" on;
 	font-size: 1.5rem;
 	font-weight: 800;
+	letter-spacing: 11px;
 	line-height: 1.4479166667;
 	padding-left: 70px;
 }
@@ -2176,6 +2182,7 @@ dialog::backdrop {
 	font-family: "Shippori Mincho", serif;
 	font-size: 0.9375rem;
 	font-weight: 800;
+	letter-spacing: 7px;
 	line-height: 1.448;
 }
 
@@ -2214,7 +2221,6 @@ dialog::backdrop {
 	font-size: 1rem;
 	font-weight: 800;
 	line-height: 1.448125;
-	text-align: center;
 	text-align: center;
 }
 
@@ -3306,11 +3312,15 @@ body#cooking {
 	top: 3px;
 }
 
-#sea.p-course__version {
+.p-course {
+	text-align: center;
+}
+
+#sea.p-course__version .p-course__gallery {
 	padding: 0;
 }
 
-#luxury.p-course__version {
+#luxury.p-course__version .p-course__gallery {
 	padding: 0;
 }
 
@@ -3373,10 +3383,12 @@ body#cooking {
 }
 
 .p-course__menu {
+	display: inline-block;
 	height: 282px;
 	margin-bottom: 40px;
 	max-width: 100%;
 	padding: 23px 6vw 0;
+	text-align: left;
 }
 
 #sea .p-course__menu {
@@ -3384,12 +3396,13 @@ body#cooking {
 }
 
 #luxury .p-course__menu {
+	margin: auto;
 	margin-bottom: 60px;
-	margin-left: auto;
 }
 
 .p-course__title {
 	font-size: 1.25rem;
+	letter-spacing: 9px;
 	line-height: 1.448;
 	padding-left: 20px;
 }
@@ -3428,7 +3441,6 @@ body#cooking {
 }
 
 .p-dish__text {
-	display: inline-block;
 	font-size: 0.875rem;
 	line-height: 1.4478571429;
 }
