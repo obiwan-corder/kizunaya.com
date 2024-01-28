@@ -140,6 +140,7 @@ header {
 .c-scrolldown span {
 	bottom: 33px;
 	color: #ffffff;
+	font-family: "Zen Kaku Gothic New", sans-serif;
 	font-size: 0.8125rem;
 	font-weight: 400;
 	left: 3px;
@@ -2816,6 +2817,10 @@ body#cooking {
 	padding-top: 59px;
 }
 
+.c-reservation-btn {
+	padding-bottom: 0;
+}
+
 .p-logo__wrap {
 	top: -1px;
 }
@@ -3197,7 +3202,9 @@ body#cooking {
 }
 
 .p-onsen__content {
+	margin: 0 auto;
 	padding-bottom: 51px;
+	width: 90%;
 }
 
 .p-onsen__properties {

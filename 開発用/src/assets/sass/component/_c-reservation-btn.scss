@@ -3,6 +3,9 @@
 .c-reservation-btn {
   transition: all 0.3s ease;
 
+  @include global.mq('sp') {
+    padding-bottom:0;
+  }
   &:hover {
     background-color: global.$white-color;
     color: global.$text-color;
